@@ -7,7 +7,7 @@ title: Search&amp;Promote 8.10.1发行说明(2013/07/18)
 topic: Release Notes,Site search and merchandising
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 **修复和增强功能**
 
-* **业务规则** -添加了将多个计划分配给业务规则的功能。
+* **[!DNL Business Rules]** -添加了将多个计划分配给业务规则的功能。
 
    See [About Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
