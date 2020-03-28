@@ -7,7 +7,7 @@ title: 关于模拟器
 topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
    
    -->
 
-   （可选）使用“模拟器”页上表格中的复选框列，打开或关闭模拟中的给定规则。
+   （可选）使用“模拟器”页面上表格中的复选框列，打开或关闭模拟中的给定规则。
 
    <table> 
     <thead> 
@@ -52,28 +52,28 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>模拟分阶段／实时模拟 </p> </td> 
-      <td colname="col2"> <p>在模拟实时环境或舞台环境之间进行切换。 </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">模拟分阶段／实时模拟</span> </p> </td> 
+      <td colname="col2"> <p>在模拟实时环境或舞台环境之间切换。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>显示／隐藏处理规则 </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">显示／隐藏处理规则</span> </p> </td> 
       <td colname="col2"> <p>显示或隐藏触发的所有处理规则，而不仅仅是业务规则。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>更改模拟日期 </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">更改模拟日期</span> </p> </td> 
       <td colname="col2"> <p>模拟给定日期的搜索结果。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>在PC上模拟 </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">在PC上模拟</span> </p> </td> 
       <td colname="col2"> <p>模拟搜索结果，就像您使用个人计算机一样。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>在移动设备上模拟 </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">在移动设备上模拟</span> </p> </td> 
       <td colname="col2"> <p>模拟搜索结果，就像使用手机或平板电脑一样。 </p> <p>选择此选项时，您可以从以下关联选项中进行选择： </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b>设备</b> <p>在手机或平板电脑上模拟搜索结果。 </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b>分辨率</b> <p>根据您选择的设备，您可以选择关联的分辨率。 </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b>水平视图</b> <p>查看模拟搜索结果在所选设备上水平显示的方式。 </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">设备</span></b> <p>在手机或平板电脑上模拟搜索结果。 </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">分辨率</span></b> <p>根据您选择的设备，您可以选择关联的分辨率。 </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">水平视图</span></b> <p>视图模拟的搜索结果在所选设备上水平显示的方式。 </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
