@@ -7,7 +7,7 @@ title: Search&amp;Promote 8.17.0发行说明(2014/10/30)
 topic: Release Notes,Site search and merchandising
 uuid: ea1725df-778c-4875-a269-f33d0c367126
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
    请参 [阅关于单词和语言](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79)[和关于自动完成](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578)。
 
 * 流程监控器现在将重新启动 Apache 流程。
-* 在业务规则中执行 业务规则中的“显示彩块化项目”操作。
+* 在业务规则中执行 中的“显示彩块化项目”操 [!DNL Business Rules]作。
 * 在页 [!DNL Adjust Ranking Weights] 面中，您现在可以按1%的增量 **[!UICONTROL Rule & Relevancy Balance]** 调整设置。
 
    请参 [阅调整与排名规则关联的权重](../c-about-rules-menu/c-about-ranking-rules.md#task_3CB6FC92A66F4D99874A42D55825DB64)。
