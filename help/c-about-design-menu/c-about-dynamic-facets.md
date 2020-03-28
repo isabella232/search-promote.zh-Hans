@@ -8,7 +8,7 @@ title: 关于动态彩块化
 topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -96,12 +96,12 @@ t_configuring_dynamic_facets.xml
 1. 单击 **蓝色框中的重新生成分阶段站点索引** ，以快速重建分阶段网站索引。
 
    另请参 [阅重新生成实时或分阶段网站的索引](../c-about-index-menu/c-about-regenerate-index.md#task_B28DE40C0E9A475ABCBCBC4FF993AACD)。
-1. 确定要为给定搜索选择的动态彩块化数量。 您可以通过执行下列任一操作来完成此任务：
+1. 确定要为给定搜索选择的动态彩块化数量。 您可以通过执行以下任一操作来完成此任务:
 
-   * 创建具有任何所需条件的查询清除规则，该规则执行相应的操作 `set`(如 `backend parameter`果值), `sp_sfvl_df_count` 其中是搜索时要请求的所需数量的动态彩块化，然后单击 `X``X`**[!UICONTROL Add]**。
+   * 创建具有任何所需条件的查询清理规则，该规则执行相应的操作 `set`(如 `backend parameter`果值)，其中 `sp_sfvl_df_count` ，动态彩块化是搜索时要请求的所需数量，然后单击 `X``X`**[!UICONTROL Add]**。
    ![](assets/querycleaningrule_dynamicfacets.png)
 
-   请参 [阅添加查询清除规则](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)。
+   请参 [阅添加查询清理规则](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54)。
 
    另请参 [阅表中的后端搜索CGI参数](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)，第40行，进一步说明 `sp_sfvl_df_count`。
 
@@ -169,7 +169,7 @@ t_configuring_dynamic_facets.xml
 
    请务必在标 `__dynamic_facets` 记中 `gsname` 指定 `guided-facet-rail` 。 此标签是预定义的facet边栏，保留用于输出为给定搜索返回的任何动态facet。
 
-   您还可以通过“规则”>“业务规则”并使用高级规则生成器（如下所示），选择性地编辑此特殊facet边栏。
+   您还可以通过以下方式和方式来编辑此特殊 **[!UICONTROL Rules > Business Rules]**&#x200B;的facet边栏， **[!UICONTROL Advanced Rule Builder]** 如下所示。
 
    ![](assets/dynamicfacetrail_businessrule.png)
 
