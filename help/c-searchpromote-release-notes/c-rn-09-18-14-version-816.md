@@ -7,7 +7,7 @@ title: Search&amp;Promote 8.16.0发行说明(2014/9/18)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * 索引连接器 **[!UICONTROL Strip HTML]** 设置始终显示为选中。
 * Inconsistent search results were experienced with the **[!UICONTROL Common Phrases]** feature.
 * “规则”列表摘要中显示的属性名称被截短。
-* 激活单个业务规则会激活所有业务规则。
+* 推动单个业务规则的实时推出是推动所有业务规则的实时发布。
 
