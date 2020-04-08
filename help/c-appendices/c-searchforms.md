@@ -7,7 +7,7 @@ title: 搜索表单
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -151,7 +151,7 @@ source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>测试搜索表单。 </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> 测试搜索表单 </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> 测试搜索表单 </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,7 +286,7 @@ source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
 
 您可以视图上述示例的整个高级搜索表单HTML代码。
 
-请参 [阅高级搜索表单HTML代码](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)。
+请参 [阅高级搜索表单HTML代码](#reference_9AAD4A46B68D4D48865508982CB86DB9)。
 
 请参 [阅配置自动完成CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
 
@@ -435,7 +435,7 @@ source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
 
 用于生成高级搜索表单的HTML表单代码，该表单显示在示例高级搜索表单主题的顶部。
 
-请参 [阅示例高级搜索表单](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)。
+请参 [阅示例高级搜索表单](#reference_82E1051918744EBA88A01E9E6AE42C4A)。
 
 如果您使用此代码，请记住将 `sp_a` 的值替 `sp99999999` 换为实际的帐号。
 
