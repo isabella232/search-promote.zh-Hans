@@ -7,18 +7,16 @@ title: 搜索表单
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
 
 ---
 
 
 # 搜索表单{#search-forms}
 
-## 搜索表单 {#concept_915FFF20FF644830B7B3C6E00F416BCB}
-
 ## 在搜索表单中使用集合 {#reference_5A079AEEEFB84457892EF0870D0605C3}
 
-集合可让客户搜索网站的特定区域。 根据您是实施下拉列表还是复选框列表，您可以让客户搜索一个或多个集合。
+集合可让客户搜索网站的特定区域。 根据您是实施下拉列表还是复选框列表，您可以让客户搜索单个集合或多个集合。
 
 另请参 [阅关于集合](../c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127)。
 
@@ -108,7 +106,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 [https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
 
-如果您的站点使用帧，则可以为搜索结果链接指定目标帧。 默认目标为_self，它在当前框架或浏览器窗口中打开链接。 而是可以指定站点特定的或浏览器保留的目标：
+如果站点使用帧，则可以为搜索结果链接指定目标帧。 默认目标为_self，它在当前框架或浏览器窗口中打开链接。 而是可以指定站点特定的或浏览器保留的目标:
 
 * _top（浏览器保留）结果在当前浏览器窗口中打开并替换所有当前帧。
 * _blank（浏览器保留）结果在新的浏览器窗口中打开。
@@ -133,22 +131,22 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
    <td colname="col02"> <p>将表单添加到网页中的所需框架。 </p> </td> 
-   <td colname="col2"> <p> <a href="../c-appendices/c-searchforms.md#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> 将搜索表单代码添加到您的…… </a> </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> 将搜索表单代码添加到您的…… </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>为搜索结果页面设置目标框架。 </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> 为搜索结果页面设置目标框架 </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> 为搜索结果页面设置目标框架 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
-   <td colname="col02"> <p>为从搜索结果页面创建的链接设置目标。 </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> 设置从搜索结果创建的链接的目标…… </a> </p> </td> 
+   <td colname="col02"> <p>设置从搜索结果页面创建的链接的目标。 </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> 设置从搜索结果创建的链接的目标... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>编辑导航框架页面，以防止对它们进行索引。 </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> 编辑导航框架页面以防止它们…… </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> 编辑导航框架页面以防止它们…… </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
@@ -182,11 +180,11 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 ## 为搜索结果页面设置目标框架 {#section_532CACB90888467093D95EACB64FDFA1}
 
-如果如上所示将搜索表单代码放入垂直导航框架中，则可以在较大的主框架中显示搜索结果。 在此示例中，您将主帧调用为“body”，并将其设置为目标帧。
+如果如上所示将搜索表单代码放入垂直导航框架中，则可以在较大的主框架中显示搜索结果。 在此示例中，您将主框架称为“body”，并将其设置为目标框架。
 
 ![](assets/frames2.gif)
 
-1. 要为结果页指定目标框架，请通过从以下更改搜索表单代码中的以下行，将目标和值添加到表单中：
+1. 要为结果页指定目标框，请通过从以下代码更改搜索表单代码中的以下行，向表单添加目标和值：
 
    `<form method="get" action="https://search.atomz.com/search/">`
 
@@ -202,24 +200,24 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 您可以通过直接编辑模板来设置目标框架。
 
-如果搜索结果显示在“body”框架中，您可能也希望在“body”框架中打开链接。 由于这是同一帧(即默认设 `"_self"` 置的目标值)，因此您无需进行任何更改。
+如果搜索结果显示在“body”框架中，您可能也希望在“body”框架中打开链接。 因为这是同一帧(即默认设 `"_self"` 置的目标值)，所以您无需进行任何更改。
 
 您还可以为结果链接设置目标框架。 以下是您可以执行的操作的几个示例：
 
 * 为搜索结果及其链接指定不同的帧，以便当每个单击的结果在单独的帧中打开时，搜索结果在各自的帧中保持活动状态。
 * 指定将搜索结果打开到新的空白窗口中，这样旧窗口将保持活动状态并保留其原始内容，同时保留搜索结果。
 
-目标名称可以是在HTML中指定的框架的名称，也可以是以下几种HTML默认值之一：
+目标名称可以是在HTML中指定的框架的名称，也可以是以下几个HTML默认值之一：
 
 * `target="_blank"` 在未命名的空白新窗口中打开链接。
 
 * `target="_self"` 默认. 在搜索结果所在的同一窗口中打开链接。 在这种情况下，将显示原始搜索结果窗口。 使用此选项可覆盖全局分配的基本目标。
 
-* `target="_parent"` 在链接页面的父框架集中打开链接。 如果文档没有父项，则默认情况下，此功 `"_self"` 能类似。
+* `target="_parent"` 在链接页面的父框架集中打开链接。 如果文档没有父项，则此函数类似于默 `"_self"` 认值。
 
-* `target="_top"` 在完整窗口中打开链接。 如果文档已位于顶部，则默认情况下，此功能与此类 `"_self"` 似。 使用此选项可打破任意深度的框架嵌套。
+* `target="_top"` 在完整窗口中打开链接。 如果文档已位于顶部，则此函数类似于默 `"_self"` 认值。 使用此选项可打破任意深度的框架嵌套。
 
-例如，要设置目标目 `_blank` 标框架，您可以按以下方式编辑模板：
+例如，要设置目标目标框架， `_blank` 您可以按照以下方式编辑模板：
 
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Templates]**。
 
@@ -228,13 +226,13 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
    `<search-link><search-title length=100></search-link>`
 
-1. 将帧目标添加到标 `<search-link>` 记。 在以上示例中，输入 `target="_blank"`。 请务必在目标值周围添加下划线和引号。
+1. 将帧目标添加到标 `<search-link>` 记。 在以上示例中，输入 `target="_blank"`。 请务必在目标值周围加下划线和引号。
 
    标记 `<search-link>` 现在显示为如下所示：
 
    `<search-link target="_blank"><search-title length=100></search-link>`
 
-当站点访问者选择搜索结果链接时，链接的页面现在会打开一个新的空白窗口。
+当站点访客选择搜索结果链接时，链接的页面现在会打开一个新的空白窗口。
 
 ## 编辑导航框架页面以防止它们被索引 {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
@@ -263,7 +261,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
    以下是事实：
 
-   * 搜索结果页面将显示在指定的目标框架中。
+   * 搜索结果页面显示在指定的目标框架中。
    * 搜索结果中的链接位于指定的目标框架中。
    * 不显示导航框架结果。
    如果您在测试搜索表单后遇到框架问题，请与客户支持联系。
@@ -272,7 +270,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 您可以编辑高级表单代码以满足您的设计和内容需求，或者添加或删除其他搜索参数。
 
-您的主页是插入高级搜索表单的好地方，因为许多客户希望在该处找到搜索功能。 您还可以创建包含搜索表单和其他有用信息的HTML页面，然后链接到整个网站中的该页面。
+您的主页是插入高级搜索表单的好地方，因为许多客户希望在那里找到搜索功能。 您还可以创建包含搜索表单和其他有用信息的HTML页面，然后链接到整个网站中的该页面。
 
 如果为安全内容编制索引，则可以从安全搜索Web服务器提供搜索结果。 将搜索表单操作属性中的URL更改为：action=&quot;https://search.atomz.com/search/&quot;来执行此操作。
 
@@ -280,13 +278,13 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 >
 >某些HTML编辑器在从其他应用程序粘贴HTML代码时遇到问题。 如果HTML代码以文本形式显示在网页上，则将搜索代码复制并粘贴到简单的文本编辑器中（如Windows上的记事本或Mac上的简单文本），然后再次从简单文本编辑器复制并粘贴到HTML编辑器中。
 
-在高级搜索表单代码中使用搜索参数来创建单选按钮、复选框和列表框，客户可以使用这些框来自定义单个搜索。 客户可以指定显示的搜索结果数，例如，日期范围，或者是否通过高级搜索表单上显示的选项显示包含搜索结果的摘要。
+搜索参数用于高级搜索表单代码中，以创建单选按钮、复选框和列表框，客户可使用它们自定义单个搜索。 客户可以指定显示的搜索结果数，例如，日期范围，或者是否通过高级搜索表单上显示的选项显示包含搜索结果的摘要。
 
 使用以下范例高级搜索表单，本主题的其余部分向您显示如何使用搜索参数创建表单上的每个选项。
 
 ![](assets/advancedsearchform.png)
 
-您可以查看上述示例的整个高级搜索表单HTML代码。
+您可以视图上述示例的整个高级搜索表单HTML代码。
 
 请参 [阅高级搜索表单HTML代码](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)。
 
@@ -317,7 +315,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>允许您的客户指定文档必须包含“任何单词”、“所有单词”或“精确短语”才能匹配。 指定 <span class="codeph"> sp_p参 </span> 数后，客户无需在搜索查询中使用“+”或“-”，或同时使用两者。 </p> <p> 如果忽略 <span class="codeph"> sp_p参数，或 </span> 将其设置为“”或“any”，则客户仍可使用“+”和“-”说明符。 如果 <span class="codeph"> sp_p参 </span> 数设置为“all”或“phrase”，则将忽略指定的“+”和“-”。 </p> <p>您可以进一步了解在搜索中使用“+”和“-”。 </p> <p>请参阅<a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">关于搜索</a>。 </p> </td> 
+   <td colname="col4"> <p>允许您的客户指定“任何单词”、“所有单词”或“精确短语”必须存在，文档才能匹配。 指定 <span class="codeph"> sp_p参 </span> 数后，客户无需在搜索查询中使用“+”或“-”，或同时使用两者。 </p> <p> 如果忽略 <span class="codeph"> sp_p参数，或 </span> 将其设置为“”或“any”，则客户仍可使用“+”和“-”说明符。 如果 <span class="codeph"> sp_p参 </span> 数设置为“all”或“phrase”，则将忽略指定的“+”和“-”。 </p> <p>您可以进一步了解在搜索中使用“+”和“-”。 </p> <p>请参阅<a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">关于搜索</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> 类似声匹配 </p> </td> 
@@ -336,7 +334,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>sp_d <span class="codeph"> 参数指定 </span> 要执行的自定义数据范围匹配或要执行的特定日期范围匹配。 </p> <p>在默认的高级搜索表单上，此选项以单选按钮组的形式显示，其中包含一个下拉列表，其中列有使用 <span class="codeph"> sp_date_range参数生成的“自定义”日期 </span> 范围。 它还包括一组“特定”的开始和结束日期，这些日期是用 <span class="codeph"> sp_start_day、 </span>sp_start_month <span class="codeph"> 、 </span>sp_start_year、sp_end_day、 <span class="codeph"></span><span class="codeph"></span><span class="codeph"></span><span class="codeph"></span> sp_end_month和sp_end_year参数生成的。 </p> <p>“自定义”日期范围是要搜索的指定日期范围。 例如，“Anytime”、“Today”、“Inthing the last in year”等。 </p> <p>“特定”日期范围包括开始日期和结束日期。 例如，从“2009年9月8日至2011年10月18日”。 </p> </td> 
+   <td colname="col4"> <p>sp_d <span class="codeph"> 参数指定 </span> 要执行的自定义数据范围匹配或要执行的特定日期范围匹配。 </p> <p>在默认的高级搜索表单上，此选项显示为单选按钮组，其下拉列表为使用 <span class="codeph"> sp_date_range参数生成的“自定义”日期 </span> 范围。 它还包括一组“特定”开始和结束日期，这些日期包括 <span class="codeph"> sp_开始日、 </span>sp_开始月、sp_ <span class="codeph"> 开始月、sp_year年、sp_结束日、 </span>sp_结束日、sp_结束日、 <span class="codeph"></span><span class="codeph"></span><span class="codeph"></span><span class="codeph"></span> sp_结束月和sp_year参数。 </p> <p>“自定义”日期范围是要搜索的指定日期范围。 例如，“Anytime”、“Today”、“Inthing the last in year”等。 </p> <p>“特定”日期范围包括开始日期和结束日期。 例如，从“2009年9月8日至2011年10月18日”。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>日期范围匹配：自定义日期范围 </p> </td> 
@@ -365,16 +363,16 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col2"> <p>日期范围匹配：起始日期 </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_start_day、sp_start_month、sp_start_year </span> </p> <p> </p> </td> 
+   <td colname="col2"> <p>日期范围匹配：开始日期 </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_开始_day、sp_开始_month、sp_开始_year </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>这三个数字值指定要搜索的特定日期范围的开始日期。 请务必指定所有三个值，因为忽略部分指定的日期。 </p> <p>只指定开始日期、结束日期或同时指定开始日期和结束日期是合法的。 如果仅指定开始日期，则搜索包括日期在开始日期或开始日期之后的匹配文档。 如果仅指定结束日期，则搜索将包括结束日期当天或之前的匹配文档。 如果同时指定了开始日期和结束日期，则搜索将包括从开始日期到结束日期的匹配文档。 </p> <p>所有日期均相对于格林威治标准时间进行搜索。 </p> </td> 
+   <td colname="col4"> <p>这三个数字值指定要搜索的特定日期范围的开始日期。 请务必指定所有三个值，因为忽略部分指定的日期。 </p> <p>只指定开始日期、结束日期或同时指定开始日期和结束日期是合法的。 如果仅指定开始日期，则搜索包括日期在开始日期或之后的匹配文档。 如果仅指定结束日期，则搜索将包括结束日期或结束日期之前的匹配文档。 如果同时指定了开始日期和结束日期，则搜索将包括从开始日期到结束日期的匹配文档。 </p> <p>所有日期均相对于格林威治标准时间进行搜索。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> 日期范围匹配：结束日期 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> sp_end_day、sp_end_month、sp_end_year </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
-   <td colname="col4"> <p>这三个数字值指定要搜索的特定日期范围的结束日期。 请务必指定所有三个值，因为忽略部分指定的日期。 </p> <p>只指定开始日期、结束日期或开始和结束日期是合法的。 如果仅指定开始日期，则搜索包括日期在开始日期或开始日期之后的匹配文档。 如果仅指定结束日期，则搜索将包括结束日期当天或之前的匹配文档。 如果同时指定了开始日期和结束日期，则搜索包括从开始日期到结束日期的匹配文档。 </p> <p>所有日期均相对于格林威治标准时间进行搜索。 </p> </td> 
+   <td colname="col4"> <p>这三个数字值指定要搜索的特定日期范围的结束日期。 请务必指定所有三个值，因为忽略部分指定的日期。 </p> <p>只指定开始日期、结束日期或开始日期和结束日期是合法的。 如果仅指定开始日期，则搜索包括日期在开始日期或之后的匹配文档。 如果仅指定结束日期，则搜索将包括结束日期或结束日期之前的匹配文档。 如果同时指定开始和结束日期，则搜索将包括从开始日期到结束日期的匹配文档。 </p> <p>所有日期均相对于格林威治标准时间进行搜索。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>在搜索字段内 </p> </td> 
@@ -391,7 +389,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>在 <span class="codeph"> sp_x列 </span> 表框中，客户可以指定要在其中搜索查询字符串的字段。 </p> <p>客户可以选择所有字段、标题、文档说明、文档关键字、正文、替代文本、文档的URL、日期或目标关键字。 </p> <p>使用 <span class="codeph"></span> sp_x参数时，客户无需在搜索查询字符串中指定“title:”、“desc:”、“keys:”、“body:”、“alt:”、“url:”和“target:”。 </p> <p>如果忽 <span class="codeph"> 略sp_x参 </span> 数，或将其设置为“”或“any”，则客户仍可使用字段说明符字符串。 如果 <span class="codeph"> sp_x参数设 </span> 置为特定字段，则忽略所有其他字段说明符字符串。 </p> <p>请参阅<a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">关于搜索</a>。 </p> </td> 
+   <td colname="col4"> <p>您的 <span class="codeph"> 客户可以在sp_x </span> 列表框中指定要在其中搜索查询字符串的字段。 </p> <p>客户可以选择所有字段、标题、文档说明、文档关键字、正文、替代文本、文档的URL、日期或目标关键字。 </p> <p>使用 <span class="codeph"></span> sp_x参数时，客户无需在搜索查询字符串中指定“title:”、“desc:”、“keys:”、“body:”、“alt:”、“url:”和“目标:”。 </p> <p>如果忽 <span class="codeph"> 略sp_x参 </span> 数，或将其设置为“”或“any”，则客户仍可使用字段说明符字符串。 如果 <span class="codeph"> sp_x参数设 </span> 置为特定字段，则忽略所有其他字段说明符字符串。 </p> <p>请参阅<a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local">关于搜索</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>显示结果计数 </p> </td> 
@@ -426,7 +424,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
       &lt;option&nbsp;value=1&gt;date&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>允许客户选择结果是按相关性还是日期顺序列出。 </p> <p>当值设置为1时，结果将从最近更改的文档列出到最近更改的文档。 当该值设置为0时，结果将从最相关和最不相关中列出。 您还可以将此参数与单选按钮一起使用，如下例所示： </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
+   <td colname="col4"> <p>允许客户选择结果是按相关性还是日期顺序列出。 </p> <p>当该值设置为1时，结果将从最近更改的文档列出到最近更改的文档。 当该值设置为0时，结果将从最相关和最不相关中列出。 您还可以将此参数与单选按钮一起使用，如下例所示： </p> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=0&nbsp;selected&gt;Sort&nbsp;by&nbsp;relevance 
       &lt;input&nbsp;type=radio&nbsp;name="sp_s"&nbsp;value=1&gt;Sort&nbsp;by&nbsp;date </code> </p> </td> 
   </tr> 
