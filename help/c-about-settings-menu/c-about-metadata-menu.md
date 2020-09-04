@@ -8,9 +8,9 @@ title: 关于元数据菜单
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8039'
 ht-degree: 1%
 
 ---
@@ -68,10 +68,9 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>元标记名称 </p> </td> 
-      <td colname="col2"> <p>确定与定义的字段关联的内容。 </p> <p>名称的列表最长可为255个字符。 并且，名称可以包含HTML meta标记的name属性中允许的任何字符。 </p> <p>您可以在单个字段定义中指定多个meta标签。 </p> <p>多个值必须以逗号分隔，在任何给定网页上找到的最左边的meta标记名称优先。 </p> <p>例如，假定您定义了一个名为“auth”的字段。 字段名称具有关联的元标记“author, dc.author”。 在这种情况下，如果网页上同时出现两个元标记，则将索引“author”元标记中的内容并搜索“dc.author”的内容。 </p> <p>用户定义的字段在其定义中必须至少有一个元标记名称。 预定义的字段不需要具有关联的meta标记。 但是，如果指定了一个或多个元标记，则元标记的内容将覆盖每个标记的当前数据源。 </p> <p>例如，如果元标记“dc.title”与预定义的“title”字段关联，则“dc.title”元标记中的内容将索引到 
-      <userinput>
+      <td colname="col2"> <p>确定与定义的字段关联的内容。 </p> <p>名称的列表最长可为255个字符。 并且，名称可以包含HTML meta标记的name属性中允许的任何字符。 </p> <p>您可以在单个字段定义中指定多个meta标签。 </p> <p>多个值必须以逗号分隔，在任何给定网页上找到的最左边的meta标记名称优先。 </p> <p>例如，假定您定义了一个名为“auth”的字段。 字段名称具有关联的元标记“author, dc.author”。 在这种情况下，如果网页上同时出现两个元标记，则将索引“author”元标记中的内容并搜索“dc.author”的内容。 </p> <p>用户定义的字段在其定义中必须至少有一个元标记名称。 预定义字段不需要具有关联的meta标记。 但是，如果指定了一个或多个元标记，则元标记的内容将覆盖每个标记的当前数据源。 </p> <p>例如，如果元标记“dc.title”与预定义的“title”字段相关联，则“dc.title”元标记中的内容将索引到任何特定文档的标 <code>
         &lt;title&gt; 
-      </userinput> 标签，用于任何特定文档。 </p> <p>请参见如下示例： </p> <p> 
+      </code> 记上。 </p> <p>请参见如下示例： </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> 描述 </li> 
@@ -97,37 +96,30 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>允许列表 </p> </td> 
-      <td colname="col2"> <p>仅当选择数据类型“文 <span class="uicontrol"> 本” </span>或“编 <span class="uicontrol"> 号”时 </span> 可用。 </p> <p>在此字段的元数据内容中单独索引分隔的值。 </p> <p>例如，当选择“允许列表”时，内容“红、黄、绿、蓝”被视为四个单独的值，而不是一个。 此处理在搜索范围时最有用(使用 
-      <userinput>
+      <td colname="col2"> <p>仅当选择数据类型“文 <span class="uicontrol"> 本” </span>或“编 <span class="uicontrol"> 号”时 </span> 可用。 </p> <p>在此字段的元数据内容中单独索引分隔的值。 </p> <p>例如，当选择“允许列表”时，内容“Red”、“Yellow”、“Green”、“Blue”被视为四个单独的值。 此处理对于范围搜索(使 <code>
         sp_q_min 
-      </userinput>、 
-      <userinput>
+      </code>用、 <code>
         sp_q_max 
-      </userinput> 或 
-      <userinput>
+      </code>或) <code>
         sp_q_exact 
-      </userinput>)和 
-      <userinput>
-        &lt;search-field-value-列表&gt; 
-      </userinput>、 
-      <userinput>
+      </code>以及对、 <code>
+        &lt;search-field-value-list&gt; 
+      </code>和最有用 <code>
         &lt;search-field-values&gt; 
-      </userinput>, 和 
-      <userinput>
+      </code><code>
         &lt;search-display-field-values&gt; 
-      </userinput>. </p> <p>如果选择了“版本”数据类型，则不可用。 </p> </td> 
+      </code>。 </p> <p>如果选择了“版本”数据类型，则不可用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> 动态彩块化 </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>注意：此功能在默认情况下不启用。请与技术支持联系以激活供您使用。 激活后，它会显示在用户界面中。 </p> </p> <p>将标识的facet设置为动态。 </p> <p>彩块化构建在元标记字段的顶部。 meta标签字段是AdobeSearch&amp;Promote的低级核心搜索层。 彩块化则是GS（向导搜索）的一部分，GS是AdobeSearch&amp;Promote的高级表示层。 但是，Facet自有的meta标签字段对facet一无所知。 </p> <p>请参 <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> 阅关于动态彩 </a>块化。 </p> </td> 
+        <!--NEW 2/2/2014--> <p>注意：此功能在默认情况下不启用。请与技术支持联系以激活供您使用。 激活后，它会显示在用户界面中。 </p> </p> <p>将标识的facet设置为动态。 </p> <p>彩块化构建在元标记字段的顶部。 元标签字段是AdobeSearch&amp;Promote的低级核心搜索层。 彩块化，另一方面是GS（向导搜索）的一部分-AdobeSearch&amp;Promote的高级表示层。 但是，Facet自有的meta标签字段对facet一无所知。 </p> <p>请参 <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> 阅关于动态彩 </a>块化。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>允许重复数据消除 </p> </td> 
-      <td colname="col2"> <p>选中此选项可启用此字段的外部重复数据删除。 即，允许在搜索时通过 
-        <userinput>
+      <td colname="col2"> <p>选中此选项可启用此字段的外部重复数据删除。 即，允许通过Search CGI参数在搜索时指定 <code>
           sp_dedupe_field 
-        </userinput> 搜索CGI参数。 </p> <p>请参 <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> 阅搜索CGI参 </a>数。 </p> </td> 
+        </code> 此字段。 </p> <p>请参 <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> 阅搜索CGI参 </a>数。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>表名 </p> </td> 
@@ -135,7 +127,7 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>列表分隔符 </p> </td> 
-      <td colname="col2"> <p>仅当选择“允 <span class="uicontrol"> 许列表” </span> 时可用。 </p> <p>指定单个列表值的字符。 您可以指定多个字符，每个字符都被视为值分隔符。 </p> </td> 
+      <td colname="col2"> <p>仅在选择 <span class="uicontrol"> 允许列表 </span> 时可用。 </p> <p>指定单个列表值的字符。 您可以指定多个字符，每个字符都被视为值分隔符。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>默认搜索 </p> </td> 
@@ -151,10 +143,9 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>排序 </p> </td> 
-      <td colname="col2"> <p>指定何时按命名字段对结果进行排序，具体方式为 
-        <userinput>
+      <td colname="col2"> <p>指定何时按命名字段，通过Search CGI参数对结果 <code>
           sp_s 
-        </userinput> 搜索CGI参数。 </p> <p>请参 <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> 阅搜索CGI参 </a>数。 </p> </td> 
+        </code> 进行排序。 </p> <p>请参 <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> 阅搜索CGI参 </a>数。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>语言 </p> </td> 
@@ -186,20 +177,17 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>默认单位 </p> </td> 
-      <td colname="col2"> <p>仅当选择数据类型“位 <span class="uicontrol"> 置” </span> 作为“数据类型”时可用。 </p> <p>控制距离值的处理以进行接近性搜索。 </p> <p>如果将默认单位设置 <span class="uicontrol"> 为 </span>“Miles”（英里），则应用于此字段的任何接近搜索最小／最大距离标准(通过 
-      <userinput>
+      <td colname="col2"> <p>仅当选择数据类型“位 <span class="uicontrol"> 置” </span> 作为“数据类型”时可用。 </p> <p>控制距离值的处理以进行接近性搜索。 </p> <p>如果将默认单位设 <span class="uicontrol"> 置为 </span>Miles，则应用于此字段的任何接近搜索最小／最大距离标准(通过或搜索CGI参数 <code>
         sp_q_min[_#] 
-      </userinput> 或 the 
-      <userinput>
+      </code><code>
         sp_q_max[_#] 
-      </userinput> 搜索CGI参数)被视为英里，否则被视为公里。 </p> <p>此选项还控制应用于输出的默认距离单位 
-      <userinput>
+      </code> )都将被视为mils，否则被视为km。 </p> <p>此选项还控制在应用于邻近搜索输出字段时应用于搜索 <code>
         &lt;Search-Display-Field&gt; 
-      </userinput> 当应用到proximity搜索输出字段时，搜索结果模板标记。 </p> <p>请参 <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> 阅关于接近性 </a>搜索。 </p> </td> 
+      </code> 结果模板标签输出的默认距离单位。 </p> <p>请参 <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> 阅关于接近性 </a>搜索。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>创建范围描述？ </p> </td> 
-      <td colname="col2"> <p>仅当选择“ <span class="uicontrol"> 数 </span> 字”作为数据类型时可用。 </p> <p>控制自动创建字段范围说明，以与“设计”&gt;“导 <span class="uicontrol"> 航” </span> &gt;“ <span class="uicontrol"> 彩 </span> 块化” <span class="uicontrol"> 一起使用 </span>。 </p> <p>请参 <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" format="dita" scope="local"> 阅关于彩 </a>块化。 </p> <p> <p>注意：  如果此字段已选 <span class="uicontrol"> 中“垂直更 </span> 新字段”，则在“垂直更新”期间将更新生成的字段范围描述字段。 但是，建议在“范围字段”中标识的 <span class="uicontrol"> 字段也 </span> 选中“ <span class="uicontrol"> 垂直更新字 </span> 段”。 </p> </p> </td> 
+      <td colname="col2"> <p>仅当选择“ <span class="uicontrol"> 数 </span> 字”作为数据类型时可用。 </p> <p>控制自动创建字段范围说明，以与“设计”&gt;“导 <span class="uicontrol"> 航” </span> &gt;“ <span class="uicontrol"> 彩 </span> 块化” <span class="uicontrol"> 一起使用 </span>。 </p> <p>请参 <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" format="dita" scope="local"> 阅关于彩 </a>块化。 </p> <p> <p>注意： 如果此字段已选 <span class="uicontrol"> 中“垂直更 </span> 新字段”，则在“垂直更新”期间将更新生成的字段范围描述字段。 但是，建议在“范围字段”中标识的 <span class="uicontrol"> 字段也 </span> 选中“ <span class="uicontrol"> 垂直更新字 </span> 段”。 </p> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>范围字段 </p> </td> 
@@ -224,15 +212,15 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>“小于”格式 </p> </td> 
-      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>这是用于指定小于“范围值”中最小值的值的范围描述的 <span class="uicontrol"> 模板 </span>。 最小值将使用数字占位符标记 <span class="uicontrol"> ~N~表示 </span>。 例如： </p> <code> Less&amp;nbsp;than&amp;nbsp;~N~ </code> <p>或: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;below </code> <p>通常，该值的格式为“原样”-即，对于“范围值 <span class="uicontrol"> ” </span> 定义“5 10 20”和提供的值1，生成的范围描述将仅类似于“小于5”。 如果您希望它为“4.99及更低版本”，请将“精度” <span class="uicontrol"> 设置 </span> 为 <span class="uicontrol"> 2并 </span> 使用以下格式： </p> <code> ~n~&amp;nbsp;and&amp;nbsp;below </code> <p>在 <span class="uicontrol"> “小于”格 </span>式中，小写 <span class="uicontrol"> ~n~将使值根据精确度设置 </span> 向下 <i>舍入</i><span class="uicontrol"></span> 。 </p> <p>注意： 要按原样在范围描述中包含任何数字占位符，请使用反斜杠(\)前缀进行指定——例如 <span class="uicontrol"> \~N~ </span> 或 <span class="uicontrol"> \~n~ </span>。 要包含反斜杠字符，请使用另一个反斜杠指定它——例如， <span class="uicontrol"> \\ </span>a. </p> </td> 
+      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>这是用于指定小于“范围值”中最小值的值的范围描述的 <span class="uicontrol"> 模板 </span>。 最小值将使用数字占位符标记 <span class="uicontrol"> ~N~表示 </span>。 例如： </p> <code> Less&amp;nbsp;than&amp;nbsp;~N~ </code> <p>或: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;below </code> <p>通常，该值的格式为“原样”-即，对于“范围值 <span class="uicontrol"> ” </span> 定义“5 10 20”和提供的值1，生成的范围描述将仅类似于“小于5”。 如果您希望它为“4.99及更低版本”，请将“精度” <span class="uicontrol"> 设置 </span> 为 <span class="uicontrol"> 2并 </span> 使用以下格式： </p> <code> ~n~&amp;nbsp;and&amp;nbsp;below </code> <p>在 <span class="uicontrol"> “小于”格 </span>式中，小写 <span class="uicontrol"> ~n~将使值根据精确度设置 </span> 向下 <i>舍入</i><span class="uicontrol"></span> 。 </p> <p>注意：要按原样在范围描述中包含任何数字占位符，请使用反斜杠(\)前缀进行指定——例如 <span class="uicontrol"> \~N~ </span> 或 <span class="uicontrol"> \~n~ </span>。 要包含反斜杠字符，请使用另一个反斜杠指定它——例如， <span class="uicontrol"> \\ </span>a. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>中间格式 </p> </td> 
-      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>这是用于指定介于范围值中最小值和最大值之间的值的范围描述 <span class="uicontrol"> 的模板 </span>。 对于给定范围，低范围值将使用数字占位符标记 <span class="uicontrol"> ~L~ </span>表示，而高范围值将使用标记 <span class="uicontrol"> ~H~表示 </span>。 例如： </p> <code> ~L~&amp;nbsp;to&amp;nbsp;~H~ </code> <p>或: </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>或: </p> <code> Less&amp;nbsp;than&amp;nbsp;~H~&amp;nbsp;and&amp;nbsp;greater&amp;nbsp;than&amp;nbsp;~L~ </code> <p>通常，这些值将格式化为“原样”-即，对于范围值定 <span class="uicontrol"> 义 </span> 为“5 10 20”，而提供的值为8，生成的范围描述将仅类似于“5到10”。 如果您希望它为“5到9.99之间”，并且较高的值向下调 <i>整</i>，请将 <span class="uicontrol"> Precision </span> 设置为 <span class="uicontrol"> 2并 </span> 使用以下格式： </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~h~ </code> <p>同样 <span class="uicontrol"> ,~L </span> ~可以被 <span class="uicontrol"> ~l~取代 </span> ，使低值向上调节 <i>，也可以根据</i>Precision Light的设置 <span class="uicontrol"></span> 来进行。 这意味着定义如下： </p> <code> Between&amp;nbsp;~l~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>如果 <span class="uicontrol"> Precision </span> 值为 <span class="uicontrol"> 2，则 </span> 将创建“5.01到10”。 </p> <p>小写 <span class="uicontrol"> ~l </span> ~将使低值按精度设置向上 <i>舍入</i> ，小写 <span class="uicontrol"> ~h~将使高值变为四舍 </span><span class="uicontrol"></span><i></i>入。 </p> <p>注意： 要按原样在范围描述中包含任何数字占位符，请使用反斜杠(\)前缀进行指定——例如 <span class="uicontrol"> \~L~ </span> or <span class="uicontrol"> \~h~ </span>. 要包含反斜杠字符，请使用另一个反斜杠指定它——例如， <span class="uicontrol"> \\ </span>a. </p> </td> 
+      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>这是用于指定介于范围值中最小值和最大值之间的值的范围描述 <span class="uicontrol"> 的模板 </span>。 对于给定范围，低范围值将使用数字占位符标记 <span class="uicontrol"> ~L~ </span>表示，而高范围值将使用标记 <span class="uicontrol"> ~H~表示 </span>。 例如： </p> <code> ~L~&amp;nbsp;to&amp;nbsp;~H~ </code> <p>或: </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>或: </p> <code> Less&amp;nbsp;than&amp;nbsp;~H~&amp;nbsp;and&amp;nbsp;greater&amp;nbsp;than&amp;nbsp;~L~ </code> <p>通常，这些值将格式化为“原样”-即，对于范围值定 <span class="uicontrol"> 义 </span> 为“5 10 20”，而提供的值为8，生成的范围描述将仅类似于“5到10”。 如果您希望它为“5到9.99之间”，并且较高的值向下调 <i>整</i>，请将 <span class="uicontrol"> Precision </span> 设置为 <span class="uicontrol"> 2并 </span> 使用以下格式： </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~h~ </code> <p>同样 <span class="uicontrol"> ,~L </span> ~可以被 <span class="uicontrol"> ~l~取代 </span> ，使低值向上调节 <i>，也可以根据</i>Precision Light的设置 <span class="uicontrol"></span> 来进行。 这意味着定义如下： </p> <code> Between&amp;nbsp;~l~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>如果 <span class="uicontrol"> Precision </span> 值为 <span class="uicontrol"> 2，则 </span> 将创建“5.01到10”。 </p> <p>小写 <span class="uicontrol"> ~l </span> ~将使低值按精度设置向上 <i>舍入</i> ，小写 <span class="uicontrol"> ~h~将使高值变为四舍 </span><span class="uicontrol"></span><i></i>入。 </p> <p>注意：要按原样在范围描述中包含任何数字占位符，请使用反斜杠(\)前缀进行指定——例如 <span class="uicontrol"> \~L~ </span> or <span class="uicontrol"> \~h~ </span>. 要包含反斜杠字符，请使用另一个反斜杠指定它——例如， <span class="uicontrol"> \\ </span>a. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>“大于”格式 </p> </td> 
-      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>这是用于指定大于范围值中最大值的值的范围描述 <span class="uicontrol"> 的模板 </span>。 最大值将使用数字占位符标记 <span class="uicontrol"> ~N~表示 </span>。 例如： </p> <code> Greater&amp;nbsp;than&amp;nbsp;~N~ </code> <p>或: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;above </code> <p>通常，该值的格式为“原样”-即，对于“范围值”定 <span class="uicontrol"> 义 </span> 为“5 10 20”，而提供的值为30，则生成的范围描述将仅类似于“大于20”。 如果您希望它为“20.01及更高版本”，请将“精度” <span class="uicontrol"> 设置 </span> 为 <span class="uicontrol"> 2并 </span> 使用以下格式： </p> <code> ~n~&amp;nbsp;and&amp;nbsp;above </code> <p>在 <span class="uicontrol"> “大于” </span>格式中，小写 <span class="uicontrol"> ~n~将使值根据精确度设置 </span> 进行 <i>四舍</i><span class="uicontrol"></span> 入。 </p> <p>注意： 要按原样在范围描述中包含任何数字占位符，请使用反斜杠(\)前缀进行指定——例如 <span class="uicontrol"> \~N~ </span> 或 <span class="uicontrol"> \~n~ </span>。 要包含反斜杠字符，请使用另一个反斜杠指定它——例如， <span class="uicontrol"> \\ </span>a. </p> </td> 
+      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>这是用于指定大于范围值中最大值的值的范围描述 <span class="uicontrol"> 的模板 </span>。 最大值将使用数字占位符标记 <span class="uicontrol"> ~N~表示 </span>。 例如： </p> <code> Greater&amp;nbsp;than&amp;nbsp;~N~ </code> <p>或: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;above </code> <p>通常，该值的格式为“原样”-即，对于“范围值”定 <span class="uicontrol"> 义 </span> 为“5 10 20”，而提供的值为30，则生成的范围描述将仅类似于“大于20”。 如果您希望它为“20.01及更高版本”，请将“精度” <span class="uicontrol"> 设置 </span> 为 <span class="uicontrol"> 2并 </span> 使用以下格式： </p> <code> ~n~&amp;nbsp;and&amp;nbsp;above </code> <p>在 <span class="uicontrol"> “大于” </span>格式中，小写 <span class="uicontrol"> ~n~将使值根据精确度设置 </span> 进行 <i>四舍</i><span class="uicontrol"></span> 入。 </p> <p>注意：要按原样在范围描述中包含任何数字占位符，请使用反斜杠(\)前缀进行指定——例如 <span class="uicontrol"> \~N~ </span> 或 <span class="uicontrol"> \~n~ </span>。 要包含反斜杠字符，请使用另一个反斜杠指定它——例如， <span class="uicontrol"> \\ </span>a. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>查准率 </p> </td> 
@@ -248,7 +236,7 @@ ht-degree: 1%
       </tr> 
       <tr> 
       <td colname="col1"> <p>显示千个分隔符？ </p> </td> 
-      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>我们应该把“10000”显示为“10000”吗？ 将使用区域设置特定的值。 </p> </td> 
+      <td colname="col2"> <p>仅当选中“ <span class="uicontrol"> 创建范围说 </span> 明”并选择“范围 <span class="uicontrol"> 字段”项时 </span> 才可用。 </p> <p>我们应该把“10000”显示为“10000”吗？ 将使用区域设置特定值。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>调整零值？ </p> </td> 
@@ -410,7 +398,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> 追加／替换 </span> </p> </td> 
-   <td colname="col2"> <p>选择“追加”以添加注入定义的值(“Adobe: 联系我们”或“立即开始销售！” （在上例中）。 选择“替换”以用定义的值覆盖现有字段内容。 如果字段当前没有内容，则会自动添加定义的值，而不管使用哪个选项（追加或替换）。 </p> </td> 
+   <td colname="col2"> <p>选择“append”以添加注入定义的值(“Adobe:联系我们”或“立即开始销售！” （在上例中）。 选择“替换”以用定义的值覆盖现有字段内容。 如果字段当前没有内容，则会自动添加定义的值，而不管使用哪个选项（追加或替换）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> 字段 </span> </p> </td> 
@@ -426,7 +414,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> 目标 </span> </li> 
       <li id="li_400D7E3F3E9B47EFB2FF5C0D278DB573"> <span class="codeph"> title </span> </li> 
       <li id="li_449BCBEE4F64424BB69F780C10F5956C"> <span class="codeph"> url </span> </li> 
-     </ul> </p> <p>每个字段名称都与站点页面上的元素相对应。 例如，如果指定字段 <span class="codeph"> 名 </span> 称desc，则可以向与网站页面上的描述Meta标签对应的字段添加注入定义值。 </p> <p>如果页面上不存在描述Meta标记，则定义的内容会为您创建标记。 desc注入中指 <span class="codeph"> 定 </span> 的内容会像硬编码元描述内容一样显示在结果页面上。 </p> <p>您还可以使用相同的字段名称创建多个定义。 例如，假设您注射了以下药物： </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>上例中的所有网站页面都会收到一个插入的标题“欢迎使用我的网站”。 “/公司/”文件夹中的页面会插入一个新标题“我的站点： 与我们联系”。 </p> <p>请注意，注入按注入定义字段在“注入定义”文本框中 <span class="wintitle"> 的显示顺 </span> 序应用。 如果同一位置的页面多次定义同一字段（本例中的“标题”），则以后的定义优先。 </p> <p> <span class="codeph"> [regexp] </span> -可选。 如果选择使用 <span class="codeph"> regexp选 </span> 项，则定义的URL将被视为常规表达式。 </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> <p>在以下定义中： </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> “重要信息”将注入与常规目标^匹配的所有页面的“表达式” <span class="codeph"> 字段。*/产品/.*\.html$ </span>. </p> <p>因此，您有以下几点： </p> <p> <code> https://www.mydomain.com/products/page1.html 
+     </ul> </p> <p>每个字段名称都与站点页面上的元素相对应。 例如，如果指定字段 <span class="codeph"> 名 </span> 称desc，则可以向与网站页面上的描述Meta标签对应的字段添加注入定义值。 </p> <p>如果页面上不存在描述Meta标记，则定义的内容会为您创建标记。 desc注入中指 <span class="codeph"> 定 </span> 的内容会像硬编码元描述内容一样显示在结果页面上。 </p> <p>您还可以使用相同的字段名称创建多个定义。 例如，假设您注射了以下药物： </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>上例中的所有网站页面都会收到一个插入的标题“欢迎使用我的网站”。 “/公司/”文件夹中的页面会插入一个新标题“我的站点：与我们联系”。 </p> <p>请注意，注射按注入定义文本框中注 <span class="wintitle"> 入的显 </span> 示顺序。 如果同一位置的页面多次定义同一字段（本例中的“标题”），则以后的定义优先。 </p> <p> <span class="codeph"> [regexp] </span> -可选。 如果选择使用 <span class="codeph"> regexp选 </span> 项，则定义的URL将被视为常规表达式。 </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> <p>在以下定义中： </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> “重要信息”将注入与常规目标^匹配的所有页面的“表达式” <span class="codeph"> 字段。*/产品/.*\.html$ </span>. </p> <p>因此，您有以下几点： </p> <p> <code> https://www.mydomain.com/products/page1.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p> <code> https://www.mydomain.com/product/oldstuff.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;not&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p>在以下示例中： </p> <p> <code> append&amp;nbsp;title&amp;nbsp;regexp&amp;nbsp;^.*\.pdf$&amp;nbsp;Millennium&amp;nbsp;Science </code> </p> <p>注入将“Millennium Science”追加到所有以“.pdf”文件扩展名结尾的页面的“标题”内容。 </p> </td> 
   </tr> 
@@ -522,13 +510,13 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>将下载的数据源分解为单个伪文档。 </p> </td> 
-   <td colname="col3"> <p>对于 <span class="uicontrol"> 文 </span>本，每行以换行符分隔的文本都对应单个文档，并使用指定的分隔符进行分析，如逗号或制表符。 </p> <p>对于 <span class="uicontrol"> 源 </span>，每个文档的数据都使用以下形式的常规表达式模式提取： </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>在“ <span class="uicontrol"> 属 </span> 性加载器 <span class="wintitle"> 添加”页上使用映射， </span> 创建数据的缓存副本，然后为Crawler创建链接列表。 数据存储在本地缓存中，并填充配置的字段。 </p> <p>解析的数据被写入本地高速缓存。 </p> <p>稍后将读取此缓存，以创建Crawler所需的简单HTML文档。 例如： </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>对于 <span class="uicontrol"> 文 </span>本，每行以换行符分隔的文本都对应单个文档，并使用指定的分隔符进行分析，如逗号或制表符。 </p> <p>对于 <span class="uicontrol"> 源 </span>，每个文档的数据都使用以下形式的常规表达式模式提取： </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>在“ <span class="uicontrol"> 属 </span> 性加载器 <span class="wintitle"> 添加”页上使用映射， </span> 创建数据的缓存副本，然后为Crawler创建链接列表。 数据存储在本地缓存中，并填充配置的字段。 </p> <p>所解析的数据被写入本地高速缓存。 </p> <p>稍后将读取此缓存，以创建Crawler所需的简单HTML文档。 例如： </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>仅当 <span class="codeph"> 存在到 </span> “标题”元数据字段的映射时，才会生成&lt;title&gt;元素。 同样，仅 <span class="codeph"> 当存在 </span> 到“正文”元数据字段的映射时，才会生成&lt;正文&gt;元素。 </p> <p> <b>重要说明</b>: 不支持为预定义的URL meta标签分配值。 </p> <p>对于所有其他映射 <span class="codeph"> ，将为 </span> 每个在原始文档中找到数据的字段生成&lt;meta&gt;标签。 </p> <p>每个文档的字段将添加到缓存。 对于写入缓存的每个文档，也会生成一个链接，如以下示例所示： </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>仅当 <span class="codeph"> 存在到 </span> “标题”元数据字段的映射时，才会生成&lt;title&gt;元素。 同样，仅 <span class="codeph"> 当存在 </span> 到“正文”元数据字段的映射时，才会生成&lt;正文&gt;元素。 </p> <p> <b>重要说明</b>:不支持为预定义的URL meta标签分配值。 </p> <p>对于所有其他映射 <span class="codeph"> ，将为 </span> 每个在原始文档中找到数据的字段生成&lt;meta&gt;标签。 </p> <p>每个文档的字段将添加到缓存。 对于写入缓存的每个文档，也会生成一个链接，如以下示例所示： </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       .... </code> </p> <p>配置的映射必须有一个字段标识为主键。 此映射构成从缓存读取数据时使用的键。 </p> <p>Crawler可识别URL <span class="codeph"> 索引： </span> 方案前缀，然后访问本地缓存的数据。 </p> </td> 
   </tr> 
@@ -565,7 +553,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
   </tr> 
   <tr> 
    <td colname="col1"> <p>信息源 </p> </td> 
-   <td colname="col2"> <p>下载数据源并执行简单的XML分析。 </p> <p>生成的XPath标识符显示在Map表的Tag行中，在Fields中显示类似值。 这些行只标识可用数据，不生成更复杂的XPath定义。 但是，它仍然很有帮助，因为它描述了XML数据并标识了Itemtag。 </p> <p> <p>注意：  “设置映射”功能下载整个XML源以执行其分析。 如果文件很大，此操作可能超时。 </p> </p> <p>成功后，此函数将标识所有可能的XPath项，其中许多项不值得使用。 请务必检查生成的映射定义并删除不需要或需要的映射定义。 </p> </td> 
+   <td colname="col2"> <p>下载数据源并执行简单的XML分析。 </p> <p>生成的XPath标识符显示在Map表的Tag行中，在Fields中显示类似值。 这些行只标识可用数据，不生成更复杂的XPath定义。 但是，它仍然很有帮助，因为它描述了XML数据并标识了Itemtag。 </p> <p> <p>注意： “设置映射”功能下载整个XML源以执行其分析。 如果文件很大，此操作可能超时。 </p> </p> <p>成功后，此函数将标识所有可能的XPath项，其中许多项不值得使用。 请务必检查生成的映射定义并删除不需要或需要的映射定义。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -578,7 +566,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
 
 属性加载器数据在索引操作之前加载。
 
-在添加属性加载器时，您可以选择使用该功 **[!UICONTROL Preview]** 能验证数据，就像保存它一样。 它针对配置运行测试，但不将配置保存到帐户。 测试访问配置的数据源。 但是，它将下载缓存写入临时位置； 它与索引爬网程序使用的主缓存文件夹不冲突。
+在添加属性加载器时，您可以选择使用该功 **[!UICONTROL Preview]** 能验证数据，就像保存它一样。 它针对配置运行测试，但不将配置保存到帐户。 测试访问配置的数据源。 但是，它将下载缓存写入临时位置；它与索引爬网程序使用的主缓存文件夹不冲突。
 
 预览仅处理由Acct:IndexConnector- **-预览-最大文档控制的5个文档的默认值**。 预览的文档以源形式显示，就像它们呈现给索引爬虫一样。 显示屏类似于Web浏览器中的“视图源”功能。 您可以使用标准导航链接导航文档集中的预览。
 
@@ -621,12 +609,12 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> <b>数据源类型： 文本</b> </p> </td> 
+      <td colname="col1"> <p> <b>数据源类型：文本</b> </p> </td> 
       <td colname="col2"> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>启用 </p> </td> 
-      <td colname="col2"> <p>将配置“打开”以供使用。 或者，您可以关闭配置以防止被使用。 </p> <p> <b>注意</b>: 忽略禁用的属性加载器配置。 </p> </td> 
+      <td colname="col2"> <p>将配置“打开”以供使用。 或者，您可以关闭配置，以防止使用。 </p> <p> <b>注意</b>:禁用的属性加载器配置将被忽略。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>主机地址 </p> </td> 
@@ -684,12 +672,12 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> <b>数据源类型： 源</b> </p> </td> 
+      <td colname="col1"> <p> <b>数据源类型：源</b> </p> </td> 
       <td colname="col2"> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>启用 </p> </td> 
-      <td colname="col2"> <p>将配置“打开”以供使用。 或者，您可以关闭配置以防止被使用。 </p> <p> <b>注意</b>: 忽略禁用的属性加载器配置。 </p> </td> 
+      <td colname="col2"> <p>将配置“打开”以供使用。 或者，您可以关闭配置，以防止使用。 </p> <p> <b>注意</b>:禁用的属性加载器配置将被忽略。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>主机地址 </p> </td> 
@@ -712,7 +700,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>标识可用于标识您指定的数据源文件中各个XML行的XML元素。 </p> <p>例如，在Adobe XML文档的以下源片段中，Itemtag值是记 <span class="codeph"> 录 </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>标识可用于标识您指定的数据源文件中各个XML行的XML元素。 </p> <p>例如，在AdobeXML文档的以下源片段中，Itemtag值是记 <span class="codeph"> 录 </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -763,7 +751,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
       <td colname="col1"> <p>地图 </p> </td> 
       <td colname="col2"> <p>允许您使用XPath表达式指定XML元素到元数据的映射。 </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> 标记 </span> <p>指定已解析的XML数据的XPath表示形式。 使用上面的示例Adobe XML文档，在选项Itemtag下，可以使用以下语法映射它： </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> 标记 </span> <p>指定已解析的XML数据的XPath表示形式。 使用上面的示例AdobeXML文档，在选项Itemtag下，可以使用以下语法映射它： </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>以上语法的转换如下： </p> <p> 
@@ -774,7 +762,7 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>元数 <span class="codeph"> 据元素中包含的任 </span> 何元元 <span class="codeph"> 素的内容，该元数据元素包含在 </span> 记录元素中，其名称属性为 <span class="codeph"></span><span class="codeph"></span><span class="codeph"></span><span class="codeph"></span>描述，映射到元数据字段主体。 </p> </li> 
         </ul> </p> <p>XPath是一个相对复杂的表示法。 有关更多信息，请访问以下位置： </p> <p>请参阅 <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> 字段 </span> <p>定义用于每个生成的&lt;meta&gt;标记 <span class="codeph"> 的名称属 </span> 性值。 </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当属性加载器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到结果缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了“允 <span class="wintitle"> 许列表 </span> ”属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当属性加载器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到结果缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了 <span class="wintitle"> 允许列表 </span> 属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> 主键？ </span> <p>只有一个字段被标识为主键。 此字段将用作“外键”，以将属性加载器数据与索引中的相应文档匹配。 </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> 删除HTML? </span> <p>选中此选项后，将删除在此字段数据中找到的任何HTML标记。 </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> 操作 </span> <p>允许您向映射中添加行或从映射中删除行。 行的顺序不重要。 </p> </li> 
