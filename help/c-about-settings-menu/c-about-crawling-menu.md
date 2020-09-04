@@ -8,10 +8,10 @@ title: 关于爬网菜单
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '11115'
-ht-degree: 1%
+source-wordcount: '11033'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 您可以在下表中使用一个或多个以空格分隔的关键字限定每个入口点。 这些关键字影响页面的索引方式。
 
-**重要说明**: 请确保将给定关键字与入口点分开，并用空格相隔； 逗号不是有效的分隔符。
+**重要说明**:请确保将给定关键字与入口点分开，并用空格相隔；逗号不是有效的分隔符。
 
 <table> 
  <thead> 
@@ -52,45 +52,35 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> 如果不想在入口点页面上为文本编制索引，但想要遵循该页面的链接，请添加 
-     <userinput>
+   <td colname="col2"> <p> 如果不想在入口点页面上为文本编制索引，但想要遵循页面链接，请在入口点 <code>
        noindex 
-     </userinput> 进入点之后。 </p> <p>如以下示例所示，将关键字与入口点分隔为空格： </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>此关键字等效于具有 
-     <userinput>
+     </code> 后添加。 </p> <p>如以下示例所示，将关键字与入口点分隔为空格： </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>此关键字等效于入口点页面 <code>
        content="noindex" 
-     </userinput>) 
-     <userinput>
+     </code>的…… <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>标 <code>
        &lt;/head&gt; 
-     </userinput> 入口点页面的标记。 </p> </td> 
+     </code> 签之间的robotmeta标签。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofoly </p> </td> 
-   <td colname="col2"> <p> 如果要为入口点页面中的文本编制索引，但不希望跟踪该页面的任何链接，请添加 
-     <userinput>
-       nofoly 
-     </userinput> 进入点之后。 </p> <p>如以下示例所示，将关键字与入口点分隔为空格： </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>此关键字等效于具有 
-     <userinput>
+   <td colname="col2"> <p> 如果要为入口点页面中的文本编制索引，但不想跟随该页面的任何链接，请在入口点 <code>
+       nofollow 
+     </code> 后添加。 </p> <p>如以下示例所示，将关键字与入口点分隔为空格： </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>此关键字等效于在入口点页面 <code>
        content="nofollow" 
-     </userinput> 在 
-     <userinput>
+     </code> 的。 <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>.. <code>
        &lt;/head&gt; 
-     </userinput> 入口点页面的标记。 </p> </td> 
+     </code> 标记之间的robotmeta标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>表单 </p> </td> 
-   <td colname="col2"> <p> 当入口点为登录页面时， 
-     <userinput>
-       表单 
-     </userinput> 搜索自动机可以提交登录表单，并在搜索网站之前接收相应的cookie。 当使用“form”关键字时，入口点页面不进行索引，搜索自动机不会将入口点页面标记为已爬网。 使用 
-     <userinput>
-       nofoly 
-     </userinput> 如果您不希望搜索机器人跟踪页面链接。 </p> </td> 
+   <td colname="col2"> <p> 当入口点是登录页面时，通 <code>
+       form 
+     </code> 常使用搜索自动机提交登录表单并接收相应的cookies，然后搜索网站。 当使用“form”关键字时，入口点页面不进行索引，搜索自动机不会将入口点页面标记为已爬网。 如 <code>
+       nofollow 
+     </code> 果您不希望搜索自动机跟踪页面链接，请使用。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -239,7 +229,7 @@ include https://www.mydomain.com/photos/fall/redleaves4.html
 
 您可以使用一个或多个空格分隔的关键字限定每个包含蒙版，这些关键字会影响匹配页面的索引方式。
 
-逗号不能作为遮罩和关键字之间的分隔符； 只能使用空格。
+逗号不能作为遮罩和关键字之间的分隔符；只能使用空格。
 
 <table> 
  <thead> 
@@ -251,54 +241,42 @@ include https://www.mydomain.com/photos/fall/redleaves4.html
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> 如果不想为与URL掩码匹配的页面上的文本编制索引，但想要遵循匹配的页面链接，请添加 
-     <userinput>
+   <td colname="col2"> <p> 如果不想为与URL掩码匹配的页面上的文本编制索引，但想要遵循匹配的页面链接，请在包含URL掩 <code>
        noindex 
-     </userinput> 包含URL掩码之后。 请确保将关键字与遮罩分隔，并且空格如以下示例所示： </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>上面的示例指定搜索机器人使用 
-     <userinput>
+     </code> 码后添加。 请确保将关键字与遮罩分隔，并且空格如以下示例所示： </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>上例指定搜索自动机按照扩展名为的文件的所有链接 <code>
        .swf 
-     </userinput> 扩展名，但禁用对包含在这些文件中的所有文本编制索引。 </p> <p>The 
-     <userinput>
+     </code> 进行操作，但禁用对这些文件中包含的所有文本进行索引。 </p> <p>该关 <code>
        noindex 
-     </userinput> 关键字等效于具有 
-     <userinput>
+     </code> 键字等效于在匹配页面的标记之间 <code>
        content="noindex" 
-     </userinput> 在 
-     <userinput>
+     </code> 具有 <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> 匹配页面的标记。 </p> </td> 
+     </code> 自动meta标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofoly </p> </td> 
-   <td colname="col2"> <p> 如果要为与URL掩码匹配的页面上的文本编制索引，但不想遵循匹配页面的链接，请添加 
-     <userinput>
-       nofoly 
-     </userinput> 包含URL掩码之后。 请确保将关键字与遮罩分隔，并且空格如以下示例所示： </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>The 
-     <userinput>
-       nofoly 
-     </userinput> 关键字等效于具有 
-     <userinput>
+   <td colname="col2"> <p> 如果要为与URL掩码匹配的页面上的文本编制索引，但不想遵循匹配页面的链接，请在包含URL掩 <code>
+       nofollow 
+     </code> 码后添加。 请确保将关键字与遮罩分隔，并且空格如以下示例所示： </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>该关 <code>
+       nofollow 
+     </code> 键字等效于在匹配页面的标记之间 <code>
        content="nofollow" 
-     </userinput> 在 
-     <userinput>
+     </code> 具有 <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> 匹配页面的标记。 </p> </td> 
+     </code> 自动meta标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>用于包括和排除蒙版。 </p> <p>前面带有任何URL掩码 
-     <userinput>
+   <td colname="col2"> <p>用于包括和排除蒙版。 </p> <p>前面的任何URL掩 <code>
        regexp 
-     </userinput> 被视为常规表达式。 如果搜索自动机遇到与排除常规文档URL掩码匹配的文档，则不对这些表达式编制索引。 如果搜索自动机遇到与包含常规文档URL掩码匹配的文档，则对这些表达式进行索引。 例如，假定您具有以下URL掩码： </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>搜索自动机排除匹配文件，如 
-     <userinput>
+     </code> 码均视为常规表达式。 如果搜索自动机遇到与排除常规文档URL掩码匹配的文档，则不对这些表达式编制索引。 如果搜索自动机遇到与包含常规文档URL掩码匹配的文档，则对这些表达式进行索引。 例如，假定您具有以下URL掩码： </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>搜索自动机排除匹配文件，如 
+     <code>
        https://www.mydomain.com/products/page1.html 
-     </userinput> </p> <p>如果您具有以下排除常规表达式URL掩码： </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>搜索自动机不包含任何包含CGI参数的URL，如 
-     <userinput>
+     </code> </p> <p>如果您具有以下排除常规表达式URL掩码： </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>搜索自动机不包含任何包含CGI参数的URL，如 <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </userinput>. </p> <p>如果您具有以下各项，则包括常规表达式URL掩码： </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>搜索自动机会跟踪扩展名为“.swf”的文件中的所有链接。 The 
-     <userinput>
+     </code>。 </p> <p>如果您具有以下各项，则包括常规表达式URL掩码： </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>搜索自动机会跟踪扩展名为“.swf”的文件中的所有链接。 关 <code>
        noindex 
-     </userinput> 关键字还指定不索引匹配文件的文本。 </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> </td> 
+     </code> 键字还指定不索引匹配文件的文本。 </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -317,7 +295,7 @@ include https://www.mydomain.com/photos/fall/redleaves4.html
 
 1. 在产品菜单上，单击 **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**。
 1. （可选）在页 [!DNL URL Masks] 面的字 **[!UICONTROL Test URL Masks]** 段中，输入网站中的测试URL掩码，然后单击 **[!UICONTROL Test]**。
-1. 在字 [!DNL URL Masks] 段中，键 `include` 入（添加要进行爬网和索引的网站）或键入( `exclude` 阻止网站进行爬网和索引)，后跟URL掩码地址。
+1. 在字 [!DNL URL Masks] 段中，键 `include` 入（添加要进行爬网和索引的网站）或键入 `exclude` （阻止网站进行爬网和索引），后跟URL掩码地址。
 
    每行输入一个URL掩码地址。 示例：
 
@@ -395,7 +373,7 @@ include https://www.mydomain.com/photos/fall/redleaves4.html
 exclude-days 90 https://www.mydomain.com/docs/archive
 ```
 
-由于这是排除日期掩码，因此与该模式匹配的任何文件都不会编制索引，并且旧版本或旧版本都为90天。 排除文档时，不会索引任何文本，也不会跟踪该文件中的链接。 文件会被有效忽略。 在此示例中，文件和文件夹可能与指定的URL模式匹配。 请注意， `https://www.mydomain.com/docs/archive.html` 与模 `https://www.mydomain.com/docs/archive/index.html` 式匹配，如果90天或90天以上，则不索引。 要仅与文件夹中的文 `/docs/archive/` 件匹配，日期掩码必须包含尾随斜杠，如下所示：
+由于这是排除日期掩码，因此与该模式匹配的任何文件都不会索引，并且旧版本或旧版本都为90天。 排除文档时，不会索引任何文本，也不会跟踪该文件中的链接。 文件会被有效忽略。 在此示例中，文件和文件夹可能与指定的URL模式匹配。 请注意， `https://www.mydomain.com/docs/archive.html` 与模 `https://www.mydomain.com/docs/archive/index.html` 式匹配，如果90天或90天以上，则不索引。 要仅与文件夹中的文 `/docs/archive/` 件匹配，日期掩码必须包含尾随斜杠，如下所示：
 
 ```
 exclude-days 90 https://www.mydomain.com/docs/archive/
@@ -461,7 +439,7 @@ include-days 0 https://www.mydomain.com/archive/fall/index.html
 
 您可以使用一个或多个空格分隔的关键字限定每个包含蒙版，这些关键字会影响匹配页面的索引方式。
 
-逗号不能作为遮罩和关键字之间的分隔符； 只能使用空格。
+逗号不能作为遮罩和关键字之间的分隔符；只能使用空格。
 
 <table> 
  <thead> 
@@ -473,49 +451,39 @@ include-days 0 https://www.mydomain.com/archive/fall/index.html
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> 如果不想为日期在包含蒙版指定的日期或之前的页面上的文本编制索引，请添加 
-     <userinput>
+   <td colname="col2"> <p> 如果不希望为日期在包含掩码指定的日期或之前的页面上的文本编制索引，请在包含日期掩码之 <code>
        noindex 
-     </userinput> 在包含日期掩码之后，如下所示： </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>请确保将关键字与遮罩分隔为空格。 </p> <p>上例指定搜索自动机遵循扩展名为“.swf”（10天或更旧）的文件中的所有链接。 但是，它会禁用对包含在这些文件中的所有文本进行索引。 </p> <p>您可能希望确保未为旧文件的文本编制索引，但仍遵循这些文件中的所有链接。 在这种情况下，请将包含日期掩码与“noindex”关键字一起使用，而不是使用排除日期掩码。 </p> </td> 
+     </code> 后添加，如下所示： </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>请确保将关键字与遮罩分隔为空格。 </p> <p>上例指定搜索自动机遵循扩展名为“.swf”（10天或更旧）的文件中的所有链接。 但是，它会禁用对包含在这些文件中的所有文本进行索引。 </p> <p>您可能希望确保未为旧文件的文本编制索引，但仍遵循这些文件中的所有链接。 在这种情况下，请将包含日期掩码与“noindex”关键字一起使用，而不是使用排除日期掩码。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofoly </p> </td> 
-   <td colname="col2"> <p> 如果要为日期在包含蒙版指定的日期或之前的页面上的文本编制索引，但您不希望遵循匹配页面的链接，请添加 
-     <userinput>
-       nofoly 
-     </userinput> 在包含日期掩码之后，如下所示： </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>请确保将关键字与遮罩分隔为空格。 </p> <p>The 
-     <userinput>
-       nofoly 
-     </userinput> 关键字等效于具有 
-     <userinput>
+   <td colname="col2"> <p> 如果要为日期在包含蒙版指定的日期或之前的页面上的文本编制索引，但您不想遵循匹配页面的链接，请在包含日期蒙版之后添加 <code>
+       nofollow 
+     </code> ，如下所示： </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>请确保将关键字与遮罩分隔为空格。 </p> <p>该关 <code>
+       nofollow 
+     </code> 键字等效于在匹配页面的标记 <code>
        content="nofollow" 
-     </userinput> 在 
-     <userinput>
+     </code> 之间 <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </userinput> 匹配页面的标记。 </p> </td> 
+     </code> 具有自动meta标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>server-date </p> </td> 
-   <td colname="col2"> <p>用于包括和排除蒙版。 </p> <p>搜索机器人通常在检查日期掩码之前下载并解析每个文件。 发生此行为是因为某些文件类型可以在文件本身中指定日期。 例如，HTML文档可以包含设置文件日期的meta标签。 </p> <p>如果要根据文件的日期排除许多文件，并且不想在服务器上增加不必要的负载，则可以使用 
-     <userinput>
+   <td colname="col2"> <p>用于包括和排除蒙版。 </p> <p>搜索机器人通常在检查日期掩码之前下载并解析每个文件。 发生此行为是因为某些文件类型可以在文件本身中指定日期。 例如，HTML文档可以包含设置文件日期的meta标签。 </p> <p>如果要根据文件的日期排除许多文件，并且不想在服务器上增加不必要的负载，则可以在日期掩码 <code>
        server-date 
-     </userinput> 的URL。 </p> <p>此关键字指示搜索机器人信任服务器返回的文件的日期，而不是分析每个文件。 例如，如果文档为90天或更早，则以下排除日期掩码会忽略与URL匹配的页，这取决于服务器在HTTP头中返回的日期： </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> 如果服务器返回的日期已过90天或更久， 
-     <userinput>
+     </code> 中的URL后使用。 </p> <p>此关键字指示搜索机器人信任服务器返回的文件的日期，而不是分析每个文件。 例如，如果文档为90天或更早，则以下排除日期掩码会忽略与URL匹配的页，这取决于服务器在HTTP头中返回的日期： </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> 如果服务器返回的日期已过90天或更久，则 <code>
        server-date 
-     </userinput> 指定不从服务器下载排除的文档。 这意味着文档的索引创建时间更短，服务器的负载也更轻。 如果显示 
-     <userinput>
+     </code> 指定不从服务器下载被排除的文档。 这意味着文档的索引创建时间更短，服务器的负载也更轻。 如果 <code>
        server-date 
-     </userinput> 未指定，搜索自动机将忽略服务器在HTTP头中返回的日期。 而是下载每个文件并检查是否指定了日期。 如果文件中未指定日期，则搜索自动机将使用服务器返回的日期。 </p> <p>您不应使用 
-     <userinput>
+     </code> 未指定，搜索自动机将忽略服务器在HTTP头中返回的日期。 而是下载每个文件并检查是否指定了日期。 如果文件中未指定日期，则搜索自动机将使用服务器返回的日期。 </p> <p>如果文件包 <code>
        server-date 
-     </userinput> 文件包含覆盖服务器日期的命令。 </p> </td> 
+     </code> 含覆盖服务器日期的命令，则不应使用。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> 用于包括和排除蒙版。 </p> <p>前面的任何日期掩码 
-     <userinput>
+   <td colname="col2"> <p> 用于包括和排除蒙版。 </p> <p>前面的任何日期掩码 <code>
        regexp 
-     </userinput> 被视为常规表达式。 </p> <p>如果搜索自动机遇到与排除常规表达式日期掩码匹配的文件，它不会为这些文件编制索引。 </p> <p>如果搜索自动机遇到与包含常规表达式日期蒙版匹配的文件，它将为这些文档建立索引。 </p> <p>例如，假定您具有以下日期掩码： </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>遮罩告知搜索自动机排除180天或更早的匹配文件。 即，URL中包含“archive”一词的文件。 </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> </td> 
+     </code> 均被视为常规表达式。 </p> <p>如果搜索自动机遇到与排除常规表达式日期掩码匹配的文件，它不会为这些文件编制索引。 </p> <p>如果搜索自动机遇到与包含常规表达式日期蒙版匹配的文件，它将为这些文档建立索引。 </p> <p>例如，假定您具有以下日期掩码： </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>遮罩告知搜索自动机排除180天或更早的匹配文件。 即，URL中包含“archive”一词的文件。 </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -533,7 +501,7 @@ include-days 0 https://www.mydomain.com/archive/fall/index.html
 **添加日期蒙版以索引或不索引网站的各个部分**
 
 1. 在产品菜单上，单击 **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Date Masks]**。
-1. （可选）在页 [!DNL Date Masks] 面的字 **[!UICONTROL Test Date]** 段中，输入格式为YYYY-MM-DD的日期(例如 `2011-07-25`); 在字 **[!UICONTROL Test URL]** 段中，输入网站的URL掩码，然后单击 **[!UICONTROL Test]**。
+1. （可选）在页 [!DNL Date Masks] 面的字 **[!UICONTROL Test Date]** 段中，输入格式为YYYY-MM-DD的日期(例如 `2011-07-25`);在字 **[!UICONTROL Test URL]** 段中，输入网站的URL掩码，然后单击 **[!UICONTROL Test]**。
 1. 在字段 [!DNL Date Masks] 中，每行输入一个日期掩码地址。
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列任一操作：
@@ -639,7 +607,7 @@ https://www.mysite.com/path6 name6 password6
 
 可以使 [!DNL Content Types] 用选择要为此帐户爬网和索引的文件类型。
 
-您可以选择爬网和索引的内容类型包括PDF文档、文本文档、Adobe Flash电影、来自Microsoft Office应用程序（如Word、Excel和Powerpoint）的文件以及MP3文件中的文本。 在所选内容类型内找到的文本与网站上的所有其他文本一起搜索。
+您可以选择爬网和索引的内容类型包括PDF文档、文本文档、AdobeFlash电影、来自Microsoft Office应用程序（如Word、Excel和Powerpoint）的文件以及MP3文件中的文本。 在所选内容类型内找到的文本与网站上的所有其他文本一起搜索。
 
 在客户看到“内容类型”设置的效果之前，您必须重新构建站点索引。
 
@@ -682,7 +650,7 @@ MP3文件的MIME类型“audio/mpeg”可识别。
 
 可以使 [!DNL Content Types] 用选择要为此帐户爬网和索引的文件类型。
 
-您可以选择爬网和索引的内容类型包括PDF文档、文本文档、Adobe Flash电影、来自Microsoft Office应用程序（如Word、Excel和Powerpoint）的文件以及MP3文件中的文本。 在所选内容类型内找到的文本与网站上的所有其他文本一起搜索。
+您可以选择爬网和索引的内容类型包括PDF文档、文本文档、AdobeFlash电影、来自Microsoft Office应用程序（如Word、Excel和Powerpoint）的文件以及MP3文件中的文本。 在所选内容类型内找到的文本与网站上的所有其他文本一起搜索。
 
 在客户看到“内容类型”设置的效果之前，您必须重新构建站点索引。
 
@@ -782,61 +750,49 @@ MP3文件的MIME类型“audio/mpeg”可识别。
       </tr> 
       <tr> 
       <td colname="col1"> <p>页面URL掩码 </p> </td> 
-      <td colname="col2"> <p>标识包含表单的网页。 要标识在单个页面上显示的表单，请输入该页面的URL，如下例所示： </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>要标识在多个页面上显示的表单，请指定使用通配符来描述这些页面的URL掩码。 例如，要标识在任何ASP页面下 <code> https://www.mydomain.com/register/ </code>遇到的表单，您应指定以下内容： </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>您还可以使用常规表达式来标识多个页面。 只需指定 
-      <userinput>
+      <td colname="col2"> <p>标识包含表单的网页。 要标识在单个页面上显示的表单，请输入该页面的URL，如下例所示： </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>要标识在多个页面上显示的表单，请指定使用通配符来描述这些页面的URL掩码。 例如，要标识在任何ASP页面下 <code> https://www.mydomain.com/register/ </code>遇到的表单，您应指定以下内容： </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>您还可以使用常规表达式来标识多个页面。 只需指定 <code>
         regexp 
-      </userinput> 关键字，如以下示例所示： </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code> URL掩码前的关键字，如下例所示： </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>操作URL掩码 </p> </td> 
-      <td colname="col2"> <p>标识操作属性 
-      <userinput>
+      <td colname="col2"> <p>标识标记的操作 <code>
         &lt;form&gt; 
-      </userinput> 标记之前。 </p> <p>与页面URL掩码一样，操作URL掩码可以采用单个URL、带通配符的URL或常规表达式。 </p> <p>URL掩码可以是以下任一掩码： 
+      </code> 属性。 </p> <p>与页面URL掩码一样，操作URL掩码可以采用单个URL、带通配符的URL或常规表达式。 </p> <p>URL掩码可以是以下任一掩码： 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> 完整路径，如下所示： <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> 部分路径，如下所示： <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> 使用通配符的URL，如下所示： <code> https://www.mydomain.com/*.html </code> </li> 
       <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> 常规表达式，如下所示： <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>如果您不想为通过URL掩码或操作URL掩码标识的页面上的文本编制索引，或者如果您不希望在这些页面上跟踪链接，则可以使用 
-      <userinput>
+      </ul> </p> <p>如果您不想为通过URL掩码或操作URL掩码标识的页面上的文本编制索引，或者如果您不希望在这些页面上跟随链接，则可以使用和关 <code>
         noindex 
-      </userinput> 和 
-      <userinput>
-        nofoly 
-      </userinput> 关键字。 您可以使用URL蒙版或入口点将这些关键字添加到蒙版。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> 阅关于URL入口 </a>点。 </p> <p>请参阅 <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> 关于URL蒙 </a>版。 </p> </td> 
+      </code> 键 <code>
+        nofollow 
+      </code> 字。 您可以使用URL蒙版或入口点将这些关键字添加到蒙版。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> 阅关于URL入口 </a>点。 </p> <p>请参阅 <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> 关于URL蒙 </a>版。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>表单名称蒙版 </p> </td> 
-      <td colname="col2"> <p>在 
-      <userinput>
+      <td colname="col2"> <p>标识网页中 <code>
         &lt;form&gt; 
-      </userinput> 网页中的标记包含名称属性。 </p> <p>您可以使用简单名称( 
-      <userinput>
+      </code> 的标记是否包含名称属性。 </p> <p>您可以使用简单名称( <code>
         login_form 
-      </userinput>)，带通配符的名称( 
-      <userinput>
-        表单* 
-      </userinput>)或常规表达式( 
-      <userinput>
-        regexp ^。*授权。*$ 
-      </userinput>) 来访问。 </p> <p>您通常可以将此字段留空，因为表单通常没有名称属性。 </p> </td> 
+      </code>)、带通配符()的 <code>
+        form* 
+      </code>名称或常规表达式( <code>
+        regexp ^.*authorize.*$ 
+      </code>)。 </p> <p>您通常可以将此字段留空，因为表单通常没有名称属性。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>表单ID蒙版 </p> </td> 
-      <td colname="col2"> <p>在 
-      <userinput>
+      <td colname="col2"> <p>标识网页中 <code>
         &lt;form&gt; 
-      </userinput> 网页中的标记包含id属性。 </p> <p>您可以使用简单名称( 
-      <userinput>
+      </code> 的标记是否包含id属性。 </p> <p>您可以使用简单名称( <code>
         login_form 
-      </userinput>)，带通配符的名称( 
-      <userinput>
-        表单* 
-      </userinput>)或常规表达式( 
-      <userinput>
-        regexp ^。*授权。*$ 
-      </userinput>) 来访问。 </p> <p>您通常可以将此字段留空，因为表单通常没有名称属性。 </p> </td> 
+      </code>)、带通配符()的 <code>
+        form* 
+      </code>名称或常规表达式( <code>
+        regexp ^.*authorize.*$ 
+      </code>)。 </p> <p>您通常可以将此字段留空，因为表单通常没有名称属性。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>参数 </p> </td> 
@@ -852,52 +808,43 @@ MP3文件的MIME类型“audio/mpeg”可识别。
       </tr> 
       <tr> 
       <td colname="col1"> <p>覆盖方法 </p> </td> 
-      <td colname="col2"> <p>指定表单提交的目标何时与表单的action属性中使用的内容不同，以及提交JavaScript更改方法的时间。 </p> <p>所有表单参数的默认值( 
-      <userinput>
+      <td colname="col2"> <p>指定表单提交的目标何时与表单的action属性中使用的内容不同，以及提交JavaScript更改了方法的时间。 </p> <p>所有表单参数(标 <code>
         &lt;input&gt; 
-      </userinput> 标记，包括隐藏字段)，默认 
-      <userinput>
-        &lt;选项&gt; 
-      </userinput> 从 
-      <userinput>
-        &lt;选择&gt; 
-      </userinput> 标记和 
-      <userinput>
+      </code> 签，包括隐藏字段)的默认值、标 <code>
+        &lt;option&gt; 
+      </code> 签中的 <code>
+        &lt;select&gt; 
+      </code> 默认值以及标签之间的默 <code>
         &lt;textarea&gt;...&lt;/textarea&gt; 
-      </userinput> 标记)。 但是，在“参数”字段的“表 <span class="wintitle"> 单提交” </span> 部分中列出的 <span class="uicontrol"> 任何 </span> 参数都将替换为表单默认值。 </p> </td> 
+      </code> 认文本)都从网页中读取。 但是，在“参数”字段的“表 <span class="wintitle"> 单提交” </span> 部分中列出的 <span class="uicontrol"> 任何 </span> 参数都将替换为表单默认值。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>参数 </p> </td> 
-      <td colname="col2"> <p>您可以在表单提交参数前添加前缀 
-      <userinput>
-        操作 
-      </userinput> keyword. </p> <p>在参数前加前缀时 
-      <userinput>
-        操作 
-      </userinput>，它不会作为表单提交的一部分提交。 此行为对于应取消选择提交的复选框很有用。 </p> <p>例如，假定您要提交以下参数： </p> <p> 
+      <td colname="col2"> <p>您可以在表单提交参数前添加关键字 <code>
+        not 
+      </code> 前缀。 </p> <p>在参数前缀为 <code>
+        not 
+      </code>时，它不会作为表单提交的一部分提交。 此行为对于应取消选择提交的复选框很有用。 </p> <p>例如，假定您要提交以下参数： </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> 具有值的电子邮件参数 
-      <userinput>
+      <code>
         nobody@mydomain.com 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_905497E3FACE472DBDD49392D5B45E01"> 带值的口令参数 
-      <userinput>
-        试 
-      </userinput> </li> 
+      <code>
+        tryme 
+      </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> 取消选择mycheckbox参数。 </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>所有其它 
-      <userinput>
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>所有其 <code>
         &lt;form&gt; 
-      </userinput> 参数作为默认值 </p> </li> 
+      </code> 他参数作为其默认值 </p> </li> 
       </ul> </p> <p>表单提交参数如下所示： </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>的方法属性 
-      <userinput>
+        not&nbsp;mycheckbox </code> </p> <p>网页上标签的 <code>
         &lt;form&gt; 
-      </userinput> 网页上的标签用于确定数据是使用GET方法还是POST方法发送到服务器。 </p> <p>如果在单击第一个日期的同时按住 
-      <userinput>
+      </code> method属性用于确定数据是使用GET方法还是POST方法发送到服务器。 </p> <p>如果标 <code>
         &lt;form&gt; 
-      </userinput> 标记不包含方法属性，表单是使用GET方法提交的。 </p> </td> 
+      </code> 签不包含方法属性，则使用GET方法提交表单。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -929,7 +876,7 @@ MP3文件的MIME类型“audio/mpeg”可识别。
 1. 在页 [!DNL Form Submission] 面上， **[!UICONTROL Edit]** 单击要更新的表单定义右侧。
 1. 在页面 [!DNL Edit Form Definition] 上，设置和 [!DNL Form Recognition] 选 [!DNL Form Submission] 项。
 
-   请参阅在网站上添加表单 [定义以为表单建立索引下的选项表](../c-about-settings-menu/c-about-crawling-menu.md#task_62FBCE9E6DBE4BDA8D1249233ADFC00F)。
+   请参阅在网站上添加表 [单定义以索引表单下的选项表](../c-about-settings-menu/c-about-crawling-menu.md#task_62FBCE9E6DBE4BDA8D1249233ADFC00F)。
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列任一操作：
 
@@ -1011,13 +958,13 @@ XML数据源由XML标准或记录组成，这些标准或记录包含与单个�
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>将下载的数据源分解为单个伪文档。 </p> </td> 
-   <td colname="col3"> <p>对于 <span class="uicontrol"> 文 </span>本，每行以换行符分隔的文本都对应单个文档，并使用指定的分隔符进行分析，如逗号或制表符。 </p> <p>对于 <span class="uicontrol"> 源 </span>，每个文档的数据都使用以下形式的常规表达式模式提取： </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>使用 <span class="uicontrol"> “索 </span> 引连接器 <span class="wintitle"> 添加”页上的映射， </span> 创建数据的缓存副本，然后为Crawler创建链接列表。 数据存储在本地缓存中，并填充配置的字段。 </p> <p>解析的数据被写入本地高速缓存。 </p> <p>稍后将读取此缓存，以创建Crawler需要的简单HTML文档。 例如： </p> <p> <code> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>对于 <span class="uicontrol"> 文 </span>本，每行以换行符分隔的文本都对应单个文档，并使用指定的分隔符进行分析，如逗号或制表符。 </p> <p>对于 <span class="uicontrol"> 源 </span>，每个文档的数据都使用以下形式的常规表达式模式提取： </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>使用 <span class="uicontrol"> “索 </span> 引连接器 <span class="wintitle"> 添加”页上的映射， </span> 创建数据的缓存副本，然后为Crawler创建链接列表。 数据存储在本地缓存中，并填充配置的字段。 </p> <p>所解析的数据被写入本地高速缓存。 </p> <p>稍后将读取此缓存，以创建Crawler需要的简单HTML文档。 例如： </p> <p> <code> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>仅当 <span class="codeph"> 存在到 </span> “标题”元数据字段的映射时，才会生成&lt;title&gt;元素。 同样，仅 <span class="codeph"> 当存在 </span> 到“正文”元数据字段的映射时，才会生成&lt;正文&gt;元素。 </p> <p> <b>重要说明</b>: 不支持为预定义的URL meta标签分配值。 </p> <p>对于所有其他映射 <span class="codeph"> ，将为 </span> 每个在原始文档中找到数据的字段生成&lt;meta&gt;标签。 </p> <p>每个文档的字段将添加到缓存。 对于写入缓存的每个文档，也会生成一个链接，如以下示例所示： </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>仅当 <span class="codeph"> 存在到 </span> “标题”元数据字段的映射时，才会生成&lt;title&gt;元素。 同样，仅 <span class="codeph"> 当存在 </span> 到“正文”元数据字段的映射时，才会生成&lt;正文&gt;元素。 </p> <p> <b>重要说明</b>:不支持为预定义的URL meta标签分配值。 </p> <p>对于所有其他映射 <span class="codeph"> ，将为 </span> 每个在原始文档中找到数据的字段生成&lt;meta&gt;标签。 </p> <p>每个文档的字段将添加到缓存。 对于写入缓存的每个文档，也会生成一个链接，如以下示例所示： </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       .... </code> </p> <p>配置的映射必须有一个字段标识为主键。 此映射构成从缓存读取数据时使用的键。 </p> <p>Crawler可识别URL <span class="codeph"> 索引： </span> 方案前缀，然后访问本地缓存的数据。 </p> </td> 
   </tr> 
@@ -1044,7 +991,7 @@ XML配置的索引创建过程与文本和源配置的创建过程类似，只�
 <a href="index:<ic_config_name>?url="{url}">
 ```
 
-例如，如果Adobe安装程序返回了以下链接：
+例如，如果Adobe设置返回了以下链接：
 
 ```
 <a href="https://www.adobe.com/somepath/doc1.xml">doc 1</a> 
@@ -1053,7 +1000,7 @@ XML配置的索引创建过程与文本和源配置的创建过程类似，只�
 
 在上表中，步骤3不适用，步骤4在搜索和索引时完成。
 
-或者，您也可以将XML文档与通过爬网过程自然发现的其他文档混合。 在这种情况下，可以使用重写规 **[!UICONTROL Settings]** 则( **[!UICONTROL Rewrite Rules]** > > **[!UICONTROL Crawl List Retrieve URL Rules]**)来更改XML文档的URL，将其定向到索引连接器。
+或者，您也可以将XML文档与通过爬网过程自然发现的其他文档混合使用。 在这种情况下，可以使用重写规 **[!UICONTROL Settings]** 则( **[!UICONTROL Rewrite Rules]** > > **[!UICONTROL Crawl List Retrieve URL Rules]**)来更改XML文档的URL，将其定向到索引连接器。
 
 请参 [阅关于爬网列表检索URL规则](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA)。
 
@@ -1085,7 +1032,7 @@ index:<indexconnector_configuration_name>
 
 如果在“索引连接器”页上找到并启用了每个添加的条目，爬网程序将处理它。
 
-注意： 由于每个文档的URL都是使用索引连接器配置名称和文档的主键构建的，因此，在执行增量更新时，请确保使用相同的索引连接器配置名称！ 这样做可以正 [!DNL Adobe Search&Promote] 确更新以前已编制索引的文档。
+注意：由于每个文档的URL都是使用索引连接器配置名称和文档的主键构建的，因此，在执行增量更新时，请确保使用相同的索引连接器配置名称！ 这样做可以正 [!DNL Adobe Search&Promote] 确更新以前已编制索引的文档。
 
 另请参阅 [关于URL入口点](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573)。
 
@@ -1107,7 +1054,7 @@ index:<indexconnector_configuration_name>
   </tr> 
   <tr> 
    <td colname="col1"> <p>信息源 </p> </td> 
-   <td colname="col2"> <p>下载数据源并执行简单的XML分析。 </p> <p>生成的XPath标识符显示在Map表的Tag行中，在Fields中显示类似值。 这些行只标识可用数据，不生成更复杂的XPath定义。 但是，它仍然很有帮助，因为它描述了XML数据并标识了Itemtag值。 </p> <p> <p>注意：  “设置映射”功能下载整个XML源以执行其分析。 如果文件很大，此操作可能超时。 </p> </p> <p>成功后，此函数将标识所有可能的XPath项，其中许多项不值得使用。 请务必检查生成的映射定义并删除不需要或需要的映射定义。 </p> </td> 
+   <td colname="col2"> <p>下载数据源并执行简单的XML分析。 </p> <p>生成的XPath标识符显示在Map表的Tag行中，在Fields中显示类似值。 这些行只标识可用数据，不生成更复杂的XPath定义。 但是，它仍然很有帮助，因为它描述了XML数据并标识了Itemtag值。 </p> <p> <p>注意： “设置映射”功能下载整个XML源以执行其分析。 如果文件很大，此操作可能超时。 </p> </p> <p>成功后，此函数将标识所有可能的XPath项，其中许多项不值得使用。 请务必检查生成的映射定义并删除不需要或需要的映射定义。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
@@ -1116,11 +1063,11 @@ index:<indexconnector_configuration_name>
  </tbody> 
 </table>
 
-**重要说明**: “设置映射”功能可能不适用于大型XML数据集，因为其文件分析器会尝试将整个文件读入内存。 因此，您可能会遇到内存不足的情况。 但是，当在索引时处理同一文档时，它不会读入内存。 相反，大型文档会“在旅途中”进行处理，而不会完全在内存中先读取。
+**重要说明**:“设置映射”功能可能不适用于大型XML数据集，因为其文件分析器会尝试将整个文件读入内存。 因此，您可能会遇到内存不足的情况。 但是，当在索引时处理同一文档时，它不会读入内存。 相反，大型文档会“在旅途中”进行处理，而不会完全在内存中先读取。
 
 **在添加索引连接器时使用预览**
 
-在添加索引连接器时，您可以选择使用该功 **[!UICONTROL Preview]** 能验证数据，就像保存数据一样。 它针对配置运行测试，但不将配置保存到帐户。 测试访问配置的数据源。 但是，它将下载缓存写入临时位置； 它与索引爬网程序使用的主缓存文件夹不冲突。
+在添加索引连接器时，您可以选择使用该功 **[!UICONTROL Preview]** 能验证数据，就像保存数据一样。 它针对配置运行测试，但不将配置保存到帐户。 测试访问配置的数据源。 但是，它将下载缓存写入临时位置；它与索引爬网程序使用的主缓存文件夹不冲突。
 
 预览仅处理由Acct:IndexConnector-文档-最大文档控制的5个预览的默认值。 预览的文档以源形式显示，就像它们呈现给索引爬虫一样。 显示屏类似于Web浏览器中的“视图源”功能。 您可以使用标准导航链接导航文档集中的预览。
 
@@ -1156,19 +1103,18 @@ index:<indexconnector_configuration_name>
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> 文本 </span> <p>简单的平面文本文件、逗号分隔、制表符分隔或其他一致的分隔格式。 每行以换行符分隔的文本对应于单个文档，并使用指定的分隔符进行分析。 </p> <p>您可以将每个值或列映射到由列号引用的元数据字段，从1(1)开始。 </p> </li> 
       <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> 信息源 </span> <p>下载包含多个“行”信息的主XML文档。 </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>下载包含链接的主XML文档( 
-      <userinput>
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>下载一个主XML文档，其中包含指向各 <code>
         &lt;a&gt; 
-      </userinput>)到单个XML文档。 </p> </li> 
+      </code>个XML文档的链接()。 </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> <b>数据源类型： 文本</b> </p> </td> 
+      <td colname="col1"> <p> <b>数据源类型：文本</b> </p> </td> 
       <td colname="col2"> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>启用 </p> </td> 
-      <td colname="col2"> <p>将配置“打开”以爬网和索引。 或者，您可以关闭配置以防止搜索和索引。 </p> <p> <b>注意</b>: 如果在入口点列表中找到禁用的索引连接器配置，则忽略它们。 </p> </td> 
+      <td colname="col2"> <p>将配置“打开”以爬网和索引。 或者，您可以关闭配置以防止搜索和索引。 </p> <p> <b>注意</b>:如果在入口点列表中找到禁用的索引连接器配置，则忽略它们。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>主机地址 </p> </td> 
@@ -1184,11 +1130,11 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>垂直文件路径 </p> </td> 
-      <td colname="col2"> <p>指定在垂直更新期间使用的简单平面文本文件、逗号分隔的制表符分隔的格式文件或其他一致分隔的格式文件的路径。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则会在“垂直更新”操作期间下载并处理此文件。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
+      <td colname="col2"> <p>指定在垂直更新期间使用的简单平面文本文件、逗号分隔的制表符分隔的格式文件或其他一致分隔的格式文件的路径。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则会在“垂直更新”操作期间下载并处理此文件。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>删除文件路径 </p> </td> 
-      <td colname="col2"> <p>指定简单平面文本文件的路径，每行包含一个文档标识符值。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则在增量索引操作期间下载并处理此文件。 此文件中找到的值用于构建“删除”请求以删除先前已索引的文档。 此文件中的值必须与“完整文件路径”或“增量文件路径”文件（在标识为“主键”的列中）中的值 <span class="uicontrol"> 相对应 </span>。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
+      <td colname="col2"> <p>指定简单平面文本文件的路径，每行包含一个文档标识符值。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则在增量索引操作期间下载并处理此文件。 此文件中的值用于构建“删除”请求以删除先前已索引的文档。 此文件中的值必须与“完整文件路径”或“增量文件路径”文件（在标识为“主键”的列中）中的值 <span class="uicontrol"> 相对应 </span>。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>协议 </p> </td> 
@@ -1223,7 +1169,7 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>索引的最小文档数 </p> </td> 
-      <td colname="col2"> <p>如果设置为正值，则指定下载的文件中所需的最小记录数。 如果接收的记录较少，则索引操作将中止。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> <p> <b>注意</b>: 此功能仅在完整索引操作期间使用。 </p> </td> 
+      <td colname="col2"> <p>如果设置为正值，则指定下载的文件中所需的最小记录数。 如果接收的记录较少，则索引操作将中止。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> <p> <b>注意</b>:此功能仅在完整索引操作期间使用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>地图 </p> </td> 
@@ -1231,19 +1177,19 @@ index:<indexconnector_configuration_name>
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> 列 </span> <p> 指定列号，第一列为1(1)。 要为每个列添加新的映射行，请在“操作” <span class="wintitle"> 下 </span>单击 <span class="uicontrol"> + </span>。 </p> <p>您无需引用数据源中的每列。 相反，您可以选择跳过值。 </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> 字段 </span> <p>定义用于每个生成的&lt;meta&gt;标记的名称属性值。 </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当索引连接器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到生成的缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了“允 <span class="wintitle"> 许列表 </span> ”属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当索引连接器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到生成的缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了 <span class="wintitle"> 允许列表 </span> 属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> 主键？ </span> <p>只有一个映射定义被标识为主键。 此字段成为将此文档添加到索引时显示的唯一引用。 此值用于索引中文档的URL。 </p> <p>主 <span class="uicontrol"> 键值 </span> 在由索引连接器配置表示的所有文档中必须是唯一的——遇到的任何重复都将被忽略。 如果源文档不包含用作主键的唯一值，但两个或多个字段合并在一起 <span class="uicontrol"> 可以构成唯一标 </span>识符，则可以通过将多个列值与分隔值的垂直条(“|”) <i></i><span class="uicontrol"></span><span class="uicontrol"></span> 组合来定义主键。 </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> 删除HTML? </span> <p>选中此选项后，将删除在此字段数据中找到的任何HTML标记。 </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> 操作 </span> <p>允许您向映射中添加行或从映射中删除行。 行的顺序不重要。 </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> <b>数据源类型： 源</b> </p> </td> 
+      <td colname="col1"> <p> <b>数据源类型：源</b> </p> </td> 
       <td colname="col2"> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>启用 </p> </td> 
-      <td colname="col2"> <p>将配置“打开”以爬网和索引。 或者，您可以关闭配置以防止搜索和索引。 </p> <p> <b>注意</b>: 如果在入口点列表中找到禁用的索引连接器配置，则忽略它们。 </p> </td> 
+      <td colname="col2"> <p>将配置“打开”以爬网和索引。 或者，您可以关闭配置以防止搜索和索引。 </p> <p> <b>注意</b>:如果在入口点列表中找到禁用的索引连接器配置，则忽略它们。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>主机地址 </p> </td> 
@@ -1259,11 +1205,11 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>垂直文件路径 </p> </td> 
-      <td colname="col2"> <p>指定XML文档的路径，该路径包含在垂直更新期间要使用的多个稀疏“行”信息。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则会在“垂直更新”操作期间下载并处理此文件。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
+      <td colname="col2"> <p>指定XML文档的路径，该路径包含在垂直更新期间要使用的多个稀疏“行”信息。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则会在“垂直更新”操作期间下载并处理此文件。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>删除文件路径 </p> </td> 
-      <td colname="col2"> <p>指定简单平面文本文件的路径，每行包含一个文档标识符值。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则在增量索引操作期间下载并处理此文件。 此文件中找到的值用于构建“删除”请求以删除先前已索引的文档。 此文件中的值必须与“完整文件路径”或“增量文件路径”文件（在标识为“主键”的列中）中的值 <span class="uicontrol"> 相对应 </span>。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
+      <td colname="col2"> <p>指定简单平面文本文件的路径，每行包含一个文档标识符值。 </p> <p>路径相对于主机地址的根。 </p> <p>如果指定，则在增量索引操作期间下载并处理此文件。 此文件中的值用于构建“删除”请求以删除先前已索引的文档。 此文件中的值必须与“完整文件路径”或“增量文件路径”文件（在标识为“主键”的列中）中的值 <span class="uicontrol"> 相对应 </span>。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>协议 </p> </td> 
@@ -1278,7 +1224,7 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>标识可用于标识您指定的数据源文件中各个XML行的XML元素。 </p> <p>例如，在Adobe XML文档的以下源片段中，Itemtag值是记 <span class="codeph"> 录 </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>标识可用于标识您指定的数据源文件中各个XML行的XML元素。 </p> <p>例如，在AdobeXML文档的以下源片段中，Itemtag值是记 <span class="codeph"> 录 </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;datasource&gt;marketplace&lt;/datasource&gt; 
@@ -1313,13 +1259,13 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>索引的最小文档数 </p> </td> 
-      <td colname="col2"> <p>如果设置为正值，则指定下载的文件中所需的最小记录数。 如果接收的记录较少，则索引操作将中止。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> <p> <b>注意</b>: 此功能仅在完整索引操作期间使用。 </p> </td> 
+      <td colname="col2"> <p>如果设置为正值，则指定下载的文件中所需的最小记录数。 如果接收的记录较少，则索引操作将中止。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> <p> <b>注意</b>:此功能仅在完整索引操作期间使用。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>地图 </p> </td> 
       <td colname="col2"> <p>允许您使用XPath表达式指定XML元素到元数据的映射。 </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> 标记 </span> <p>指定已解析的XML数据的XPath表示形式。 使用上面的示例Adobe XML文档，在选项Itemtag下，可以使用以下语法映射它： </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> 标记 </span> <p>指定已解析的XML数据的XPath表示形式。 使用上面的示例AdobeXML文档，在选项Itemtag下，可以使用以下语法映射它： </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>以上语法的转换如下： </p> <p> 
@@ -1330,20 +1276,20 @@ index:<indexconnector_configuration_name>
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>元数 <span class="codeph"> 据元素中包含的任 </span> 何元元 <span class="codeph"> 素的内容，该元数据元素包含在 </span> 记录元素中，其名称属性为 <span class="codeph"></span><span class="codeph"></span><span class="codeph"></span><span class="codeph"></span>描述，映射到元数据字段主体。 </p> </li> 
       </ul> </p> <p>XPath是一个相对复杂的表示法。 有关更多信息，请访问以下位置： </p> <p>请参阅 <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> 字段 </span> <p>定义用于每个生成的&lt;meta&gt;标记 <span class="codeph"> 的名称属 </span> 性值。 </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当索引连接器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到生成的缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了“允 <span class="wintitle"> 许列表 </span> ”属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当索引连接器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到生成的缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了 <span class="wintitle"> 允许列表 </span> 属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> 主键？ </span> <p>只有一个映射定义被标识为主键。 此字段成为将此文档添加到索引时显示的唯一引用。 此值用于索引中文档的URL。 </p> <p>主 <span class="uicontrol"> 键值 </span> 在由索引连接器配置表示的所有文档中必须是唯一的——遇到的任何重复都将被忽略。 如果源文档不包含用作主键的唯一值，但两个或多个字段合并在一起 <span class="uicontrol"></span>，则可以通过将多个标签定义与 <i>分隔值的垂直条(“|”)组合</i><span class="uicontrol"></span><span class="uicontrol"></span> 来定义主键。 </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> 删除HTML? </span> <p>选中此选项后，将删除在此字段数据中找到的任何HTML标记。 </p> </li> 
-      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> 是否用于删除？ </span> <p>仅在增量索引操作期间使用。 与此XPath模式匹配的记录标识要删除的项。 每个 <span class="uicontrol"> 此类记 </span> 录的主键值用于构建“删除”请求，与删除文件路径一样。 </p> <p> <b>注意</b>: 默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </li> 
+      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> 是否用于删除？ </span> <p>仅在增量索引操作期间使用。 与此XPath模式匹配的记录标识要删除的项。 每个 <span class="uicontrol"> 此类记 </span> 录的主键值用于构建“删除”请求，与删除文件路径一样。 </p> <p> <b>注意</b>:默认情况下，此功能未启用。 请与技术支持联系以激活该功能供您使用。 </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> 操作 </span> <p>允许您向映射中添加行或从映射中删除行。 行的顺序不重要。 </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p> <b>数据源类型： XML</b> </p> </td> 
+      <td colname="col1"> <p> <b>数据源类型：XML</b> </p> </td> 
       <td colname="col2"> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>启用 </p> </td> 
-      <td colname="col2"> <p>将配置“打开”以爬网和索引。 或者，您可以关闭配置以防止搜索和索引。 </p> <p> <b>注意</b>: 如果在入口点列表中找到禁用的索引连接器配置，则忽略它们。 </p> </td> 
+      <td colname="col2"> <p>将配置“打开”以爬网和索引。 或者，您可以关闭配置以防止搜索和索引。 </p> <p> <b>注意</b>:如果在入口点列表中找到禁用的索引连接器配置，则忽略它们。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>主机地址 </p> </td> 
@@ -1351,10 +1297,9 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>文件路径 </p> </td> 
-      <td colname="col2"> <p>指定包含链接的主XML文档的路径( 
-      <userinput>
+      <td colname="col2"> <p>指定主XML文档的路径，该文档包含指向各个XML <code>
         &lt;a&gt; 
-      </userinput>)到单个XML文档。 </p> <p>路径相对于主机地址的根。 </p> </td> 
+      </code>的链接()。 </p> <p>路径相对于主机地址的根。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>协议 </p> </td> 
@@ -1365,7 +1310,7 @@ index:<indexconnector_configuration_name>
       <li id="li_2F967B5675254C949B31EAB19910751C"> FTP <p>必须输入正确的身份验证凭据才能访问FTP服务器。 </p> </li> 
       <li id="li_C24BE4C1DE79488AA64C7133D78CD3A6"> SFTP <p>必须输入正确的身份验证凭据才能访问SFTP服务器。 </p> </li> 
       <li id="li_7581C21CFC104986A361F62BD7A370C1"> File（文件） </li> 
-      </ul> </p> <p> <b>注意</b>: 只有在“主机地址”和／或“文件路径”字段中指定信息时，才使用协议设置。 单个XML文档根据其URL规范使用HTTP或HTTPS进行下载。 </p> </td> 
+      </ul> </p> <p> <b>注意</b>:只有在“主机地址”和／或“文件路径”字段中指定了信息时，才使用协议设置。 单个XML文档根据其URL规范使用HTTP或HTTPS进行下载。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
@@ -1375,7 +1320,7 @@ index:<indexconnector_configuration_name>
       <td colname="col1"> <p>地图 </p> </td> 
       <td colname="col2"> <p>允许您使用列号指定列到元数据的映射。 </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> 标记 </span> <p>指定已解析的XML数据的XPath表示形式。 使用上面的Adobe XML文档示例，在选项Itemtag下，可以使用以下语法映射它： </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> 标记 </span> <p>指定已解析的XML数据的XPath表示形式。 使用上面的示例AdobeXML文档，在选项Itemtag下，可以使用以下语法映射它： </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>以上语法的转换如下： </p> <p> 
@@ -1386,7 +1331,7 @@ index:<indexconnector_configuration_name>
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>元数 <span class="codeph"> 据元素中包含的任 </span> 何元元 <span class="codeph"> 素的内容，该元数据元素包含在 </span> 记录元素中，其名称属性为 <span class="codeph"></span><span class="codeph"></span><span class="codeph"></span><span class="codeph"></span>描述，映射到元数据字段主体。 </p> </li> 
       </ul> </p> <p>XPath是一个相对复杂的表示法。 有关更多信息，请访问以下位置： </p> <p>请参阅 <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> 字段 </span> <p>定义用于每个生成的&lt;meta&gt;标记的名称属性值。 </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当索引连接器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到生成的缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了“允 <span class="wintitle"> 许列表 </span> ”属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> 元数据? </span> <p>使字 <span class="uicontrol"> 段 </span> 成为下拉列表列表，您可以从中为当前帐户选择定义的元数据字段。 </p> <p>如果 <span class="uicontrol"> 需 </span> 要，字段值可以是未定义的元数据字段。 未定义的元数据字段有时对创建筛选脚本使用的 <span class="wintitle"> 内容很有用 </span>。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> 阅关于筛选 </a>脚本。 </p> <p>当索引连接器在任何映射字段中处理具有多个点击的XML文档时，这些多个值将连接到生成的缓存文档中的单个值。 默认情况下，这些值使用逗号分隔符组合。 但是，假定相应的字段 <span class="wintitle"> 值 </span> 是定义的元数据字段。 此外，该字段还设置了 <span class="wintitle"> 允许列表 </span> 属性。 在这种情况下，该字段的列表分隔符值（定义的第一个分隔符）将用在级联中。 </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> 主键？ </span> <p>只有一个映射定义被标识为主键。 此字段成为将此文档添加到索引时显示的唯一引用。 此值用于索引中文档的URL。 </p> <p>主 <span class="uicontrol"> 键值 </span> 在由索引连接器配置表示的所有文档中必须是唯一的——遇到的任何重复都将被忽略。 如果源文档不包含用作主键的唯一值，但两个或多个字段合并在一起 <span class="uicontrol"></span>，则可以通过将多个标签定义与 <i>分隔值的垂直条(“|”)组合</i><span class="uicontrol"></span><span class="uicontrol"></span> 来定义主键。 </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> 删除HTML? </span> <p>选中此选项后，将删除在此字段数据中找到的任何HTML标记。 </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> 操作 </span> <p>允许您向映射中添加行或从映射中删除行。 行的顺序不重要。 </p> </li> 
