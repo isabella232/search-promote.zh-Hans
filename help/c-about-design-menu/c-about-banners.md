@@ -1,13 +1,16 @@
 ---
-description: 您可以使用横幅管理网站上的横幅广告。
-seo-description: 您可以使用横幅管理网站上的横幅广告。
+description: 您可以使用横幅来管理网站上的横幅广告。
+seo-description: 您可以使用横幅来管理网站上的横幅广告。
 seo-title: 关于横幅
 solution: Target
 title: 关于横幅
 topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4810'
+ht-degree: 1%
 
 ---
 
@@ -26,39 +29,39 @@ c_about_banners.xml
 
 有两种方法可用于向网站添加横幅广告。
 
-第一种方法是通过Target、Search&amp;Promote添加横幅。 横幅是客户搜索您的网站时显示的HTML代码片段。 您的横幅可以包含GIF、JPEG或PNG格式的文本或图像，或两者的组合。 您可以从预设大小中进行选择，或定义自己的自定义尺寸以适合您的页面。 用于显示横幅的HTML代码还可以指定要使用的字体样式和边框等。 此添加横幅的方法提供基本功能，并且不需要其他软件。
+第一种方法是通过目标、Search&amp;Promote添加横幅。 横幅是客户搜索您的网站时显示的HTML代码片段。 您的横幅可以包含GIF、JPEG或PNG格式的文本或图像，或两者的组合。 您可以从预设大小中进行选择，也可以定义自己的自定义尺寸以适合您的页面。 用于显示横幅的HTML代码还可以指定要使用的字体样式和边框等内容。 此添加横幅的方法优惠基本功能，并且不需要其他软件。
 
-第二种方法是使用Adobe Dynamic Media Classic，这是一种动态媒体管理和发布服务。 通过有效的Adobe Dynamic Media Classic帐户，您可以使用Dynamic Media Classic直接管理横幅内容并将其传送到Target、Search&amp;Promote。 在站点搜索／销售中，您可以配置对Dynamic Media Classic帐户的访问权。 然后，打开Dynamic Media Classic媒体浏览器并选择要用作横幅的Dynamic Media资产。
-
->[!NOTE]
->
->在站点搜索／销售中，将Dynamic Media资产用作横幅之前，会先在Scene7 Publishing System中上传并准备好资产以进行发布。 您可以从网站搜索／销售中上传资产，并让其自动准备好供Scene7 Publishing System发布。 或者，您也可以从Scene7 Publishing System中上传和发布所有资产。
-
-## 横幅与Adobe Scene7 Publishing System集成 {#section_D4D7ADEA6A6348E68EDA138E184FE579}
-
-您可以在站点搜索／销售中将Dynamic Media Classic资产类型用作横幅，包括图像、动态横幅和模板（如图像模板或Flash模板）。
-
-模板是动态创建和可寻址的分层图像文件，如Adobe Photoshop®等图像编辑应用程序中的分层文件。 与静态图像文件不同，模板可以包含参数。 通过参数，您可以自定义可变图像属性和图像内容。
+第二种方法是使用AdobeDynamic Media Classic，这是一种动态媒体管理和发布服务。 有效的Adobe动态媒体经典帐户可让您使用动态媒体经典直接管理横幅内容并将其交付给目标、Search&amp;Promote。 在站点搜索／销售中，您可以配置对Dynamic Media Classic帐户的访问权限。 然后，打开Dynamic Media Classic媒体浏览器，选择要用作横幅的Dynamic Media资产。
 
 >[!NOTE]
 >
->您还可以使用Scene7 Publishing System中的“模板发布”以及Adobe Illustrator和Adobe InDesign中的文件，从基于布局的设计创建模板。
+>在站点搜索／销售中，将Dynamic Media资产用作横幅之前，首先在Scene7出版系统中上传和准备资产以供发布。 您可以从网站搜索／销售中上传资产，并让其自动准备好供Scene7出版系统发布。 或者，您也可以从Scene7出版系统中上传和发布所有资产。
 
-请参 [阅《Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) (Scene7)用户指南》中的模板发布。
+## 横幅与Adobe Scene7出版系统的集成 {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-模板可以包含任意数量的图像图层和文本图层。 您可以将包含图层（如分层的PSD文件）的静态文件转换为模板，或在Dynamic Media Classic中创建模板。 您可以使用上传到Scene7 Publishing System的字体在模板中创建文本图层。 向模板添加文本后，可以通过更改其对齐方式、字体、字体大小和颜色来设置其格式。
+您可以在网站搜索／销售中将Dynamic Media Classic资产类型用作横幅，包括图像、动态横幅和模板(如图像模板或Flash模板)。
 
-使用Dynamic Media Classic中的“参数”屏幕，您可以将模板的任何方面转换为可寻址的参数。 这样，您可以更改要使用的图层图像或模板中要使用的文本值。 参数随URL字符串一起传递，允许您更改任何参数以动态自定义从图像服务器生成的回复图像。
+模板是动态创建和可寻址的分层图像文件，如图像编辑应用程序(如Adobe Photoshop®)中的分层文件。 与静态图像文件不同，模板可以包含参数。 通过参数，您可以自定义可变图像属性和图像内容。
+
+>[!NOTE]
+>
+>您还可以使用Scene7出版系统中的模板发布以及Adobe Illustrator和Adobe InDesign的文件，从基于布局的设计创建模板。
+
+请参 [阅《Dynamic](https://help.adobe.com/en_US/scene7/using/WSFBFBAD30-2694-4b18-B7CE-894F9FC5CDDF.html) Media Classic(Scene7)用户指南》中的模板发布。
+
+模板可以包含任意数量的图像图层和文本图层。 您可以将包含图层（如分层的PSD文件）的静态文件转换为模板，或在Dynamic Media Classic中创建模板。 您可以使用上传到Scene7出版系统的字体在模板中创建文本图层。 向模板添加文本后，可以通过更改其对齐方式、字体、字体大小和颜色来设置其格式。
+
+使用Dynamic Media Classic中的“参数”屏幕，您可以将模板的任何方面转换为可寻址的参数。 这样，您可以更改要使用的分层图像或模板中要使用的文本值。 参数随URL字符串一起传递，允许您更改任何参数以动态自定义从图像服务器生成的回复图像。
 
 您可以进一步了解如何使用Dynamic Media Classic创建模板并参数化图层上的属性，以便在横幅中使用它们。
 
-请参 [阅《Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) (Scene7)用户指南》中的模板基础知识。
+请参 [阅《Dynamic Media](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Classic(Scene7)用户指南》中的模板基础知识。
 
 **上传和发布资产**
 
-您必须先在Dynamic Media Classic中上传和发布资产，然后才能在站点搜索／销售中将资产用于横幅。 此入门项目还包括图像模板或Flash模板使用的任何资产。 使用Dynamic Media Classic帐户上传和发布数字资产。 或者，您可以使用站点搜索／销售来上传数字资产，然后让Dynamic Media Classic根据您的上传设置自动为您发布该资产。 如果您尝试选择尚未上传和发布的资产，则会在用户界面中通知您，并在继续操作之前提供上传资产的选项。
+您必须先在Dynamic Media Classic中上传和发布资产，然后才能将资产用于网站搜索／销售中的横幅。 此先决条件还包括图像模板或Flash模板使用的任何资产。 使用Dynamic Media Classic帐户上传和发布数字资产。 或者，您也可以使用网站搜索／销售来上传数字资产，然后让Dynamic Media Classic根据您的上传设置自动为您发布。 如果您尝试选择尚未上传和发布的资产，则会在用户界面中通知您，并在继续操作前可以选择上传资产。
 
-您可以进一步了解如何使用Scene7 Publishing System上传和发布数字资产。
+您可以进一步了解如何使用Scene7出版系统上传和发布数字资产。
 
 请参 [阅《Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) (Scene7)用户指南》中的上传和发布资产。
 
@@ -66,11 +69,11 @@ c_about_banners.xml
 >
 >要在Dynamic Media Classic资产查看器中使用上传功能，请确保您使用的Dynamic Media Classic帐户已设置“SPS公司管理员”角色。
 
-请参 [阅《Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) (Scene7)用户指南》中的管理设置。
+请参 [阅《Dynamic Media](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) Classic(Scene7)用户指南》中的管理设置。
 
 **使用业务规则更改横幅中的Dynamic Media Classic模板参数**
 
-如果您将Dynamic Media Classic资产添加为横幅，则可在中 [!DNL Visual Rule Builder] 将 [!DNL Business Rules] 其添加到网站上的任何横幅区域。 例如，您向搜索结果页面添加横幅，就像您添加任何其他横幅一样。 您还可以根据您的特定需求自定义Dynamic Media Classic模板中的默认参数值，以覆盖这些默认值。 通过这种功能，您可以自定义Dynamic Media Classic模板，这些模板具有不同的营销消息和指向不同端点的超链接。
+如果您将Dynamic Media Classic资产添加为横幅，则可在中 [!DNL Visual Rule Builder] 使 [!DNL Business Rules] 用它将其添加到网站上的任何横幅区域。 例如，您向搜索结果页面添加横幅，就像您添加任何其他横幅一样。 您还可以根据您的特定需求自定义Dynamic Media Classic模板中的默认参数值，以覆盖这些默认值。 通过这种功能，您可以使用不同的营销消息和指向不同端点的超链接自定义Dynamic Media Classic模板。
 
 另请参阅 [添加新业务规则](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)。
 
@@ -78,7 +81,7 @@ c_about_banners.xml
 
 ## 添加横幅 {#task_549D02B5F73B4158B105A94E39D937B7}
 
-您可以使 [!DNL Banners] 用来管理横幅广告以及这些广告在您的网站上的位置。 添加横幅时，您将通过在搜索时显示的HTML代码片段在外部引用图像。
+您可以使 [!DNL Banners] 用来管理横幅广告以及它们在您的网站上的位置。 添加横幅时，您通过在搜索时显示的HTML代码片段在外部引用图像。
 
 <!-- 
 
@@ -86,16 +89,16 @@ t_adding_a_new_banner.xml
 
  -->
 
-如果您有有效的Adobe Dynamic Media Classic帐户，则可以通过Scene7 Publishing System添加横幅广告。
+如果您有有效的AdobeDynamic Media Classic帐户，则可通过Scene7出版系统添加横幅广告。
 
-请参 [阅使用Adobe Dynamic Media Classic添加横幅](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3)。
+请参 [阅使用AdobeDynamic Media Classic添加横幅](../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3)。
 
-请参 [阅配置对您的Adobe Dynamic Media Classic帐户的访问](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)。
+请参 [阅配置对AdobeDynamic Media Classic帐户的访问权](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)。
 
 **添加横幅**
 
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Banners]**。
-1. 在页 [!DNL Banners] 面的下拉列 **[!UICONTROL Add Banner]** 表中，选择 **[!UICONTROL HTML code]**。
+1. 在页 [!DNL Banners] 面的下拉 **[!UICONTROL Add Banner]** 列表中，选择 **[!UICONTROL HTML code]**。
 1. 在对 [!DNL Add Banner] 话框中，设置所需的选项。
 
    <table> 
@@ -108,33 +111,31 @@ t_adding_a_new_banner.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>名称 </p> </td> 
-      <td colname="col2"> <p>必需。标识横幅的名称。 在“业务规则”的可视规则生成器中添加横幅时，该名称用于引用该横幅。 该名称不会显示在横幅中。 </p> <p>请参 <a href="../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7" type="task" format="dita" scope="local"> 阅添加新业务规则。</a> </p> </td> 
+      <td colname="col2"> <p>必需。标识横幅的名称。 在Business Rules的可视规则生成器中添加横幅时，该名称用于引用该横幅。 该名称不会显示在横幅中。 </p> <p>请参 <a href="../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7" type="task" format="dita" scope="local"> 阅添加新业务规则。</a> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>横幅HTML </p> </td> 
-      <td colname="col2"> <p> 允许您粘贴与横幅关联的HTML代码。 </p> <p>任何HTML代码都是可接受的，包括由 
-        <userinput>
+      <td colname="col2"> <p> 允许您粘贴与横幅关联的HTML代码。 </p> <p>任何HTML代码都是可接受的，包括由标 <code>
           &lt;style&gt; 
-        </userinput> 标签或由 
-        <userinput>
+        </code> 签环绕的CSS代码或由标签环绕的JavaScript <code>
           &lt;script&gt; 
-        </userinput> 标记。例如，以下代码块用于Horizontal top类型的文本横幅：在下 <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code> 代码。 例如，以下代码块用于“水平顶部”类型的文本横幅： <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
-          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>例中，代码块用于完整初始图像： <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
+          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>在以下示例中，代码块用于完整初始图像： <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>类型 </p> </td> 
-      <td colname="col2"> <p>指定以下横幅类型： 
+      <td colname="col2"> <p>指定以下类型的横幅： 
         <ul id="ul_6423AEDB9E664049989EB529D63C4A62"> 
           <li id="li_BF6CD60B3ED748D49CFFB9C5D607661C"> <span class="uicontrol"> [新类型] </span> <p>允许您指定所需的横幅类型，包括维和名称。 </p> </li> 
-          <li id="li_1A29AB22AD644E60A12298187B5E898E"> <span class="uicontrol"> 完全初始化 </span> <p>此类横幅的设置尺寸为680像素宽，高650像素。 您可以选择指定类型的名称，或接受默认名称，该名称是横幅类型本身的名称。 </p> </li> 
-          <li id="li_2BE06D013CB54DDE851051BFC038BB57"> <span class="uicontrol"> 水平顶部 </span> <p> 横幅位于网站的顶部区域。 如果要向横幅左侧或右侧添加超链接，则此类型很有用。 此类横幅的设置尺寸为468像素宽，高60像素。 您可以选择指定类型的名称，或接受默认名称，该名称是横幅类型本身的名称。 </p> </li> 
-          <li id="li_EC35AB92234749F08AA8A9BD26D0EA8D"> <span class="uicontrol"> 水平顶部——全宽 </span> <p>添加新横幅时，此类型是默认类型。 横幅位于网站顶部区域，占据整个页面宽度。 此类横幅的设置尺寸为670像素宽，高150像素。 您可以选择指定类型的名称，或接受默认名称，该名称是横幅类型本身的名称。 </p> </li> 
+          <li id="li_1A29AB22AD644E60A12298187B5E898E"> <span class="uicontrol"> 完全初始 </span> <p>此类横幅的设置尺寸为680像素宽，高650像素。 您可以选择指定类型的名称，也可以接受默认名称，该名称是横幅类型本身的名称。 </p> </li> 
+          <li id="li_2BE06D013CB54DDE851051BFC038BB57"> <span class="uicontrol"> 水平顶部 </span> <p> 横幅位于网站的顶部区域。 如果要在横幅的左侧或右侧添加超链接，则此类型很有用。 此类横幅的设置尺寸为468像素宽，高60像素。 您可以选择指定类型的名称，也可以接受默认名称，该名称是横幅类型本身的名称。 </p> </li> 
+          <li id="li_EC35AB92234749F08AA8A9BD26D0EA8D"> <span class="uicontrol"> 水平顶部——全宽 </span> <p>添加新横幅时，此类型是默认类型。 横幅位于网站的顶部区域，占用整个页面宽度。 此类横幅的设置尺寸为670像素宽，高150像素。 您可以选择指定类型的名称，也可以接受默认名称，该名称是横幅类型本身的名称。 </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>标记 </p> </td> 
-      <td colname="col2"> <p>添加要与横幅关联的标记或“关键字”。 如果您使用许多横幅，添加标记可以帮助您调整横幅搜索，以便根据需要快速找到合适的横幅。 您还可以删除已添加的任何标记。 </p> </td> 
+      <td colname="col2"> <p>添加要与横幅关联的标记或“关键字”。 如果您使用多个横幅，添加标记可以帮助您调整横幅搜索，以便根据需要快速找到合适的横幅。 您还可以删除已添加的任何标记。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -164,9 +165,9 @@ t_editing_a_banner.xml
 
  -->
 
-如果您使用网站搜索／销售添加横幅，则还可以使用Adobe Dynamic Media Classic编辑横幅。
+如果您使用网站搜索／销售添加横幅，则还可以使用AdobeDynamic Media Classic编辑横幅。
 
-另请参 [阅使用Adobe Dynamic Media Classic编辑横幅](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9)。
+另请参 [阅使用AdobeDynamic Media Classic编辑横幅](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9)。
 
 **编辑横幅**
 
@@ -192,9 +193,9 @@ t_editing_a_banner.xml
 
       请参 [阅实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-## 使用Adobe Dynamic Media Classic添加横幅 {#task_AD1E0C00A9E04B1FA819EB93288786B3}
+## 使用AdobeDynamic Media Classic添加横幅 {#task_AD1E0C00A9E04B1FA819EB93288786B3}
 
-您可以使 [!DNL Banners] 用来管理网站上的横幅广告。 使用Adobe Dynamic Media Classic添加横幅时，您可以从已上传到Scene7 Publishing System的任何数字资产中进行选择。
+您可以使 [!DNL Banners] 用来管理网站上的横幅广告。 使用AdobeDynamic Media Classic添加横幅时，您可以从上传到Scene7出版系统的任何数字资产中进行选择。
 
 <!-- 
 
@@ -202,25 +203,25 @@ t_adding_a_banner_using_adobe_scene7.xml
 
  -->
 
-要使用Adobe Dynamic Media Classic添加横幅，请确保您已配置了对有效Dynamic Media Classic帐户的访问权限。
+要使用AdobeDynamic Media Classic添加横幅，请确保您已配置了对有效Dynamic Media Classic帐户的访问权限。
 
-请参 [阅配置对您的Adobe Dynamic Media Classic帐户的访问](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)。
+请参 [阅配置对AdobeDynamic Media Classic帐户的访问权](../c-about-settings-menu/c-about-account-options-menu.md#task_CEFF88C2033D41D0B2FE86C435EDAC6D)。
 
-**使用Adobe Dynamic Media Classic添加横幅**
+**使用AdobeDynamic Media Classic添加横幅**
 
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Banners.]**
-1. 在页 [!DNL Banners] 面的下拉列 **[!UICONTROL Add Banner]** 表中，单击 **[!UICONTROL Adobe Scene7]**。
-1. 在对 [!DNL Pick an Asset] 话框的左窗格中，使用用户界面中的导航选项找到包含要用于横幅的数字资产的文件夹。
+1. 在页 [!DNL Banners] 面的下拉 **[!UICONTROL Add Banner]** 列表中，单击 **[!UICONTROL Adobe Scene7]**。
+1. 在对 [!DNL Pick an Asset] 话框的左侧窗格中，使用用户界面中的导航选项找到包含要用于横幅的数字资产的文件夹。
 
-   除资产导航选项外，所有其他选项都取决于您选择添加或编辑的数字资产。
+   除资产导航选项外，所有其他选项均取决于您选择添加或编辑的数字资产。
 
-   使用资产导航选项可查找要在站点搜索／销售中用于新横幅的资产。 导航选项适用于所有类型的选定数字资产。
+   使用资产导航选项查找要在网站搜索／销售中用于新横幅的资产。 导航选项适用于所有类型的选定数字资产。
 
    >[!NOTE]
    >
    >在对话框中编辑横幅时，不会显示资产导航 [!DNL Change Parameters] 选项。
 
-   请参 [阅使用Adobe Dynamic Media Classic编辑横幅](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9)。
+   请参 [阅使用AdobeDynamic Media Classic编辑横幅](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9)。
 
    **资产导航选项**
 
@@ -234,7 +235,7 @@ t_adding_a_banner_using_adobe_scene7.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/S7_folders.png"> </p> </td> 
-      <td colname="col2"> <p>允许您从下拉列表中选择特定公司的Dynamic Media Classic帐户，并导航该帐户中的数字资产文件夹。 </p> <p>选择文件夹后，“选择资产”对话框的 <span class="wintitle"> 右窗格将显 </span> 示该文件夹中包含的所有可用数字资产。 </p> </td> 
+      <td colname="col2"> <p>允许您从下拉式公司中为特定列表选择Dynamic Media Classic帐户，还可以在该帐户中导航数字资产文件夹。 </p> <p>选择文件夹后，“选择资产”对话框的 <span class="wintitle"> 右侧窗 </span> 格会显示该文件夹中包含的所有可用数字资产。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_folderhistory.png"> </p> </td> 
@@ -242,11 +243,11 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_reloadfolder.png"> </p> </td> 
-      <td colname="col2"> <p>刷新为选定文件夹显示的数字资产列表。 </p> <p>如果您使用操作下拉列表移动、删除或重命名选定的资产，则可能需 <span class="uicontrol"> 要单 </span> 击此控件。 </p> </td> 
+      <td colname="col2"> <p>刷新选定文件夹显示的数字资产列表。 </p> <p>如果您使用操作下拉列表移动、删除或重命名选定的资产，则可 <span class="uicontrol"> 能需 </span> 要单击此控件。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_list_or_grid.png"> </p> </td> 
-      <td colname="col2"> <p>在列表视图中显示数字资产。 该列表显示每个资产的关联图标或缩略图图像、文件名、数字资产类型、尺寸（如果适用）以及上次编辑日期。 </p> <p>网格视图将选定文件夹中的数字资产显示为图标、缩略图或两者。 </p> </td> 
+      <td colname="col2"> <p>在列表视图中显示数字资产。 该列表显示每个资产的关联图标或缩略图图像、文件名、数字资产类型、尺寸（如果适用）以及上次编辑日期。 </p> <p>网格视图将选定文件夹中的数字资产显示为图标和／或缩略图。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_actionsdropdown.png"> </p> </td> 
@@ -254,7 +255,7 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>打开上 <span class="wintitle"> 传对 </span> 话框，您可以在其中从桌面或外部服务器上传选定的数字资产，以便将其用作横幅。 </p> <p>上传资产后，Scene7 Publishing System中会自动为您安排一个发布作业。 </p> <p>请参阅使用Adobe Dynamic Media Classic <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> 添加横幅中的选项表 </a>。 </p> <p>您可以进一步了解如何使用Scene7 Publishing System上传和发布数字资产。 </p> <p>请参 <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> 阅《Scene7 Publishing System用 </a> 户指南》中的上传和发布资产。 </p> </td> 
+      <td colname="col2"> <p>打开上 <span class="wintitle"> 传 </span> 对话框，您可以在其中从桌面或外部服务器上传选定的数字资产，以将其用作横幅。 </p> <p>上传资产后，Scene7出版系统中的发布作业会自动为您进行计划。 </p> <p>请参阅使用AdobeDynamic Media <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> Classic添加横幅中的选项 </a>表。 </p> <p>您可以进一步了解如何使用Scene7出版系统上传和发布数字资产。 </p> <p>请参 <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> 阅《Scene7出版 </a> 系统用户指南》中的上传和发布资产。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -262,15 +263,15 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_addfilter.png"> </p> </td> 
-      <td colname="col2"> <p>添加另一个资产过滤器，以便您能够按类型或特定日期进一步优化显示的数字资产列表。 </p> </td> 
+      <td colname="col2"> <p>添加另一个资产筛选器，以便您能够按类型或特定日期进一步优化显示的数字资产的列表。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_Kindfilter.png"> </p> </td> 
-      <td colname="col2"> <p>调整显示的数字资产列表，以仅显示特定类型（如Flash、图像、模板或任何）的数字资产。 </p> <p>单击 <img src="assets/s7_deletefilter.png"> 以从搜索中删除筛选器。 </p> </td> 
+      <td colname="col2"> <p>调整显示的数字资产的列表，以仅按特定类型(如Flash、图像、模板或任意)显示这些资产。 </p> <p>单击 <img src="assets/s7_deletefilter.png"> 以从搜索中删除筛选器。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_datefilter.png"> </p> </td> 
-      <td colname="col2"> <p>调整显示的数字资产列表，以仅显示在特定日期之前或特定日期之后创建或编辑的资产。 </p> <p>单击 <img src="assets/s7_deletefilter.png" /> 以从搜索中删除筛选器。 </p> </td> 
+      <td colname="col2"> <p>调整显示的数字资产的列表，以仅显示在特定日期之前或特定日期之后创建或编辑的资产。 </p> <p>单击 <img src="assets/s7_deletefilter.png" /> 以从搜索中删除筛选器。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_assetzoom.png"> </p> </td> 
@@ -281,7 +282,7 @@ t_adding_a_banner_using_adobe_scene7.xml
 
    **属性选项**
 
-   如果选择Flash模板、图像模板或图像，则显示“属性”选项。 根据您选择的数字资产，并非所有选项都可用。
+   如果选择了Flash模板、图像模板或图像，则会显示属性选项。 根据您选择的数字资产，并非所有选项都可用。
 
    <table> 
     <thead> 
@@ -297,7 +298,7 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>格式 </p> </td> 
-      <td colname="col2"> <p>标识图像或图像模板的格式。 </p> <p>您可以从以下格式中进行选择： </p> 
+      <td colname="col2"> <p>标识图像或图像模板的格式。 </p> <p>您可以选择以下格式： </p> 
         <ul id="ul_9A19421BCC424CF585645049DCB87F10"> 
         <li id="li_A4913D783BD547F9AFA1A259C56EC2B3">jpeg </li> 
         <li id="li_66237D7BE8754FB0B0088CE5A02C0214">png </li> 
@@ -308,7 +309,7 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>质量 </p> </td> 
-      <td colname="col2"> <p>控制JPEG或GIF格式图像的压缩级别。 此设置影响文件大小和图像质量。 质量等级为1-100。 </p> <p>向左或向右拖动滑块时，预览窗口中的图像会更新以反映质量的变化。 </p> <p>此选项不适用于Flash模板。 </p> </td> 
+      <td colname="col2"> <p>控制JPEG或GIF格式图像的压缩级别。 此设置会影响文件大小和图像质量。 质量等级为1-100。 </p> <p>向左或向右拖动滑块时，预览窗口中的图像会更新以反映质量的变化。 </p> <p>此选项不适用于Flash模板。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>宽度 </p> </td> 
@@ -316,14 +317,14 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>高度 </p> </td> 
-      <td colname="col2"> <p>指定数字资产的高度（以像素为单位）。 此维度是访问您网站的客户查看资产的高度。 </p> <p>此选项不适用于Flash模板。 </p> </td> 
+      <td colname="col2"> <p>指定数字资产的高度（以像素为单位）。 此维度是访问您网站的客户看到资产的高度。 </p> <p>此选项不适用于Flash模板。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **横幅链接选项**
 
-   只有在为横幅选择图像或图像模板时，才会显示“横幅链接”选项。
+   仅当您为横幅选择了图像或图像模板时，才会显示横幅链接选项。
 
    <table> 
     <thead> 
@@ -335,18 +336,18 @@ t_adding_a_banner_using_adobe_scene7.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>URL 链接 </p> </td> 
-      <td colname="col2"> <p>指定当客户单击图像时，您希望横幅链接到的URL地址。 </p> <p>如果不希望横幅链接到任何内容，请将“链接URL”字段留空。 </p> </td> 
+      <td colname="col2"> <p>指定当客户单击图像时希望横幅链接到的URL地址。 </p> <p>如果不希望横幅链接到任何内容，请将“链接URL”字段留空。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Target </p> </td> 
-      <td colname="col2"> <p>指定打开链接横幅的位置，如新浏览器窗口或新选项卡。 </p> </td> 
+      <td colname="col2"> <p>指定在何处打开链接的横幅，如新的浏览器窗口或新的选项卡。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **修改链接选项**
 
-   仅当您为横幅选择了Flash模板时，才会显示“修改链接”选项。
+   仅当您为横幅选择了Flash模板时，才会显示修改链接选项。
 
    <table> 
     <thead> 
@@ -358,16 +359,16 @@ t_adding_a_banner_using_adobe_scene7.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img placement="inline" id="image_EBB8159690C74D4692B5DF945B045E0B" src="assets/icon_edit_16.gif" /> </p> </td> 
-      <td colname="col2"> <p>允许您编辑Flash模板中使用的URL链接字段。 </p> </td> 
+      <td colname="col2"> <p>允许您编辑在Flash模板中使用的URL链接字段。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **替换文本选项**
 
-   仅当您为具有可编辑文本图层的横幅选择了Flash模板时，才会显示“替换文本”选项。
+   仅当您为具有可编辑文本图层的横幅选择了Flash模板时，才会显示替换文本选项。
 
-   您对Flash模板中的文本所做的任何更改都会反映在“预览”窗口中。
+   您对Flash模板中的文本所做的任何更改都会反映在预览窗口中。
 
    >[!NOTE]
    >
@@ -387,26 +388,26 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_deletefilter.png"> </p> </td> 
-      <td colname="col2"> <p>删除“搜索并替换”字段，并恢复之前使用的文本。 </p> </td> 
+      <td colname="col2"> <p>删除“搜索并替换”字段，并恢复以前使用的文本。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>搜索 </p> </td> 
-      <td colname="col2"> <p>允许您为Flash模板图层中的未链接文本输入搜索词。 </p> </td> 
+      <td colname="col2"> <p>允许您在Flash模板的图层中为未链接的文本输入搜索词。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>将 </p> </td> 
-      <td colname="col2"> <p>允许您指定要插入的文本以代替要搜索的文本。 </p> <p>在此字段 <span class="uicontrol"> 中按 </span> Enter时，预览窗口将更新为替换文本。 </p> </td> 
+      <td colname="col2"> <p>允许您指定要插入的文本以代替要搜索的文本。 </p> <p>在此字 <span class="uicontrol"> 段中 </span> 按Enter时，预览窗口将更新为替换文本。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **参数选项**
 
-   仅当您为横幅选择了图像模板或Flash模板时，才显示参数选项。 实际参数选项因在Scene7 Publishing System中创建和参数化模板的方式而异。 例如，您的模板可能包含参数化字段，这些字段允许您更改文本、字体样式、价格、用于免费送货的特殊代码、横幅中图像的大小，甚至可浏览其他图像以使用。
+   仅当您为横幅选择了图像模板或Flash模板时，才会显示参数选项。 实际参数选项因模板在Scene7出版系统中的创建和参数化方式而异。 例如，您的模板可能包含参数化字段，这些字段允许您更改文本、字体样式、价格、用于免费送货的特殊代码、横幅中图像的大小，甚至可以浏览其他图像以使用。
 
    >[!NOTE]
    >
-   >请注意，您对参数所做的任何更改都可能被业务规则所覆盖。 只有在没有创建会更改参数的业务规则时，这些参数才用作默认值。
+   >请注意，您对参数所做的任何更改都可能会被业务规则所覆盖。 只有在没有创建会更改参数的业务规则时，这些参数才用作默认值。
 
    请参 [阅添加新业务规则](../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7)。
 
@@ -414,7 +415,7 @@ t_adding_a_banner_using_adobe_scene7.xml
 
    **切换图层可见性选项**
 
-   “切换图层可见性”选项仅在为横幅选择Flash模板时才适用。
+   仅当您为横幅选择了Flash模板时，“切换图层可见性”选项才适用。
 
    <table> 
     <thead> 
@@ -431,13 +432,13 @@ t_adding_a_banner_using_adobe_scene7.xml
     </tbody> 
     </table>
 
-   （可选）如果要用于横幅的数字资产在所选文件夹中不可用，则可能需要上传该数字资产。 单 **[!UICONTROL Upload]**&#x200B;击，然后选择所需的文件和选项。 文件将上传到所选文件夹。
+   （可选）如果您要用于横幅的数字资产在所选文件夹中不可用，则可能需要上传该数字资产。 单 **[!UICONTROL Upload]**&#x200B;击，然后选择所需的文件和选项。 文件将上传到所选文件夹。
 
    >[!NOTE]
    >
-   >如果要在Scene7资产查看器中使用上传功能，请确保您使用的Scene7帐户已设置“SPS公司管理员”角色。
+   >如果要在Scene7资源查看器中使用上传功能，请确保您使用的Scene7帐户已设置“SPS公司管理员”角色。
 
-   请参 [阅《Scene7 Publishing System用户指南](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) 》中的管理设置。
+   请参 [阅《Scene7出版](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) 系统用户指南》中的“管理设置”。
 
    **基本选项**
 
@@ -451,26 +452,26 @@ t_adding_a_banner_using_adobe_scene7.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>浏览 </p> </td> 
-      <td colname="col2"> <p> 允许您浏览到要上传、发布的文件，然后选择用作横幅的文件。 </p> </td> 
+      <td colname="col2"> <p> 允许您浏览到要上传、发布的文件，然后选择用作横幅。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> 覆盖 </p> </td> 
-      <td colname="col2"> <p>您上传的文件将替换选定文件夹中的现有文件，并使用相同的文件名。 </p> </td> 
+      <td colname="col2"> <p>上传的文件将替换选定文件夹中具有相同文件名的现有文件。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>电子邮件首选项 </p> </td> 
-      <td colname="col2"> <p> 允许您选择上传时收到的电子邮件通知，也可以选择不会收到与上传作业相关的任何通知。 </p> </td> 
+      <td colname="col2"> <p> 允许您选择上传时收到的电子邮件通知，也可以选择不接收与上传作业相关的任何通知。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
    **高级选项**
 
-   上传PostScript(EPS)或Illustrator(AI)图像文件时，可以采用各种格式设置这些文件。 您可以栅格化文件，将它们转换为FXG以进行模板发布，保持透明背景，选择分辨率，并选择色彩空间。
+   上传PostScript(EPS)或Illustrator(AI)图像文件时，可以采用各种格式设置它们。 您可以栅格化文件、将它们转换为FXG以进行模板发布、保持透明背景、选择分辨率和选择色彩空间。
 
-   PSD（Photoshop文档文件）在Dynamic Media Classic中最常用于创建模板。 上传PSD文件时，可以自动从该文件创建Dynamic Media Classic模板(选择选 **[!UICONTROL Create Template]** 项)。
+   PSD(Photoshop文档文件)在Dynamic Media Classic中最常用于创建模板。 上传PSD文件时，可以自动从文件创建Dynamic Media Classic模板(选 **[!UICONTROL Create Template]** 择选项)。
 
-   如果使用PSD文件创建模板，Scene7 Publishing System会使用图层从PSD文件创建多个图像；它为每个图层创建一个图像。
+   Scene7出版系统(PSD)使用PSD文件创建模板时，如果使用该文件创建模板，则它会用图层创建多个图像；它为每个图层创建一个图像。
 
    <table> 
     <thead> 
@@ -482,8 +483,8 @@ t_adding_a_banner_using_adobe_scene7.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>颜色配置文件选项 </p> </td> 
-      <td colname="col02"> <p>颜色配置文件 </p> </td> 
+      <td colname="col1"> <p>颜色用户档案选项 </p> </td> 
+      <td colname="col02"> <p>颜色用户档案 </p> </td> 
       <td colname="col2"> <p> 允许您从以下选项中进行选择： </p> 
         <ul id="ul_6927BC08CA2647EDB2C85DAD2B82AE31"> 
         <li id="li_CA3F44FF9C0F4CE987DCB0AF9303C2E4"> <span class="uicontrol"> 转换为SRGB </span> <p>转换为SRGB（标准红绿蓝）。 SRGB是用于在网页上显示图像的推荐色彩空间。 </p> </li> 
@@ -498,7 +499,7 @@ t_adding_a_banner_using_adobe_scene7.xml
       <tr> 
       <td colname="col1"> <p>PostScript选项 </p> <p>Illustrator选项 </p> </td> 
       <td colname="col02"> <p>正在处理 </p> </td> 
-      <td colname="col2"> <p> <span class="uicontrol"> 栅格化 </span> 选项将文件中的矢量图形转换为位图格式。 </p> </td> 
+      <td colname="col2"> <p> <span class="uicontrol"> 栅格 </span> 化选项将文件中的矢量图形转换为位图格式。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Postscript选项 </p> <p>Illustrator选项 </p> </td> 
@@ -518,13 +519,13 @@ t_adding_a_banner_using_adobe_scene7.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p> PostScript选项 </p> <p>Illustrator选项 </p> </td> 
-      <td colname="col02"> <p> 保持透明背景 </p> </td> 
+      <td colname="col02"> <p> 维护透明背景 </p> </td> 
       <td colname="col2"> <p>保持文件的背景透明度。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Photoshop选项 </p> </td> 
       <td colname="col02"> <p> 维护图层 </p> </td> 
-      <td colname="col2"> <p>将PSD中的图层（如果有）拆分到单个资源中。 资产图层仍与PSD关联。 </p> </td> 
+      <td colname="col2"> <p>将PSD中的图层（如果有）拆分为单个资源。 资产图层仍与PSD关联。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Photoshop选项 </p> </td> 
@@ -534,7 +535,7 @@ t_adding_a_banner_using_adobe_scene7.xml
       <tr> 
       <td colname="col1"> <p> Photoshop选项 </p> </td> 
       <td colname="col02"> <p> 提取文本 </p> </td> 
-      <td colname="col2"> <p> 提取文本，以便客户可以搜索横幅中的关键字。 </p> </td> 
+      <td colname="col2"> <p> 提取文本，以便客户可以在横幅中搜索关键字。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Photoshop选项 </p> </td> 
@@ -544,23 +545,23 @@ t_adding_a_banner_using_adobe_scene7.xml
       <tr> 
       <td colname="col1"> <p>Photoshop选项 </p> </td> 
       <td colname="col02"> <p> 图层命名 </p> </td> 
-      <td colname="col2"> <p>PSD文件中的图层将作为单独的图像上传。 您可以从以下选项中进行选择，以决定要在Scene7 Publishing System中命名这些图像的方式： </p> 
+      <td colname="col2"> <p>PSD文件中的图层作为单独的图像上传。 您可以从以下选项中进行选择，以决定要在Scene7出版系统中命名这些图像的方式： </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
-        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> 使用PSD文件中的图层名称 </span> <p>在PSD文件中将图像命名为图层名称后面的图像。 例如，原始PSD文件中名 <span class="codeph"> 为Price Tag的 </span> 图层将变为名为 <span class="codeph"> Price Tag的图像 </span>。 但是，如果PSD文件中的图层名称是默认的Photoshop图层名称（背景、图层1、图层2等），则图像将以PSD文件中的图层编号命名，而不是以其默认图层名称命名。 </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> 使用PSD文件名并附加编号 </span> <p>在PSD文件中将图像命名为其图层编号之后，忽略原始图层名称。 图像以Photoshop文件名和附加的图层编号命名。 例如，名为 <span class="codeph"> Spring Ad.psd的文件的第二个层被命名为 </span><span class="codeph"></span> Spring Ad_2，即使它在Photoshop中具有非默认名称。 </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> 使用PSD文件名和图层名称或编号 </span> <p>在PSD文件后面命名图像，后跟图层名称或图层编号。 如果PSD文件中的图层名称是默认的Photoshop图层名称，则使用图层编号。 例如，在名为SpringAd的PSD文 <span class="codeph"> 件中名 </span> 为Price Tag的图层被命名为 <span class="codeph"> Spring Ad_Price </span><span class="codeph"></span>Tag。 具有默认名称Layer 2的 <span class="codeph"> 图层名 </span> 称为 <span class="codeph"> Spring Ad_2 </span>。 </p> </li> 
+        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> 从PSD文件使用图层名称 </span> <p>在PSD文件中将图像命名为图层名称之后。 例如，原始PSD文件中 <span class="codeph"> 名为 </span> Price Tag的图层将变为名为Price Tag <span class="codeph"> 的图像 </span>。 但是，如果PSD文件中的图层名称是默认的Photoshop图层名称（背景、图层1、图层2等），则图像将以PSD文件中的图层编号命名，而不是以其默认图层名称命名。 </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> 使用PSD文件名并附加编号 </span> <p>在PSD文件中将图像命名为图层编号之后的图像，而忽略原始图层名称。 图像以Photoshop文件名和附加的图层编号命名。 例如，名为Spring Ad.psd的文件的 <span class="codeph"> 第二个图层 </span> 命名为 <span class="codeph"> Spring Ad_2，即 </span> 使它在Photoshop有非默认名称。 </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> 使用PSD文件名和图层名称或编号 </span> <p>在PSD文件之后命名图像，后跟图层名称或图层编号。 如果PSD文件中的图层名称是默认的Photoshop图层名称，则使用图层编号。 例如，在名为SpringAd的 <span class="codeph"> PSD文 </span> 件中名为Price Tag的 <span class="codeph"> 图层 </span> 被命名为 <span class="codeph"> Spring Ad_Price Tag </span>。 具有缺省名称Layer 2 <span class="codeph"> 的图 </span> 层命名 <span class="codeph"> 为Spring Ad_2 </span>。 </p> </li> 
         <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> 根据PSD文件名创建文件夹 </span> <p>使用PSD的文件名为图层图像创建文件夹。 </p> </li> 
         </ul> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Photoshop选项 </p> </td> 
       <td colname="col02"> <p>锚点 </p> </td> 
-      <td colname="col2"> <p>指定如何在从PSD文件生成的分层合成生成的模板中定位图像。 </p> <p>默认情况下，锚点为中心。 中心锚点允许替换图像最好地填充相同空间，而不管替换图像的长宽比如何。 当引用模板并使用参数替换时，具有替代此图像的不同方面的图像会有效地占据相同的空间。 如果应用程序需要替换图像以填充模板中分配的空间，请更改为其他设置。 </p> </td> 
+      <td colname="col2"> <p>指定如何在从PSD文件生成的分层合成生成的模板中定位图像。 </p> <p>默认情况下，锚点为中心。 无论替换图像的长宽比如何，中心锚点都允许替换图像以最佳方式填充相同的空间。 当引用模板并使用参数替换时，具有替换此图像的不同方面的图像会有效地占据相同的空间。 如果应用程序需要替换图像以填充模板中分配的空间，请更改为其他设置。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>PDF选项 </p> </td> 
       <td colname="col02"> <p>正在处理 </p> </td> 
-      <td colname="col2"> <p> <span class="uicontrol"> 栅格 </span> 化选项将翻阅PDF文件中的页面，并将矢量图形转换为位图图像。 
+      <td colname="col2"> <p> <span class="uicontrol"> 栅格 </span> 化选项将翻开PDF文件中的页面，并将矢量图形转换为位图图像。 
         <!--Choose this option to create an eCatalog. (This option is thedefault.)--> </p> </td> 
       </tr> 
       <tr> 
@@ -571,7 +572,7 @@ t_adding_a_banner_using_adobe_scene7.xml
       <tr> 
       <td colname="col1"> <p>PDF选项 </p> </td> 
       <td colname="col02"> <p> 色彩空间 </p> </td> 
-      <td colname="col2"> <p>允许您为PDF文件选择色彩空间。 大多数PDF文件都有RGB和CMYK彩色图像。 RGB色彩空间是联机查看的首选。 </p> <p>您可以从以下色彩空间选项中进行选择： </p> 
+      <td colname="col2"> <p>允许您为PDF文件选择色彩空间。 大多数PDF文件同时具有RGB和CMYK彩色图像。 RGB色彩空间是联机查看的首选。 </p> <p>您可以从以下色彩空间选项中进行选择： </p> 
         <ul id="ul_44A8C39DEB21473F9375E3962F14D3C6"> 
         <li id="li_1046FA0017934C5EB7C0100F8F78507D"> <span class="uicontrol"> 自动检测 </span> <p> 保留PDF文件的色彩空间。 </p> </li> 
         <li id="li_561CCF705EDD451993D2DA2EB33F05F7"> <span class="uicontrol"> 强制为RGB </span> <p> 转换为RGB色彩空间。 </p> </li> 
@@ -582,12 +583,12 @@ t_adding_a_banner_using_adobe_scene7.xml
       <tr> 
       <td colname="col1"> <p>PDF选项 </p> </td> 
       <td colname="col02"> <p>从多页PDF自动生成电子目录 </p> </td> 
-      <td colname="col2"> <p> 自动从PDF文件创建电子目录。 eCatalog以您上传的PDF文件命名。 </p> </td> 
+      <td colname="col2"> <p> 自动从PDF文件创建电子目录。 电子目录以您上传的PDF文件命名。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> PDF选项 </p> </td> 
       <td colname="col02"> <p>提取关键字 </p> </td> 
-      <td colname="col2"> <p>从PDF文件提取单词，以便文件可按关键字搜索。 </p> </td> 
+      <td colname="col2"> <p>从PDF文件提取单词，使文件可按关键字进行搜索。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -595,7 +596,7 @@ t_adding_a_banner_using_adobe_scene7.xml
 1. 在右窗格中，单击所需的图像、模板或Flash文件。
 
    出 [!DNL Pick An Asset] 现弹出窗口。
-1. （可选）在弹 [!DNL Pick An Asset] 出窗口中的下拉列 [!DNL Actions] 表中，执行下列任一操作：
+1. （可选）在 [!DNL Pick An Asset] 弹出窗口的下拉 [!DNL Actions] 列表中，执行下列任一操作：
 
    * 单击 **[!UICONTROL Move]**. 在对 [!DNL Select a folder to move to] 话框中，选择要移动数字资产的文件夹。 单击 **[!UICONTROL Move]**.
 
@@ -608,7 +609,7 @@ t_adding_a_banner_using_adobe_scene7.xml
    * 单击 **[!UICONTROL Rename]**. 在对 [!DNL Enter a new name for] 话框的文本字段中，键入数字资产的新名称。 单击 **[!UICONTROL Rename]**.
 
 1. （可选）根据您选择的数字资产，在弹出窗口的左 [!DNL Pick an Asset] 窗格中设置所需的选项。
-1. 单击资产以选择资产以用作横幅。
+1. 单击资产以将其选为横幅。
 1. （可选）执行下列操作之一：
 
    * 单击 **[!UICONTROL History]** 可还原您所做的任何更改。
@@ -623,9 +624,9 @@ t_adding_a_banner_using_adobe_scene7.xml
 
       请参 [阅实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-## 使用Adobe Dynamic Media Classic编辑横幅 {#task_C3E782477FBF428ABEA220751781ACA9}
+## 使用AdobeDynamic Media Classic编辑横幅 {#task_C3E782477FBF428ABEA220751781ACA9}
 
-使 [!DNL Edit Banner] 用可更改您使用Adobe Dynamic Media Classic添加的横幅的属性和参数。
+使 [!DNL Edit Banner] 用Adobe动态媒体经典更改您添加的横幅的属性和参数。
 
 <!-- 
 
@@ -633,14 +634,14 @@ t_editing_a_banner_using_adobe_scene7.xml
 
  -->
 
-如果通过添加HTML代码来添加横幅，则应改为使用站点搜索／促销来编辑横幅。
+如果通过添加HTML代码添加横幅，则应改用站点搜索／促销来编辑横幅。
 
 另请参阅 [编辑横幅](../c-about-design-menu/c-about-banners.md#task_D4081083BE7B40F5A003D1A2F1435AEA)。
 
-**使用Adobe Dynamic Media Classic编辑横幅**
+**使用AdobeDynamic Media Classic编辑横幅**
 
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Banners]**。
-1. 在页 [!DNL Banners] 面上，单 ![](assets/icon_edit_16.gif) 击横幅窗口左下角的横幅缩略图上方，该缩略图具有S7图标。
+1. 在页 [!DNL Banners] 面上， ![](assets/icon_edit_16.gif) 单击横幅窗口左下角带有S7图标的横幅缩略图上方。
 1. 在页 [!DNL Change Parameter] 面上，设置所需的选项。
 1. 编辑完横幅后，单击 **[!UICONTROL Save]**。
 1. （可选）执行下列操作之一：
@@ -672,15 +673,15 @@ t_deleting_banners.xml
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Banners]**。
 1. （可选）执行下列操作之一或多项：
 
-   * 在页 [!DNL Banners] 面上，从下拉列表中选择要查找的 **[!UICONTROL Find banner of type]** 横幅类型。 如果需要，请在文本字段中指定标 **[!UICONTROL with tag]** 记名称，或在文本字段中指定横幅类 **[!UICONTROL with name]** 型名称。 单击 **[!UICONTROL Find.]**
+   * 在页 [!DNL Banners] 面上，从下拉列表中选择要查找 **[!UICONTROL Find banner of type]** 的横幅类型。 如果需要，请在文本字段中指 **[!UICONTROL with tag]** 定标记名称，或在文本字段中指定横幅 **[!UICONTROL with name]** 类型名称。 单击 **[!UICONTROL Find.]**
 
-   * 在下 **[!UICONTROL Sort]** 拉列表中，选择您希望横幅列表的排序方式。
-   * 在下 **[!UICONTROL Show]** 拉列表中，选择要加载到您正在查看的当前页面的横幅数。
+   * 在下 **[!UICONTROL Sort]** 拉列表中，选择您希望如何对横幅进行列表。
+   * 在下 **[!UICONTROL Show]** 拉列表中，选择要加载到当前正在查看的页面的横幅数。
 
 1. 执行以下操作之一：
 
    * 在任何横幅框的左上角，单击要删除的每个横幅的复选框。
-   * 在页面的上栏上，选 [!DNL Banners] 中以选 **[!UICONTROL Select all]** 择当前显示的页面上加载的每个横幅。
+   * 在页面的上栏上，选 [!DNL Banners] 中以选 **[!UICONTROL Select all]** 择当前显示页面上加载的每个横幅。
 
 1. 在下 **[!UICONTROL Bulk Actions]** 拉列表中，单击 **[!UICONTROL Delete]**。
 1. 在对话 [!DNL Confirmation Action] 框中，单击 **[!UICONTROL OK]**。
@@ -700,7 +701,7 @@ t_deleting_banners.xml
 
 ## 预览横幅 {#task_6AB1F81A984A4DC2ACACD1FE030545E2}
 
-您可以浏览已添加到页面的横幅， [!DNL Banners] 以查看其全尺寸。 模板中影响横幅的任何CSS都不会显示。
+您可以浏览已添加到页面的横幅 [!DNL Banners] 以视图其全尺寸。 不会显示模板中影响横幅的任何CSS。
 
 <!-- 
 
@@ -708,21 +709,21 @@ t_previewing_banners.xml
 
  -->
 
-**预览横幅**
+**到预览横幅**
 
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Banners]**。
 1. （可选）执行下列操作之一或多项：
 
-   * 在页 [!DNL Banners] 面上，从下拉列表中选择要查找的 **[!UICONTROL Find banner of type]** 横幅类型。 如果需要，请在文本字段中指定标 **[!UICONTROL with tag]** 记名称，或在文本字段中指定横幅类 **[!UICONTROL with name]** 型名称。 单击 **[!UICONTROL Find.]**
+   * 在页 [!DNL Banners] 面上，从下拉列表中选择要查找 **[!UICONTROL Find banner of type]** 的横幅类型。 如果需要，请在文本字段中指 **[!UICONTROL with tag]** 定标记名称，或在文本字段中指定横幅 **[!UICONTROL with name]** 类型名称。 单击 **[!UICONTROL Find.]**
 
-   * 在下 **[!UICONTROL Sort]** 拉列表中，选择您希望横幅列表的排序方式。
-   * 在下 **[!UICONTROL Show]** 拉列表中，选择要加载到您正在查看的当前页面的横幅数。
+   * 在下 **[!UICONTROL Sort]** 拉列表中，选择您希望如何对横幅进行列表。
+   * 在下 **[!UICONTROL Show]** 拉列表中，选择要加载到当前正在查看的页面的横幅数。
 
-1. 在页面 [!DNL Banners] 上，单击横幅缩略图以查看其全尺寸。
+1. 在页面 [!DNL Banners] 上，单击横幅缩略图以视图其全尺寸。
 1. 执行以下操作之一：
 
-   * 在横幅预览对话框中，单击向左或向右箭头可导航并查看已添加的全尺寸横幅。
-   * 单击关闭按钮可关闭横幅预览对话框，并返回页 [!DNL Banners] 面。
+   * 在横幅预览对话框中，单击向左或向右箭头以导航和视图已添加的全尺寸横幅。
+   * 单击关闭按钮关闭横幅预览对话框，然后返回页 [!DNL Banners] 面。
 
 ## 实时推送横幅 {#task_161F4FEC8362474296A566E64BF05B97}
 
@@ -734,24 +735,24 @@ t_pushing_banners_live.xml
 
  -->
 
-或者，如果您愿意，可以使用页面底部附近的选项将所有更 **[!UICONTROL Push Live]** 改实时推送到任何横 [!DNL Banners] 幅。
+或者，您也可以使用页面底部附近的选项，将所有更 **[!UICONTROL Push Live]** 改实时推送到任何横 [!DNL Banners] 幅。
 
 请参 [阅实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-**要实时推送横幅，请执行以下操作：**
+**要实时推送横幅**
 
 1. 在产品菜单中，单击 **[!UICONTROL Design]** > **[!UICONTROL Banners]**。
 1. （可选）执行下列操作之一或多项：
 
-   * 在页 [!DNL Banners] 面上，从下拉列表中选择要查找的 **[!UICONTROL Find banner of type]** 横幅类型。 如果需要，请在文本字段中指定标 **[!UICONTROL with tag]** 记名称，或在文本字段中指定横幅类 **[!UICONTROL with name]** 型名称。 单击 **[!UICONTROL Find]**.
+   * 在页 [!DNL Banners] 面上，从下拉列表中选择要查找 **[!UICONTROL Find banner of type]** 的横幅类型。 如果需要，请在文本字段中指 **[!UICONTROL with tag]** 定标记名称，或在文本字段中指定横幅 **[!UICONTROL with name]** 类型名称。 单击 **[!UICONTROL Find]**.
 
-   * 在下 **[!UICONTROL Sort]** 拉列表中，选择您希望横幅列表的排序方式。
-   * 在下 **[!UICONTROL Show]** 拉列表中，选择要加载到您正在查看的当前页面的横幅数。
+   * 在下 **[!UICONTROL Sort]** 拉列表中，选择您希望如何对横幅进行列表。
+   * 在下 **[!UICONTROL Show]** 拉列表中，选择要加载到当前正在查看的页面的横幅数。
 
 1. 执行以下操作之一：
 
    * 在任何横幅框的左上角，单击要删除的每个横幅的复选框。
-   * 在页面的上栏上，选 [!DNL Banner] 中以选 **[!UICONTROL Select all]** 择当前显示的页面上加载的每个横幅。
+   * 在页面的上栏上，选 [!DNL Banner] 中以选 **[!UICONTROL Select all]** 择当前显示页面上加载的每个横幅。
 
 1. 在下 **[!UICONTROL Bulk Actions]** 拉列表中，单击 **[!UICONTROL Push live]**。
 1. 在对话 [!DNL Confirmation Action] 框中，单击 **[!UICONTROL OK]**。
