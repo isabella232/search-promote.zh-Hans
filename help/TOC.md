@@ -3,17 +3,17 @@ cloud: experience-cloud
 product: Adobe Search&amp;Promote
 audience: end-user
 user-guide-title: AdobeSearch&amp；提升指南
-breadcrumb-title: Adobe Search&amp;Promote Guide
+breadcrumb-title: AdobeSearch&amp；提升指南
 translation-type: tm+mt
 source-git-commit: e211b8d01a8dea5b4232f3daeb430cb7ffe7ea76
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '254'
 ht-degree: 11%
 
 ---
 
 
-# Adobe搜索和提升指南 {#using}
+# Adobe Search and Promote Guide {#using}
 
 + [Search&amp;Promote文档概述](sp-home.md)
 + Release notes {#release-notes}
