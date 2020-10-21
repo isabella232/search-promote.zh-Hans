@@ -1,9 +1,16 @@
 ---
-source-git-commit: aa5364886b5e09fdbf5840c058ac3f3f364344ab
+source-git-commit: 2c0ca6307586f4b63599856bc20aee196cb8b98f
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '509'
+ht-degree: 72%
 
 ---
 # Contribute文章for Search &amp; Promote
+
+| EXL-PR | EXL | 预览 | 激活 | 已发布 | 帮助 |
+|--- |--- |--- |--- |--- |--- |
+| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/search-promote.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/search-promote/using/sp-home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 我们欢迎来自社区成员以及文档团队以外的 Adobe 员工投稿。
 
@@ -13,7 +20,7 @@ translation-type: tm+mt
 
 ## 关于您对 Adobe 内容的供稿
 
-请参阅 [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
+请参阅 [Adobe文档参与者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
 
 您的参与方式取决于您的身份以及您所提出更改的类型：
 
@@ -48,7 +55,7 @@ See the [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributo
 此存储库中的所有文章都使用 GitHub 风格的 Markdown。如果您不了解 Markdown，请参阅：
 
 * [标记基础知识](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [可打印的标记下拉式清单](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [可打印的标记清单](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 标签
 
