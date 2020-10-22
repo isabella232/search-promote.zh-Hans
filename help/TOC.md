@@ -1,11 +1,11 @@
 ---
 cloud: experience-cloud
-product: Adobe Search&amp;Promote
+product: adobe search and promote
 audience: end-user
 user-guide-title: AdobeSearch&amp；提升指南
 breadcrumb-title: AdobeSearch&amp；提升指南
 translation-type: tm+mt
-source-git-commit: e211b8d01a8dea5b4232f3daeb430cb7ffe7ea76
+source-git-commit: c0848ff3b991e5e3c57a3fb480b9ccb3804b7fc9
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 11%
