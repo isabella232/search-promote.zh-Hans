@@ -1,18 +1,21 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Search&amp;Promote 8.9.1发行说明(2012/08/16)
+seo-title: Search&amp;Promote 8.9.1发行说明(08/16/2012)
 solution: Target
-title: Search&amp;Promote 8.9.1发行说明(2012/08/16)
+title: Search&amp;Promote 8.9.1发行说明(08/16/2012)
 topic: Release Notes,Site search and merchandising
 uuid: 6f3284ed-660f-477f-a863-b961b185eaf3
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 72%
 
 ---
 
 
-# Search&amp;Promote 8.9.1 Release Notes (08/16/2012){#search-promote-release-notes}
+# Search&amp;Promote8.9.1发行说明(08/16/2012){#search-promote-release-notes}
 
 **修复和增强功能**
 
@@ -21,10 +24,10 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * 修复了可添加空行自动完成单词列表的错误。
 * 添加了对不区分大小写的 Facet 排序的支持。
 * 添加了用于告知用户创建安全性强的 [!DNL Adobe Search&Promote] 帐户密码的建议消息。
-* 在的选 [!DNL SSO-Login-Only] 项卡中 [!DNL Support] 添加了选项 [!DNL Member Center]。
+* 在[!DNL Member Center]的[!DNL Support]选项卡中添加了[!DNL SSO-Login-Only]选项。
 
 * 修复了可挂起搜索爬网的脚本过滤中的错误。
-* 修复了右键单击然后单击时不会发生任 [!DNL Banner]何情况的错误 [!DNL Select Different Banner from visual rule builder]。
+* 修复了右键单击[!DNL Banner]然后单击[!DNL Select Different Banner from visual rule builder]时不会发生任何情况的错误。
 
 * 修复了实时推送暂存业务规则时出现的多个问题。
 * 修复了无法搜索横幅标记的错误。
