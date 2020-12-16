@@ -20,15 +20,15 @@ ht-degree: 1%
 
 使用脚本索引，您无需登录即可编写、更新和维护增量索引选项。 搜索自动机从服务器上托管的文本文件读取说明。
 
-## 使用脚本索引 {#concept_34F58D551BC04BFB8ADC294B9DA9199D}
+## 使用脚本索引{#concept_34F58D551BC04BFB8ADC294B9DA9199D}
 
-## 关于配置脚本增量索引 {#section_161D254065E143F3A39F3FC09C400090}
+## 关于配置脚本增量索引{#section_161D254065E143F3A39F3FC09C400090}
 
 要使用脚本索引，请使用“脚本的增量索引配置”页指定位于服务器上的脚本文件（纯文本文件）的URL。 例如，`https://www.mysite.com/indexlist.txt`。在站点发生变化时，您可以手动或自动向文本文件添加命令块（新闻源、股票报价机或其他更改过的文件中的信息到来会触发脚本）。
 
-当脚本的增量索引开始时，搜索自动机读取文本文件并运行在该文件中找到的新命令。 默认情况下，搜索自动机只处理新命令，这些命令由文件日期决定。 除非您 **[!UICONTROL Clear Date]** 在配置“脚本索引”时进行检查，否则搜索自动机将“记住”最近处理的块的日期说明符。
+当脚本的增量索引开始时，搜索自动机读取文本文件并运行在该文件中找到的新命令。 默认情况下，搜索自动机只处理新命令，这些命令由文件日期决定。 除非在配置“脚本索引”时检查&#x200B;**[!UICONTROL Clear Date]**，否则搜索自动机“记住”最近处理的块的日期说明符。
 
-## 关于脚本文件 {#section_B312E40539F44C6583B4F9637D428E19}
+## 关于脚本文件{#section_B312E40539F44C6583B4F9637D428E19}
 
 您在URL中指定的脚本文件是位于您服务器上的纯文本文件。 您可以对行尾序列使用回车和／或行源。 空行包含零个或多个空格字符，后跟行尾序列。 所有命令均不区分大小写。
 
@@ -50,16 +50,16 @@ ht-degree: 1%
    <td colname="col1"> <p>date-command </p> </td> 
    <td colname="col2"> <p>每个块的第一行开始有两个日期命令之一： </p> <p> 
      <ul id="ul_9C1B229B7F1846C490B853FC34989E77"> 
-      <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> 日期 </span> <p>使用“日期”命令指示日期说明符将由日、日、时和时区组成。 </p> </li> 
-      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> 秒数 </span> <p>使用 <span class="codeph"> 秒 </span> 表示日期说明符将包含一个时间（以纪元秒为单位）（例如，784111777）。 使用 <span class="codeph"> 秒 </span>时，确保块之间的秒数增加。 </p> </li> 
+      <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> 日期  </span> <p>使用“日期”命令指示日期说明符将由日、日、时和时区组成。 </p> </li> 
+      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> 秒数 </span> <p>使用<span class="codeph">秒</span>指示日期说明符将包含一个时间（以纪元秒为单位）（例如，784111777）。 使用<span class="codeph">秒</span>时，确保块之间的秒数增加。 </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>date-specifier </p> </td> 
-   <td colname="col2"> <p>日 <span class="codeph"> 期说明符命 </span> 令通常记录将块信息添加到文件的顺序日期和时间（date命令）或时间（以纪元秒为单位）。 例如： </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
+   <td colname="col2"> <p><span class="codeph">日期说明符</span>命令通常记录将块信息添加到文件的顺序日期和时间（date命令）或时间（以纪元秒为单位）。 例如： </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
       date&nbsp;Sunday,&nbsp;06-Nov-94&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.0&nbsp;style) 
       date&nbsp;Sun&nbsp;Nov&nbsp;6&nbsp;08:49:37&nbsp;1994&nbsp;(Unix&nbsp;asctime()&nbsp;date&nbsp;style) 
-      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>使用HTTP 1.1样式时，所有低于10号的序号日期都需要前导零。 例如，11月6日是11月06日，而不是11月6日。 </p> <p>搜索自动机“记住”最近处理的块的日期说明符，并仅索引其认为“较新”的信息。 (实时对搜索机器人并不重要。 相反，与其他先前处理的时间相比，时间才是重要的。) </p> <p>例如，搜索机器人在读取日期说明符为晚上10:00的块后，不会读取记录晚上10:00之前时间的任何块，而不管索引操作何时运行。 在最坏的情况下，您可能会错误地在日期说明符中输入年份“2040”而不是“2004”。 在这种情况下，搜索机器人在下一个索引操作期间对2040块进行索引，然后拒绝读取任何其他信息块（除非有一个后日期2040）。 如果出现这种情况，请从文本文件中删除所有以前处理过的块，单 <span class="uicontrol"> 击“清除日 </span>期”，然后将其实时推送。 </p> </td> 
+      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>使用HTTP 1.1样式时，所有低于10号的序号日期都需要前导零。 例如，11月6日是11月06日，而不是11月6日。 </p> <p>搜索自动机“记住”最近处理的块的日期说明符，并仅索引其认为“较新”的信息。 (实时对搜索机器人并不重要。 相反，与其他先前处理的时间相比，时间才是重要的。) </p> <p>例如，搜索机器人在读取日期说明符为晚上10:00的块后，不会读取记录晚上10:00之前时间的任何块，而不管索引操作何时运行。 在最坏的情况下，您可能会错误地在日期说明符中输入年份“2040”而不是“2004”。 在这种情况下，搜索机器人在下一个索引操作期间对2040块进行索引，然后拒绝读取任何其他信息块（除非有一个后日期2040）。 如果出现这种情况，请从文本文件中删除所有以前处理过的块，单击<span class="uicontrol">清除日期</span>，然后将其实时推送。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>注释行 </p> </td> 
@@ -73,19 +73,23 @@ ht-degree: 1%
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
        <code>
          add 
-       </code> <p>与URL配合使用。 搜索自动机仅对自上次索引操作以来已更改的指定URL建立索引。 此外，搜索自动机会遵循包含在指定文档中的链接，并仅对已更改的文档进行索引。 </p> <p>您可以像以下示例 <code>
+       </code> <p>与URL配合使用。 搜索自动机仅对自上次索引操作以来已更改的指定URL建立索引。 此外，搜索自动机会遵循包含在指定文档中的链接，并仅对已更改的文档进行索引。 </p> <p>您可以使用 
+        <code>
           nofollow 
-        </code> 中 <code>
+        </code>或 
+        <code>
           noindex 
-        </code> 那样将URL与关键字一起使用： </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code>关键字，如下例所示： </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
        <code>
          update 
-       </code> <p>与URL掩码一起使用。 搜索自动机会查找并更新与指定URL掩码匹配的所有文档。 </p> <p>您可以像以下示例 <code>
+       </code> <p>与URL掩码一起使用。 搜索自动机会查找并更新与指定URL掩码匹配的所有文档。 </p> <p>您可以使用 
+        <code>
           nofollow 
-        </code> 中 <code>
+        </code>或 
+        <code>
           noindex 
-        </code> 那样将URL与关键字一起使用： </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code>关键字，如下例所示： </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
        <code>
          include 
@@ -104,33 +108,41 @@ ht-degree: 1%
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
           <code>
             include-days NNN 
-          </code> <p>搜索自动机为与指定URL掩码匹配且版本为NNN（天数）或更高的所有文档建立索引。 </p> <p>您可以使用关键字、和/ <code>
+          </code> <p>搜索自动机为与指定URL掩码匹配且版本为NNN（天数）或更高的所有文档建立索引。 </p> <p>您可以使用关键字遵循URL掩码 
+           <code>
              nofollow 
-           </code>或 <code>
+           </code>, 
+           <code>
              noindex 
-           </code>URL掩码 <code>
+           </code>和／或 
+           <code>
              server-date 
            </code>。 </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
           <code>
             include-date YYYY-MM-DD 
-          </code> <p> 搜索自动机对与指定URL掩码匹配且旧文档或旧日期YYYY-MM-DD的所有进行索引，其中“YYYY”是4位数年份，“MM”是1位或2位月份(1-12),“DD”是1位或2位日期(1-31)。 </p> <p>您可以使用关键字、和/ <code>
+          </code> <p> 搜索自动机对与指定URL掩码匹配且旧文档或旧日期YYYY-MM-DD的所有进行索引，其中“YYYY”是4位数年份，“MM”是1位或2位月份(1-12),“DD”是1位或2位日期(1-31)。 </p> <p>您可以使用关键字遵循URL掩码 
+           <code>
              nofollow 
-           </code>或 <code>
+           </code>, 
+           <code>
              noindex 
-           </code>URL掩码 <code>
+           </code>和／或 
+           <code>
              server-date 
            </code>。 </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
           <code>
             exclude-days NNN 
-          </code> <p> 禁用所有与指定URL掩码匹配且为NN天或更旧文档的索引。 </p> <p>您可以使用关键字跟随URL掩码 <code>
+          </code> <p> 禁用所有与指定URL掩码匹配且为NN天或更旧文档的索引。 </p> <p>您可以使用关键字跟随URL掩码 
+           <code>
              server-date 
            </code>。 </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
           <code>
             exclude-date YYYY-MM-DD 
-          </code> <p>禁用所有与指定URL掩码匹配且旧文档或旧日期YYYY-MM-DD数据相同的索引。 </p> <p>您可以使用关键字跟随URL掩码 <code>
+          </code> <p>禁用所有与指定URL掩码匹配且旧文档或旧日期YYYY-MM-DD数据相同的索引。 </p> <p>您可以使用关键字跟随URL掩码 
+           <code>
              server-date 
            </code>。 </p> </li> 
         </ul> </p> </li> 
@@ -147,25 +159,25 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-另请参阅 [关于URL蒙版](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)。
+另请参阅[关于URL掩码](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164)。
 
-## 脚本文件示例 {#section_9F580F20E7214751B157A28B392BD64E}
+## 脚本文件示例{#section_9F580F20E7214751B157A28B392BD64E}
 
 在下面的脚本文件示例中，如果日期说明符过后是最近处理的块的日期说明符，则搜索机器人将处理这些块。 如果是这样，则执行以下索引操作：
 
-* 从索 `y2k-problems.html` 引中删除。
-* 添加 `no-y2k-problems.html` 到搜索索引中，并且不关注其中的任何链接 `no-y2k-problems.html`。
+* 从索引中删除`y2k-problems.html`。
+* 将`no-y2k-problems.html`添加到搜索索引中，并且不跟踪`no-y2k-problems.html`的任何链接。
 
-* 搜索时，从搜索索引中 `housewares.htm` 排 `lightfixtures.htm`除与l匹配的URL。
+* 搜索时，从搜索索引中排除与`housewares.htm`和`lightfixtures.htm`l匹配的URL。
 
-* 在下包含所有其他目录和文档 `www.mydomain.com`。
-* 更新和目录中的所 `products` 有文档 `information` ，搜索和索引自上次索引操作后更改的所有子链接。
+* 包括`www.mydomain.com`下的所有其他目录和文档。
+* 更新`products`和`information`目录内的所有文档，搜索并索引自上次索引操作以来更改的所有子链接。
 
-* 搜索时，如果URL的日 `archive` 期在1999年1月1日或之前，请排除网站部分的URL。
-* 排除与搜索 `housewares.html` 索引 `lightfixtures.html` 匹配的URL。
+* 搜索时，如果URL的日期在1999年1月1日或之前，请排除网站`archive`部分的URL。
+* 从搜索索引中排除与`housewares.html`和`lightfixtures.html`匹配的URL。
 
-* 为目录中的文 `help` 件编制索引，但不从这些文件爬网或索引任何链接。
-* 爬网并索引遇到的任何其他文件 `www.mydomain.com`。
+* 为`help`目录中的文件编制索引，但不要从这些文件爬网或索引任何链接。
+* 爬网并索引为`www.mydomain.com`遇到的任何其他文件。
 
 ```
 # Start of file. 
@@ -192,41 +204,41 @@ update regexp ^https://www\.mydomain\.com/information/.*$
 # End of file.
 ```
 
-## 配置脚本增量索引 {#task_05AE040FE75E40FFAA5E10B6B6D4D255}
+## 配置脚本增量索引{#task_05AE040FE75E40FFAA5E10B6B6D4D255}
 
 您可以指定已创建的脚本，该脚本可以写入、更新和维护增量索引，无需登录。 搜索自动机从服务器上托管的文本文件中读取指令以执行增量索引。
 
 **配置脚本增量索引**
 
-1. 在产品菜单上，单击 **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Configuration]**。
-1. 在页 **[!UICONTROL Scripted Incremental Index Configuration]** 面的中， **[!UICONTROL Script File URL]**&#x200B;输入位于您服务器上的文本文件脚本的URL。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Configuration]**。
+1. 在&#x200B;**[!UICONTROL Scripted Incremental Index Configuration]**&#x200B;页面的&#x200B;**[!UICONTROL Script File URL]**&#x200B;中，输入位于服务器上的文本文件脚本的URL。
 
-   请参 [阅关于脚本索引](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D)。
-1. （可选） **[!UICONTROL Clear Date]** 检查您是否希望搜索自动机“记住”最近处理的块的日期说明符。
+   请参阅[关于脚本索引](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D)。
+1. （可选）如果不希望搜索自动机“记住”最近处理的块的日期说明符，请检查&#x200B;**[!UICONTROL Clear Date]**。
 
-   默认情况下，搜索自动机只处理文本文件中找到的新命令块，这由文件的日期决定。 如果您不希望使用默认值，请选中 **[!UICONTROL Clear Date]**。
+   默认情况下，搜索自动机只处理文本文件中找到的新命令块，这由文件的日期决定。 如果不希望使用默认值，请检查&#x200B;**[!UICONTROL Clear Date]**。
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列操作之一：
 
-   * 单击 **[!UICONTROL History]** 可还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
 
-      请参 [阅使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
+      请参阅[使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
    * 单击 **[!UICONTROL Live]**.
 
-      请参阅 [查看实时设置](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
+      请参阅[查看实时设置](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
 
    * 单击 **[!UICONTROL Push Live]**.
 
-      请参 [阅实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
+      请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-## 为实时网站设置脚本的增量索引计划 {#task_B3A87AC4AC784507859C23B9062BA11C}
+## 为实时网站{#task_B3A87AC4AC784507859C23B9062BA11C}设置脚本式增量索引计划
 
 您可以计划脚本式增量索引创建，以在一天中定期进行。
 
 您选择的基本时间根据在“帐户设置”中配置的时区是本地的。
 
-请参 [阅配置帐户设置](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)。
+请参阅[配置帐户设置](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)。
 
 Web服务器通常安排在半夜停机进行维护。 如果服务器在计划的索引时间内关闭，则索引编制过程将失败。 请确保选择一天中有Web服务器可用的时间。
 
@@ -234,18 +246,18 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
 
 **为实时网站设置脚本的增量索引计划**
 
-1. 在产品菜单上，单击 **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**。
-1. 在页 **[!UICONTROL Scripted Incremental Index Schedule]** 面的下拉列表 **[!UICONTROL Read the Scripted Incrementally Indexing File]** 中，选择您希望脚本的增量索引文本文件以小时或分钟为单位运行的频率。
-1. 在下 **[!UICONTROL Base Time]** 拉列表中，选择要重新生成新脚本增量索引的开始时间。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**。
+1. 在&#x200B;**[!UICONTROL Scripted Incremental Index Schedule]**&#x200B;页面的&#x200B;**[!UICONTROL Read the Scripted Incrementally Indexing File]**&#x200B;下拉列表中，选择希望脚本增量索引文本文件运行的频率（以小时或分钟为单位）。
+1. 在&#x200B;**[!UICONTROL Base Time]**&#x200B;下拉列表中，选择要重新生成新脚本增量索引的开始时间。
 1. 单击 **[!UICONTROL Save Changes]**.
 
-## 运行实时或分阶段网站的脚本增量索引 {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
+## 运行实时或分阶段网站{#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}的脚本增量索引
 
 您可以使用脚本增量索引为实时网站或分阶段网站的“片段”（如频繁更改的页面的集合）编制索引，所有这些都无需登录。
 
 要使用此功能，请确保已配置脚本的增量索引文本文件。
 
-请参 [阅配置脚本的增量索引](../c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255)。
+请参阅[配置脚本增量索引](../c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255)。
 
 **运行实时网站或分阶段网站的脚本增量索引**
 
@@ -255,9 +267,9 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
    * 单击 **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Staged Index]**.
 
 1. 单击 **[!UICONTROL Scripted Index Now]**.
-1. （可选）如果出现索引错误，请单 **[!UICONTROL View Errors]** 击以视图关联的日志。
+1. （可选）如果出现索引错误，请单击&#x200B;**[!UICONTROL View Errors]**&#x200B;以视图相关日志。
 
-## 查看实时网站或分阶段网站的脚本增量索引日志 {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
+## 查看实时或分阶段网站{#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}的脚本增量索引日志
 
 当实时完整脚本索引或分阶段完整脚本索引完成时，您可以视图其关联日志以排除出现的任何错误。
 
@@ -273,7 +285,7 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
 
 1. 在日志页面的顶部或底部，执行下列任一操作：
 
-   * 使用导航选 **[!UICONTROL First]**&#x200B;项 **[!UICONTROL Prev]**、 **[!UICONTROL Next]**、 **[!UICONTROL Last]**&#x200B;或 **[!UICONTROL Go to line]** 在日志中移动。
+   * 使用导航选项&#x200B;**[!UICONTROL First]**、**[!UICONTROL Prev]**、**[!UICONTROL Next]**、**[!UICONTROL Last]**&#x200B;或&#x200B;**[!UICONTROL Go to line]**&#x200B;在日志中移动。
 
-   * 使用显示选 **[!UICONTROL Errors only]**&#x200B;项 **[!UICONTROL Wrap line]**&#x200B;或 **[!UICONTROL Show]** 优化您看到的内容。
+   * 使用显示选项&#x200B;**[!UICONTROL Errors only]**、**[!UICONTROL Wrap line]**&#x200B;或&#x200B;**[!UICONTROL Show]**&#x200B;细化您看到的内容。
 
