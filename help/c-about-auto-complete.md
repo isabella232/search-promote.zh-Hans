@@ -20,11 +20,11 @@ ht-degree: 1%
 
 您可以配置“自动完成”的各个区域，以控制生成启用自动完成的搜索表单以及文件autocomplete_data.js，它作为启用自动完成的搜索表单的一部分包含在内。
 
-## 关于自动完成 {#concept_093A9CD754864BA79B456FE4BEB64578}
+## 关于自动完成{#concept_093A9CD754864BA79B456FE4BEB64578}
 
-每次“自 [!DNL autocomplete_data.js] 动完成设置”页面已保存更改时，都会重新生成文件并将其发布到搜索内容网络。
+每次“自动完成设置”页面已保存更改时，文件[!DNL autocomplete_data.js]将重新生成并发布到搜索内容网络。
 
-## 配置自动完成 {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
+## 配置自动完成{#task_F491F2BFC4D24A61BBDC48B9059C11BB}
 
 您可以配置和设置选项，以控制生成启用自动完成的搜索表单和文件。
 
@@ -36,18 +36,18 @@ t_configuring_auto-complete.xml
 
 配置自动完成后，可以视图生成的HTML源以供审阅。 HTML源是您复制并粘贴到网站页面中的内容。
 
-请参 [阅预览搜索表单在您的表单上的外观……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
+请参阅[预览搜索表单在您的表单上的显示效果……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714)。
 
-请参 [阅配置自动完成Word列表](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)。
+请参阅[配置自动完成Word列表](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4)。
 
-请参 [阅配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
+请参阅[配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
 
 **配置自动完成**
 
-1. 在产品菜单上，单击 **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Setup]**。
-1. 在页 [!DNL Auto-Complete Setup] 面上，设置所需的选项。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Setup]**。
+1. 在[!DNL Auto-Complete Setup]页面上，设置所需的选项。
 
-   另请参 [阅预览搜索表单在您的表单上的外观……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
+   另请参阅[预览搜索表单在您的表单上的显示效果……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714)。
 
    <table> 
     <thead> 
@@ -71,15 +71,15 @@ t_configuring_auto-complete.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>表单名称 </p> </td> 
-      <td colname="col2"> <p>指定启用自动完成的搜索表单的“表单”标记的“name”属性。 例如： </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com"目标="_blank"&gt; </span> </p> <p>其 <span class="filepath"> 中 </span> SiteSearch是表单标记的名称属性。 </p> </td> 
+      <td colname="col2"> <p>指定启用自动完成的搜索表单的“表单”标记的“name”属性。 例如： </p> <p> <span class="filepath"> &lt;form name="SiteSearch" method="get" action="https://sp1004337c.guided.t1.atomz.com" target="_blank"&gt; </span> </p> <p>其中<span class="filepath"> SiteSearch </span>是表单标记的name属性。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Div标签ID </p> </td> 
-      <td colname="col2"> <p>指定启用自动完成的搜索表单的“div”标记的ID属性。 例如： </p> <p> <span class="filepath"> &lt;div id="autocomplete"&gt; </span> </p> <p>其中 <span class="filepath"> 自 </span> 动完成是div标签的属性。 </p> </td> 
+      <td colname="col2"> <p>指定启用自动完成的搜索表单的“div”标记的ID属性。 例如： </p> <p> <span class="filepath"> &lt;div id="autocomplete"&gt; </span> </p> <p>其中<span class="filepath"> autocomplete </span>是div标签的属性。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>输入标记ID </p> </td> 
-      <td colname="col2"> <p>指定启用自动完成的搜索表单的“输入”标记的ID属性。 例如： </p> <p> <span class="filepath"> &lt;input type="text" id="q" name="q" /&gt; </span> </p> <p>其中 <span class="filepath"> q </span> 是输入标记的id属性。 </p> </td> 
+      <td colname="col2"> <p>指定启用自动完成的搜索表单的“输入”标记的ID属性。 例如： </p> <p> <span class="filepath"> &lt;input type="text" id="q" name="q" /&gt; </span> </p> <p>其中<span class="filepath"> q </span>是输入标记的id属性。 </p> </td> 
       </tr> 
       <tr>
       <td colname="col1"> <p>显示阴影 </p> </td>
@@ -99,19 +99,19 @@ t_configuring_auto-complete.xml
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列操作之一：
 
-   * 单击 **[!UICONTROL History]** 可还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
 
-      请参 [阅使用历史记录选项](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
+      请参阅[使用历史记录选项](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
    * 单击 **[!UICONTROL Live]**.
 
-      请参阅 [查看实时设置](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
+      请参阅[查看实时设置](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
 
    * 单击 **[!UICONTROL Push Live]**.
 
-      请参 [阅实时推送舞台设置](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
+      请参阅[实时推送舞台设置](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-## 配置自动完成Word列表 {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## 配置自动完成Word列表{#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 配置自动完成作为建议显示给客户的词和短语的列表。
 
@@ -121,16 +121,16 @@ t_configuring_auto-complete_word_list.xml
 
  -->
 
-请参 [阅配置自动完成](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)。
+请参阅[配置自动完成](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)。
 
-请参 [阅配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
+请参阅[配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
 
 **配置自动完成Word列表**
 
-1. 在产品菜单上，单击 **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]**。
-1. 在页 [!DNL Auto-Complete Word List] 面上，设置所需的选项。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete Word List]**。
+1. 在[!DNL Auto-Complete Word List]页面上，设置所需的选项。
 
-   请参 [阅预览搜索表单在您的表单上的外观……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
+   请参阅[预览搜索表单在您的表单上的显示效果……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714)。
 
    <table> 
     <thead> 
@@ -158,19 +158,21 @@ t_configuring_auto-complete_word_list.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>添加这些单词和短语 </p> </td> 
-      <td colname="col2"> <p> 自动完成单词列表会填充此区域中列出的单词和短语。 </p> <p> 单 <span class="uicontrol"> 击编 </span> 辑以查看列表或向列表添加单词和短语。 完成后，单击“保 <span class="uicontrol"> 存更改 </span>”。 </p> </td> 
+      <td colname="col2"> <p> 自动完成单词列表会填充此区域中列出的单词和短语。 </p> <p> 单击<span class="uicontrol">编辑</span>查看列表或向列表添加单词和短语。 完成后，单击<span class="uicontrol">保存更改</span>。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>删除这些单词和短语 </p> </td> 
-      <td colname="col2"> <p> 此区域中的条目不会显示在自动完成单词列表中。 </p> <p> 单 <span class="uicontrol"> 击编 </span> 辑以查看列表或向列表添加单词和短语。 完成后，单击“保 <span class="uicontrol"> 存更改 </span>”。 </p> <p> 此列表中允许使用常规表达式。 要在此列表中指定常规表达式，请将线开始为 <code>regexp</code> 单个空格，后跟常规表达式。 单词列表中与常规表达式匹配的任何行都将被删除。 </p> <p> <b>重要说明</b>:仅当您以前在其他应用程序中使用过常规表达式时，才应使用它们。 </p> <p>请参阅 <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式 </a>。 </p> </td> 
+      <td colname="col2"> <p> 此区域中的条目不会显示在自动完成单词列表中。 </p> <p> 单击<span class="uicontrol">编辑</span>查看列表或向列表添加单词和短语。 完成后，单击<span class="uicontrol">保存更改</span>。 </p> <p> 此列表中允许使用常规表达式。 要在此列表中指定常规表达式，请将行开始为<code>regexp</code>，后跟一个空格，后跟常规表达式。 单词列表中与常规表达式匹配的任何行都将被删除。 </p> <p> <b>重要说明</b>:仅当您以前在其他应用程序中使用过常规表达式时，才应使用它们。 </p> <p>请参阅<a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local">常规表达式</a>。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>忽略大小写 </p> </td> 
-      <td colname="col2"> <p>自动完成单词重复中仅按大小写字母不同的列表项被删除；所有单词列表项都强制为小写。 </p> <p>如果希望自动完成建议显示为“大写字母”或“全部大写”，请在结果项的“ <code>
+      <td colname="col2"> <p>自动完成单词重复中仅按大小写字母不同的列表项被删除；所有单词列表项都强制为小写。 </p> <p>如果希望“自动完成”建议显示为“大写字母首字母”或“全部大写”，请添加 
+        <code>
           text-transform : capitalize; 
-        </code> /* <code>
+        </code>或 
+        自动完成CSS内容的<code>
           text-transform : uppercase; 
-        </code> 样式”下，将或CSS文本属性添加到自动完成CSS内容中。 </p> <p>请参 <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> 阅配置自动完成CSS </a>。 </p> </td> 
+        </code> CSS文本属性，位于结果项的“/*样式”下。 </p> <p>请参阅<a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local">配置自动完成CSS </a>。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>重新索引时更新 </p> </td> 
@@ -182,18 +184,18 @@ t_configuring_auto-complete_word_list.xml
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列任一操作：
 
-   * 单击 **[!UICONTROL History]** 可还原您所做的任何更改。
-   * 单 **[!UICONTROL Preview Word List]** 击以保存您所做的任何更改，然后打 [!DNL Auto-Complete Word List Preview] 开可在其中查看自动完成建议列表的页面。 使用页面顶部附近的导航选项来查看和细化显示的列表。 完成后，单击 **[!UICONTROL Close]** 以返回页 [!DNL Auto-Complete Word List] 面。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL Preview Word List]**&#x200B;以保存您所做的任何更改，然后打开[!DNL Auto-Complete Word List Preview]页面，在该页面中可以查看自动完成建议列表。 使用页面顶部附近的导航选项来查看和细化显示的列表。 完成后，单击&#x200B;**[!UICONTROL Close]**&#x200B;返回至[!DNL Auto-Complete Word List]页面。
 
-      请参 [阅使用历史记录选项](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
+      请参阅[使用历史记录选项](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
    * 单击 **[!UICONTROL Live]**.
 
-      请参阅 [查看实时设置](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
+      请参阅[查看实时设置](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
 
    * 单击 **[!UICONTROL Push Live]**.
 
-      请参 [阅实时推送舞台设置](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
+      请参阅[实时推送舞台设置](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
 ## 配置自动完成CSS {#task_EECE35DEB6C94F4A8A5B42B4DED76D96}
 
@@ -205,7 +207,7 @@ t_configuring_auto-complete_css.xml
 
  -->
 
-自动完成CSS控制其内容， [!DNL autocomplete_styles.css]该内容作为支持自动完成的搜索表单的一部分包含在内。 您在此处指定的CSS控制自动完成建议列表的可视演示。 有关可能的可视化演示构思的示例，请参阅以下内容：
+自动完成CSS控制[!DNL autocomplete_styles.css]的内容，该内容包含在已启用自动完成的搜索表单中。 您在此处指定的CSS控制自动完成建议列表的可视演示。 有关可能的可视化演示构思的示例，请参阅以下内容：
 
 [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html)。
 
@@ -215,32 +217,32 @@ t_configuring_auto-complete_css.xml
 
 配置完自动完成CSS后，您可以预览搜索表单，查看您指定的CSS在外观和布局中是否可接受。
 
-请参 [阅预览搜索表单在您的表单上的外观……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
+请参阅[预览搜索表单在您的表单上的显示效果……](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714)。
 
-**重要说明**:要应用自定义自动完成CSS，您需要从HTML代码中显示的第二行中删除注释标记。 然后，将同一行移动到包含搜索表单的页面的标题部分内。
+**重要说明**:要应用自定义自动完成CSS，您需要从HTML代码中显示的第二行中删除注释标记。然后，将同一行移动到包含搜索表单的页面的标题部分内。
 
-请 [参阅将搜索表单的HTML代码复制到……](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
+请参阅[将搜索表单的HTML代码复制到……](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7)。
 
 **配置自动完成CSS**
 
-1. 在产品菜单上，单击 **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete CSS]**。
-1. 在文 [!DNL Auto-Complete CSS] 本字段中，粘贴或键入要与自动完成建议列表关联的级联样式表信息。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Auto-Complete CSS]**。
+1. 在[!DNL Auto-Complete CSS]文本字段中，粘贴或键入要与自动完成建议列表关联的级联样式表信息。
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列任一操作：
 
-   * 单击 **[!UICONTROL History]** 可还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
 
-      请参 [阅使用历史记录选项](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
+      请参阅[使用历史记录选项](t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
    * 单击 **[!UICONTROL Live]**.
 
-      请参阅 [查看实时设置](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
+      请参阅[查看实时设置](c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
 
    * 单击 **[!UICONTROL Push Live]**.
 
-      请参 [阅实时推送舞台设置](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
+      请参阅[实时推送舞台设置](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-## 预览搜索表单在您的网站上的显示效果 {#task_437B35EFA5424603A08AF8E79E6B4714}
+## 预览搜索表单在网站{#task_437B35EFA5424603A08AF8E79E6B4714}中的显示方式
 
 根据“自动完成”和“自动完成CSS”的配置，如果要将HTML代码添加到网站，您可以预览搜索表单的显示方式。
 
@@ -250,28 +252,28 @@ t_previewing_the_search_form_as_it_would_appear_on_your_website.xml
 
  -->
 
-请参 [阅配置自动完成](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)。
+请参阅[配置自动完成](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)。
 
-请参 [阅配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
+请参阅[配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
 
-请 [参阅将搜索表单的HTML代码复制到……](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
+请参阅[将搜索表单的HTML代码复制到……](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7)。
 
-请参 [阅在搜索表单中使用集合](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3)。
+请参阅[在搜索表单中使用集合](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3)。
 
-请参 [阅将框架与表单一起使用](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5)。
+请参阅[使用带有表单的帧](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5)。
 
-请参 [阅示例高级搜索表单](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)。
+请参阅[高级搜索表单示例](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)。
 
-请参 [阅高级搜索表单HTML代码](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)。
+请参阅[高级搜索表单HTML代码](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)。
 
-请参阅 [高级搜索表单模板代码](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)。
+请参阅[高级搜索表单模板代码](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)。
 
 **预览搜索表单，使其像在您的网站上一样显示**
 
-1. 在产品菜单上，单击 **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**。
-1. （可选）单 **[!UICONTROL HTML code]** 击以查看复制并粘贴到网站页面中的HTML。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Search Form]**。
+1. （可选）单击&#x200B;**[!UICONTROL HTML code]**&#x200B;可查看复制并粘贴到网站页面中的HTML。
 
-## 将搜索表单的HTML代码复制到网站的页面 {#task_A3A01EA800F24C0AA33902387E0362C7}
+## 将搜索表单的HTML代码复制到网站的页面{#task_A3A01EA800F24C0AA33902387E0362C7}
 
 根据“自动完成”和“自动完成CSS”的配置，如果要将HTML代码添加到网站，您可以预览搜索表单的显示方式。
 
@@ -281,29 +283,29 @@ t_copying_the_html_code_of_the_search_form_into_the_pages_of_your_website.xml
 
  -->
 
-请参 [阅配置自动完成](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)。
+请参阅[配置自动完成](c-about-auto-complete.md#task_F491F2BFC4D24A61BBDC48B9059C11BB)。
 
-请参 [阅配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
+请参阅[配置自动完成CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)。
 
-请 [参阅将搜索表单的HTML代码复制到……](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
+请参阅[将搜索表单的HTML代码复制到……](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7)。
 
-请参 [阅在搜索表单中使用集合](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3)。
+请参阅[在搜索表单中使用集合](c-appendices/c-searchforms.md#reference_5A079AEEEFB84457892EF0870D0605C3)。
 
-请参 [阅将框架与表单一起使用](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5)。
+请参阅[使用带有表单的帧](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5)。
 
-请参 [阅示例高级搜索表单](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)。
+请参阅[高级搜索表单示例](c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A)。
 
-请参 [阅高级搜索表单HTML代码](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)。
+请参阅[高级搜索表单HTML代码](c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)。
 
-请参阅 [高级搜索表单模板代码](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)。
+请参阅[高级搜索表单模板代码](c-appendices/c-searchforms.md#reference_D762C22E754E462DBEECD88D2C3FA579)。
 
 **将搜索表单的HTML代码复制到网站的页面**
 
-1. 在产品菜单上，单击 **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**。
 
    >[!NOTE]
    >
-   >请勿更改表 `form name=` 单源中的值。
+   >请勿更改表单源中的`form name=`值。
 
 1. （可选）执行下列任一操作：
 
