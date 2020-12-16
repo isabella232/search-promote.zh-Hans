@@ -1,20 +1,23 @@
 ---
 description: 'null'
 seo-description: 'null'
-seo-title: Search&amp;Promote 8.9.3发行说明(2012/11/01)
+seo-title: Search&amp;Promote 8.9.3发行说明(11/01/2012)
 solution: Target
-title: Search&amp;Promote 8.9.3发行说明(2012/11/01)
+title: Search&amp;Promote 8.9.3发行说明(11/01/2012)
 topic: Release Notes,Site search and merchandising
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 81%
 
 ---
 
 
-# Search&amp;Promote 8.9.3 Release Notes (11/01/2012){#search-promote-release-notes}
+# Search&amp;Promote8.9.3发行说明(11/01/2012){#search-promote-release-notes}
 
-## Search&amp;Promote 8.9.3 Release Notes (11/01/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
+## Search&amp;Promote8.9.3发行说明(2012/11/01){#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
 
 <table> 
  <thead> 
@@ -52,10 +55,10 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 **修复**
 
-* Business rules worked inconsistently when there was a [!DNL Stage] index.
+* 当存在[!DNL Stage]索引时，业务规则工作不一致。
 * 自动规则排名现在可应用于封装的登陆页面。
 
-   请参阅添加排名规 [则中的选项表](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)。
+   请参阅[添加排名规则](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)中的选项表。
 
 * [!DNL promosearch.cgi] 不是退回促销。
 
