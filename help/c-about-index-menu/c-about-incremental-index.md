@@ -20,7 +20,7 @@ ht-degree: 1%
 
 您可以使用增量索引为实时网站或分阶段网站的“片段”（如频繁更改的页面集合）编制索引。
 
-## 使用增量索引 {#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
+## 使用增量索引{#concept_A7770F0552D14C47B3DDB65DB78FFFEE}
 
 增量索引只需几秒钟即可执行，对于需要数小时才能完成索引的大型网站非常有用。
 
@@ -30,14 +30,14 @@ ht-degree: 1%
 
 当新增索引为实时网站构建时，客户可以继续使用您的上次增量索引搜索您的站点。
 
-## 配置分阶段网站的增量索引 {#task_46A367B0786C4C90BFFA5D3F95FD86C0}
+## 配置分阶段网站{#task_46A367B0786C4C90BFFA5D3F95FD86C0}的增量索引
 
 您可以通过指定网站URL和URL蒙版来配置要包含在增量索引中的网站页面。
 
 **配置分阶段网站的增量索引**
 
-1. 在产品菜单上，单击 **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**。
-1. 在页 **[!UICONTROL Incremental Index Configuration]** 面上，使用各个字段指定要索引的页面。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**。
+1. 在&#x200B;**[!UICONTROL Incremental Index Configuration]**&#x200B;页面上，使用各种字段指定要索引的页面。
 
    <table> 
     <thead> 
@@ -57,25 +57,29 @@ ht-degree: 1%
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
           <code>
             noindex 
-          </code> <p>如果不想为页面上与指定URL匹配的文本编制索引，但想要遵循页面的链接，请在URL之后添加，如 <code>
+          </code> <p>如果不想为页面上与指定URL匹配的文本编制索引，但想要跟踪页面链接，请添加 
+            <code>
               noindex 
-            </code> 下例所示： </p> <p> 
+            </code>在URL之后，如下例所示： </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html noindex 
-            </code> </p> <p>请务必从URL <code>
+            </code> </p> <p>确保您分开 
+            <code>
               noindex 
-            </code> 中分离一个空格；逗号不是有效的分隔符。 </p> </li> 
+            </code>，来自带空格的URL;逗号不是有效的分隔符。 </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
           <code>
             nofollow 
-          </code> <p>如果要为页面上与指定URL匹配的文本编制索引，但不想跟随页面的链接，请在URL后添加 <code>
+          </code> <p>如果要为页面上与指定URL匹配的文本编制索引，但不想跟随页面链接，请添加 
+            <code>
               nofollow 
-            </code> ，如以下示例所示： </p> <p> 
+            </code>在URL之后，如下例所示： </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </code> </p> <p> 请务必从URL <code>
+            </code> </p> <p> 确保您分开 
+            <code>
               nofollow 
-            </code> 中分离一个空格；逗号不是有效的分隔符。 </p> </li> 
+            </code>，来自带空格的URL;逗号不是有效的分隔符。 </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -86,11 +90,13 @@ ht-degree: 1%
       </code> </p> <p>您还可以使用常规表达式，如以下示例所示： </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
-      </code> </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式</a>。 </p> <p>您还可以使用关键字 <code>
+      </code> </p> <p>请参阅<a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local">常规表达式</a>。 </p> <p>您还可以使用关键字 
+      <code>
         nofollow 
-      </code> , <code>
+      </code>和 
+      <code>
         noindex 
-      </code> 如上面添加 <span class="uicontrol"> 或更新URL中 </span> 所述。 </p> </td> 
+      </code>，如上面的<span class="uicontrol">添加或更新URL</span>中所述。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>包括和排除URL蒙版 </p> </td> 
@@ -100,15 +106,19 @@ ht-degree: 1%
       </code> </p> <p> 
       <code>
         exclude https://www.mydomain.com/products/ 
-      </code> </p> <p>索引页 <code>
+      </code> </p> <p>索引页面 
+      <code>
         lightbulbs1.html 
-      </code> 和 <code>
+      </code>和 
+      <code>
         lightbulbs2.html 
-      </code>。 但是，它不会为products目录下列出的任何其他页面编制索引。 </p> <p>首先显示的URL掩码始终优先于稍后在列表中显示的URL掩码。 此外，如果搜索自动机遇到与包括蒙版和排除蒙版均匹配的文档，则首先列出的蒙版优先。 </p> <p>您还可以使用关键字 <code>
+      </code>。 但是，它不会为products目录下列出的任何其他页面编制索引。 </p> <p>首先显示的URL掩码始终优先于稍后在列表中显示的URL掩码。 此外，如果搜索自动机遇到与包括蒙版和排除蒙版均匹配的文档，则首先列出的蒙版优先。 </p> <p>您还可以使用关键字 
+      <code>
         nofollow 
-      </code> , <code>
+      </code>和 
+      <code>
         noindex 
-      </code> 如上面添加 <span class="uicontrol"> 或更新URL中 </span> 所述。 </p> <p>请参 <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> 阅关于URL蒙版</a>。 </p> </td> 
+      </code>，如上面的<span class="uicontrol">添加或更新URL</span>中所述。 </p> <p>请参阅<a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local">关于URL掩码</a>。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>包括和排除日期蒙版 </p> </td> 
@@ -141,7 +151,8 @@ ht-degree: 1%
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
       <code>
         exclude-days NNN 
-      </code> <p>禁用所有与指定URL掩码匹配且版本为NNN（天数）或更高的文档的索引。 </p> <p>或者，您也可以按关键字使用URL掩码 <code>
+      </code> <p>禁用所有与指定URL掩码匹配且版本为NNN（天数）或更高的文档的索引。 </p> <p>（可选）您可以按关键字遵循URL掩码 
+        <code>
           server-date 
         </code>。 </p> <p>以下蒙版示例从索引中排除所有90天或更旧的PDF文件： </p> <p> 
         <code>
@@ -150,13 +161,14 @@ ht-degree: 1%
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
       <code>
         exclude-date YYYY-MM-DD 
-      </code> <p>禁用与指定URL掩码匹配且旧文档或旧数据早于YYYY-MM-DD的所有索引。 </p> <p>或者，您也可以按关键字使用URL掩码 <code>
+      </code> <p>禁用与指定URL掩码匹配且旧文档或旧数据早于YYYY-MM-DD的所有索引。 </p> <p>（可选）您可以按关键字遵循URL掩码 
+        <code>
           server-date 
         </code>。 </p> <p>以下掩码示例不包括2004年4月23日或之前/archive/文件夹中的所有文档: </p> <p> 
         <code>
           exclude-date 2004-04-23 https://www.mydomain.com/archive/ 
         </code> </p> </li> 
-      </ul> </p> <p>请参阅 <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> 关于日期蒙版</a>。 </p> </td> 
+      </ul> </p> <p>请参阅<a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local">关于日期掩码</a>。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>删除URL </p> </td> 
@@ -170,7 +182,7 @@ ht-degree: 1%
       </code> </p> <p>您还可以使用常规表达式，如以下示例所示： </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/199[567]/.*$ 
-      </code> </p> <p>请参阅 <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> 常规表达式</a>。 </p> </td> 
+      </code> </p> <p>请参阅<a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local">常规表达式</a>。 </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -178,25 +190,25 @@ ht-degree: 1%
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列操作之一：
 
-   * 单击 **[!UICONTROL History]** 可还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
 
-      请参 [阅使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
+      请参阅[使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
    * 单击 **[!UICONTROL Live]**.
 
-      请参阅 [查看实时设置](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
+      请参阅[查看实时设置](../c-about-staging.md#task_401A0EBDB5DB4D4CA933CBA7BECDC10F)。
 
    * 单击 **[!UICONTROL Push Live]**.
 
-      请参 [阅实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
+      请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
 
-## 为实时网站设置增量索引计划 {#task_2A46BA189ECC4317A9D5C6E99A336F33}
+## 为实时网站{#task_2A46BA189ECC4317A9D5C6E99A336F33}设置增量索引计划
 
 您可以选择增量索引频率以及用于爬网和更新增量索引的基本时间。
 
 您选择的时间根据在“帐户设置”中配置的时区为本地时间。
 
-请参 [阅配置帐户设置](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)。
+请参阅[配置帐户设置](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9)。
 
 Web服务器通常安排在半夜停机进行维护。 如果服务器在计划的索引时间内关闭，则索引编制过程将失败。 请确保选择一天中有Web服务器可用的时间。
 
@@ -204,12 +216,12 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
 
 **为实时网站设置增量索引计划**
 
-1. 在产品菜单上，单击 **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**。
-1. 在页面 **[!UICONTROL Incremental Index Schedule]** 的下拉列表 **[!UICONTROL Incrementally Index]** 中，以小时或分钟为单位选择索引频率。
-1. 在下 **[!UICONTROL Base Time]** 拉列表中，选择要重新生成新增索引的开始时间。
+1. 在产品菜单中，单击&#x200B;**[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**。
+1. 在&#x200B;**[!UICONTROL Incremental Index Schedule]**&#x200B;页面的&#x200B;**[!UICONTROL Incrementally Index]**&#x200B;下拉列表中，选择索引频率（以小时或分钟为单位）。
+1. 在&#x200B;**[!UICONTROL Base Time]**&#x200B;下拉列表中，选择要重新生成新增量索引的开始时间。
 1. 单击 **[!UICONTROL Save Changes]**.
 
-## 运行实时网站或分阶段网站的增量索引 {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
+## 运行实时或分阶段网站{#task_9BFB6157F3884B2FAECB7E0E9CA318CB}的增量索引
 
 您可以使用增量索引为实时网站或分阶段网站的“片段”（如频繁更改的页面集合）编制索引。
 
@@ -222,9 +234,9 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
    * 单击 **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Staged Index]**.
 
 1. 单击 **[!UICONTROL Incremental Index Now]**.
-1. （可选）如果出现索引错误，请单 **[!UICONTROL View Errors]** 击以视图关联的日志。
+1. （可选）如果出现索引错误，请单击&#x200B;**[!UICONTROL View Errors]**&#x200B;以视图相关日志。
 
-## 查看实时网站或分阶段网站的增量索引日志 {#task_E668E1F1240C476DAA1CA783DC728232}
+## 查看实时网站或分阶段网站{#task_E668E1F1240C476DAA1CA783DC728232}的增量索引日志
 
 当实时增量索引或分阶段增量索引完成时，您可以视图其关联日志以排除出现的任何错误。
 
@@ -241,7 +253,7 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
 
 1. 在日志页面的顶部或底部，执行下列任一操作：
 
-   * 使用导航选 **[!UICONTROL First]**&#x200B;项 **[!UICONTROL Prev]**、 **[!UICONTROL Next]**、 **[!UICONTROL Last]**&#x200B;或 **[!UICONTROL Go to line]** 在日志中移动。
+   * 使用导航选项&#x200B;**[!UICONTROL First]**、**[!UICONTROL Prev]**、**[!UICONTROL Next]**、**[!UICONTROL Last]**&#x200B;或&#x200B;**[!UICONTROL Go to line]**&#x200B;在日志中移动。
 
-   * 使用显示选 **[!UICONTROL Errors only]**&#x200B;项 **[!UICONTROL Wrap line]**&#x200B;或 **[!UICONTROL Show]** 优化您看到的内容。
+   * 使用显示选项&#x200B;**[!UICONTROL Errors only]**、**[!UICONTROL Wrap line]**&#x200B;或&#x200B;**[!UICONTROL Show]**&#x200B;细化您看到的内容。
 
