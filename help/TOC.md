@@ -2,14 +2,14 @@
 cloud: experience-cloud
 product: adobe search and promote
 solution: Search & Promote
-type: Documentation
+type: 文档
 audience: end-user
-user-guide-title: AdobeSearch&amp；提升指南
-breadcrumb-title: AdobeSearch&amp；提升指南
+user-guide-title: Adobe Search&amp；提升指南
+breadcrumb-title: Adobe Search&amp；提升指南
 translation-type: tm+mt
 source-git-commit: 4f1daa8f4737e0e1f2693aa96ab067e552f51a0f
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '255'
 ht-degree: 10%
 
 ---
@@ -23,27 +23,27 @@ ht-degree: 10%
    + [Search&amp;Promote17.11.1发行说明(10/31/2017)](c-searchpromote-release-notes/c-rn-10-31-17-version-1711.md)
    + [Search&amp;Promote15.3.1发行说明(03/24/2015)](c-searchpromote-release-notes/c-rn-03-19-15-version-153.md)
    + [Search&amp;Promote15.1.1发行说明(01/15/2015)](c-searchpromote-release-notes/c-rn-01-15-15-version-151.md)
-   + [Search&amp;Promote8.17.0发行说明(10/30/2014)](c-searchpromote-release-notes/c-rn-10-30-14-version-817.md)
-   + [Search&amp;Promote8.16.0发行说明（2014年9月18日）](c-searchpromote-release-notes/c-rn-09-18-14-version-816.md)
-   + [Search&amp;Promote8.15.0发行说明(06/19/2014)](c-searchpromote-release-notes/c-rn-06-19-14-version-815.md)
-   + [Search&amp;Promote8.14.0发行说明(05/22/2014)](c-searchpromote-release-notes/c-rn-05-22-14-version-814.md)
-   + [Search&amp;Promote8.13.0发行说明(04/16/2014)](c-searchpromote-release-notes/c-rn-04-16-14-version-813.md)
-   + [Search&amp;Promote8.12.0发行说明(01/16/2014)](c-searchpromote-release-notes/c-rn-01-16-14-version-812.md)
-   + [Search&amp;Promote8.11.0发行说明（2013年10月29日）](c-searchpromote-release-notes/c-rn-10-17-13-version-811.md)
-   + [Search&amp;Promote8.10.1发行说明(07/18/2013)](c-searchpromote-release-notes/c-rn-07-18-13-version-810.md)
-   + [Search&amp;Promote8.9.8发行说明(05/23/2013)](c-searchpromote-release-notes/c-rn-05-23-13-version-898.md)
-   + [Search&amp;Promote8.9.6发行说明(03/21/2013)](c-searchpromote-release-notes/c-rn-03-21-13-version-896.md)
-   + [Search&amp;Promote8.9.5发行说明(02/21/2013)](c-searchpromote-release-notes/c-rn-02-21-13-version-895.md)
-   + [Search&amp;Promote8.9.4发行说明(01/17/2013)](c-searchpromote-release-notes/c-rn-01-17-13-version-894.md)
-   + [Search&amp;Promote8.9.3发行说明（2012年11月1日）](c-searchpromote-release-notes/c-rn-11-01-12-version-893.md)
-   + [Search&amp;Promote8.9.2发行说明(09/13/2012)](c-searchpromote-release-notes/c-rn-09-13-12-version-892.md)
-   + [Search&amp;Promote8.9.1发行说明(08/16/2012)](c-searchpromote-release-notes/c-rn-08-16-12-version-891.md)
-   + [Search&amp;Promote8.9发行说明(07/19/2012)](c-searchpromote-release-notes/c-rn-07-19-12-version-89.md)
-   + [Search&amp;Promote8.8.1发行说明](c-searchpromote-release-notes/c-rn-05-31-12-version-881.md)
-   + [Search&amp;Promote8.8发行说明](c-searchpromote-release-notes/c-rn-04-26-12-version-88.md)
-   + [Search&amp;Promote8.7.2发行说明](c-searchpromote-release-notes/c-maintenance-release-03-29-12-version-872.md)
-   + [Search&amp;Promote8.7.1发行说明](c-searchpromote-release-notes/c-maintenance-release-02-23-12-version-871.md)
-   + [Search&amp;Promote8.7发行说明](c-searchpromote-release-notes/c-maintenance-release-01-19-12-version-870.md)
+   + [Search&amp;Promote 8.17.0发行说明(10/30/2014)](c-searchpromote-release-notes/c-rn-10-30-14-version-817.md)
+   + [Search&amp;Promote 8.16.0发行说明(9/18/2014)](c-searchpromote-release-notes/c-rn-09-18-14-version-816.md)
+   + [Search&amp;Promote 8.15.0发行说明(06/19/2014)](c-searchpromote-release-notes/c-rn-06-19-14-version-815.md)
+   + [Search&amp;Promote 8.14.0发行说明(05/22/2014)](c-searchpromote-release-notes/c-rn-05-22-14-version-814.md)
+   + [Search&amp;Promote 8.13.0发行说明(04/16/2014)](c-searchpromote-release-notes/c-rn-04-16-14-version-813.md)
+   + [Search&amp;Promote 8.12.0发行说明(01/16/2014)](c-searchpromote-release-notes/c-rn-01-16-14-version-812.md)
+   + [Search&amp;Promote 8.11.0发行说明(10/29/2013)](c-searchpromote-release-notes/c-rn-10-17-13-version-811.md)
+   + [Search&amp;Promote 8.10.1发行说明(07/18/2013)](c-searchpromote-release-notes/c-rn-07-18-13-version-810.md)
+   + [Search&amp;Promote 8.9.8发行说明(05/23/2013)](c-searchpromote-release-notes/c-rn-05-23-13-version-898.md)
+   + [Search&amp;Promote 8.9.6发行说明(03/21/2013)](c-searchpromote-release-notes/c-rn-03-21-13-version-896.md)
+   + [Search&amp;Promote 8.9.5发行说明(02/21/2013)](c-searchpromote-release-notes/c-rn-02-21-13-version-895.md)
+   + [Search&amp;Promote 8.9.4发行说明(01/17/2013)](c-searchpromote-release-notes/c-rn-01-17-13-version-894.md)
+   + [Search&amp;Promote 8.9.3发行说明(11/01/2012)](c-searchpromote-release-notes/c-rn-11-01-12-version-893.md)
+   + [Search&amp;Promote 8.9.2发行说明(09/13/2012)](c-searchpromote-release-notes/c-rn-09-13-12-version-892.md)
+   + [Search&amp;Promote 8.9.1发行说明(08/16/2012)](c-searchpromote-release-notes/c-rn-08-16-12-version-891.md)
+   + [Search&amp;Promote 8.9发行说明(07/19/2012)](c-searchpromote-release-notes/c-rn-07-19-12-version-89.md)
+   + [Search&amp;Promote 8.8.1发行说明](c-searchpromote-release-notes/c-rn-05-31-12-version-881.md)
+   + [Search&amp;Promote 8.8发行说明](c-searchpromote-release-notes/c-rn-04-26-12-version-88.md)
+   + [Search&amp;Promote 8.7.2发行说明](c-searchpromote-release-notes/c-maintenance-release-03-29-12-version-872.md)
+   + [Search&amp;Promote 8.7.1发行说明](c-searchpromote-release-notes/c-maintenance-release-02-23-12-version-871.md)
+   + [Search&amp;Promote 8.7发行说明](c-searchpromote-release-notes/c-maintenance-release-01-19-12-version-870.md)
 + [Search&amp;Promote入门](c-getting-started.md)
 + [主页](c-about-home.md)
 + [使用历史记录](t-using-the-history-option.md)
@@ -59,7 +59,7 @@ ht-degree: 10%
    + [横幅广告](c-about-design-menu/c-about-banners.md)
    + [自动完成](c-about-auto-complete.md)
 + 应用搜索规则{#rules}
-   + [查询清理规则](c-about-rules-menu/c-about-query-cleaning-rules.md)
+   + [查询清除规则](c-about-rules-menu/c-about-query-cleaning-rules.md)
    + [直接点击](c-about-rules-menu/c-about-direct-hits.md)
    + [预搜索规则](c-about-rules-menu/c-about-pre-search-rules.md)
    + [搜索后规则](c-about-rules-menu/c-about-post-search-rules.md)
@@ -67,9 +67,9 @@ ht-degree: 10%
    + [排名规则](c-about-rules-menu/c-about-ranking-rules.md)
 + 使用搜索语言{#linguistics}
    + [词典](c-about-linguistics-menu/c-about-dictionaries.md)
-   + [词与语](c-about-linguistics-menu/c-about-words-and-language.md)
+   + [词语](c-about-linguistics-menu/c-about-words-and-language.md)
    + [Did You Mean](c-about-linguistics-menu/c-about-did-you-mean.md)
-   + [查询扩展重写](c-about-linguistics-menu/c-about-query-expansion-overrides.md)
+   + [查询扩展优先](c-about-linguistics-menu/c-about-query-expansion-overrides.md)
    + [排除的单词](c-about-linguistics-menu/c-about-excluded-words.md)
    + [常用短语](c-about-linguistics-menu/c-about-common-phrases.md)
 + [模拟器](c-about-simulator.md)
@@ -106,5 +106,5 @@ ht-degree: 10%
    + [模板](c-appendices/c-templates.md)
    + [CGI参数](c-appendices/c-cgiparameters.md)
    + [搜索表单](c-appendices/c-searchforms.md)
-   + [向导式搜索输出](c-appendices/c-guidedsearchoutput.md)
+   + [导向搜索输出](c-appendices/c-guidedsearchoutput.md)
    + [常见问题解答](c-appendices/c-faq.md)
