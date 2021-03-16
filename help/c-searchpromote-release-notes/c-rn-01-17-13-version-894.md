@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 8.9.4发行说明(01/17/2013)
+description: Search&amp;Promote 8.9.4发行说明。
 solution: Target
 title: Search&amp;Promote 8.9.4发行说明(01/17/2013)
-topic: Release Notes,Site search and merchandising
+topic: 发行说明、网站搜索和销售
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 35%
+source-wordcount: '265'
+ht-degree: 33%
 
 ---
 
 
-# Search&amp;Promote8.9.4发行说明(01/17/2013){#search-promote-release-notes}
+# Search&amp;Promote 8.9.4发行说明(01/17/2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -31,7 +29,7 @@ ht-degree: 35%
   </tr> 
   <tr> 
    <td colname="col1"> <p>引导式搜索 </p> </td> 
-   <td colname="col2"> <p> 添加了“向导式搜索”标记以指示搜索所用的总时间。 </p> <p> <span class="codeph"> &lt;guided-search-time&gt;</span> -标识搜索所花费的时间。返回的搜索时间值以毫秒为单位指定。 </p> <p> <span class="codeph"> &lt;guided-fall-through-searches&gt;</span> -返回用于构建搜索结果页面的核心搜索数。 </p> <p> <span class="codeph"> &lt;guided-if-fall-through-search&gt;</span> -测试核心搜索的计数是否大于1。 </p> <p>另请参阅<a href="../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64" format="dita" scope="local">演示文稿模板标记</a>中的其他语言。 </p> </td> 
+   <td colname="col2"> <p> 添加了“向导式搜索”标记以指示搜索所用的总时间。 </p> <p> <span class="codeph"> &lt;guided-search-time&gt;</span>  — 确定搜索所花的时间。返回的搜索时间值以毫秒为单位指定。 </p> <p> <span class="codeph"> &lt;guided-fall-through-searches&gt;</span>  — 返回用于生成搜索结果页面的核心搜索数。 </p> <p> <span class="codeph"> &lt;guided-if-fall-through-search&gt;</span>  — 测试核心搜索的计数是否大于1。 </p> <p>另请参阅<a href="../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64" format="dita" scope="local">演示文稿模板标签</a>中的其他语言。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -42,11 +40,11 @@ ht-degree: 35%
 
    请参阅[查看术语报表或空搜索术语报表……](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A)。
 
-* 打开&#x200B;**[!UICONTROL Reports > Null Search Terms Report]**，选择一个时间槽，然后视图报告。 点击此报表中的一个词以打开搜索，然后再次点击查看报表。您所点击的关键词的搜索次数增加了两次。这个问题现在已修复。
+* 打开&#x200B;**[!UICONTROL Reports > Null Search Terms Report]**，选择一个时段，然后视图报表。 点击此报表中的一个词以打开搜索，然后再次点击查看报表。您所点击的关键词的搜索次数增加了两次。这个问题现在已修复。
 
    请参阅[查看术语报表或空搜索术语报表……](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A)。
 
-* 实时推送业务规则时，性能得到优化。
+* 实时推送业务规则时，已对性能进行优化。
 
    请参阅[关于Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD)。
 
