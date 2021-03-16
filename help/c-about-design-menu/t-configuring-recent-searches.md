@@ -1,16 +1,14 @@
 ---
-description: “最近搜索”是一个基于cookie的系统，它允许您使用演示文稿模板来显示客户的最近搜索历史记录。
-seo-description: “最近搜索”是一个基于cookie的系统，它允许您使用演示文稿模板来显示客户的最近搜索历史记录。
-seo-title: 配置最近搜索
+description: “最近搜索”是一个基于cookie的系统，允许您使用演示文稿模板显示客户的最近搜索历史记录。
 solution: Target
 subtopic: Navigation
 title: 配置最近搜索
-topic: Design,Site search and merchandising
+topic: 设计、网站搜索和销售
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '186'
 ht-degree: 2%
 
 ---
@@ -18,17 +16,17 @@ ht-degree: 2%
 
 # 配置最近搜索{#configuring-recent-searches}
 
-“最近搜索”是一个基于cookie的系统，它允许您使用演示文稿模板来显示客户的最近搜索历史记录。
+“最近搜索”是一个基于cookie的系统，允许您使用演示文稿模板显示客户的最近搜索历史记录。
 
 您可以使用“最近搜索”页配置搜索行为。
 
-请参阅演示文稿模板标记引用主题，进一步了解各种标记，这些标记可用于在演示文稿模板上显示最近的搜索。
+请参阅演示文稿模板标记参考主题，进一步了解可用于在演示文稿模板上显示最近搜索的各种标记。
 
-请参阅[演示文稿模板标记](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)。
+请参阅[演示文稿模板标签](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)。
 
 **配置最近搜索**
 
-1. 在项目菜单上，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**。
+1. 在“项目”菜单中，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**。
 1. 在[!DNL Recent Searches]页面上，设置所需的选项。
 
    <!-- 
@@ -47,11 +45,11 @@ ht-degree: 2%
     <tbody> 
       <tr> 
       <td colname="col1"> <p>启用最近搜索 </p> </td> 
-      <td colname="col2"> <p> 启用“最近搜索”模块后，cookie“vsrecentsearches”会与传出的搜索结果一起设置。 </p> </td> 
+      <td colname="col2"> <p> 启用“最近搜索”模块后，将使用传出的搜索结果设置Cookie“vsrecentsearches”。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>要保存的搜索数 </p> </td> 
-      <td colname="col2"> <p>配置要在cookie中保存的搜索数。 </p> </td> 
+      <td colname="col2"> <p>配置要在Cookie中保存的搜索数。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>过期 </p> </td> 
@@ -62,7 +60,7 @@ ht-degree: 2%
 
 1. （可选）执行下列操作之一：
 
-   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;可还原您所做的任何更改。
 
       请参阅[使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
