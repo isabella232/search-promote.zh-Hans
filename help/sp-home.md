@@ -1,31 +1,27 @@
 ---
 title: Adobe Search&amp;Promote技术文档
-seo-title: Adobe Search&amp;Promote技术文档和自助
 description: Adobe Search&amp;Promote的技术文档和自助资料
-seo-description: Adobe Search&amp;Promote的技术文档、发行说明和自助资料
 solution: Target
 topic: 网站搜索和销售
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 19%
+source-wordcount: '145'
+ht-degree: 22%
 
 ---
 
 
 # Adobe Search&amp;Promote 指南 {#search-promote-documentation}
 
-<!-- ## [Option 1: Lorem Ipsum FAQ announcement](#lorem-ipsum) -->
-
 ## 新闻和公告{#topic_02625547D07F411DBAC9593FCBD4741B}
 
-<!-- * [Option 2: Lorem ipsum FAQ announcement](anchor) -->
+* **注意：** [AdobeSearch&amp;Promote服务终止公告](/help/sp-eol.md)。
 
 * Adobe Marketing Cloud发行说明 — 包含所有Marketing Cloud解决方案中的新增功能、修复和已知问题。 功能版本在春季和秋季发布，而维护版本每月发布一次。
 
-   **早期访问**:注册Adobe优先级产 [品更新，](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) 在每个发行版前一周收到Adobe Marketing Cloud发行说明。
+   早期访问：注册[Adobe优先级产品更新](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe)，在每个发行版前一周收到Adobe Marketing Cloud发行说明。
 
 * 最新的AdobeSearch&amp;Promote发行说明：
 
