@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 8.7.1发行说明(02/23/2012)
+description: Search&amp;Promote 8.7.1发行说明。
 solution: Target
 title: Search&amp;Promote 8.7.1发行说明(02/23/2012)
-topic: Release Notes,Site search and merchandising
+topic: 发行说明、网站搜索和销售
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 34%
+source-wordcount: '179'
+ht-degree: 32%
 
 ---
 
 
-# Search&amp;Promote8.7.1发行说明(02/23/2012){#search-promote-release-notes}
+# Search&amp;Promote 8.7.1发行说明(02/23/2012){#search-promote-release-notes}
 
 ## 新增功能{#section_CF3326C0E4FD4179A8009FB76D514304}
 
@@ -38,6 +36,6 @@ ht-degree: 34%
 * 修复了 xlhtml 和 ppthtml 的索引编目问题。
 * 复制规则功能将名称值显示为垃圾字符。
 * 保留时间戳，以使模板缓存不会失效。
-* 当滚动条显示在“Dynamic Media经典”横幅对话框中时，某些更改参数字段被切断。
-* 您对Dynamic Media经典横幅参数所做的任何业务规则更改在登台区域有效，但在实时推送时未生效。
+* 当滚动条显示在Dynamic Media经典横幅对话框中时，某些更改参数字段被关闭。
+* 您对Dynamic Media Classic横幅参数所做的任何业务规则更改在“暂存”区域有效，但在实时推送时未生效。
 
