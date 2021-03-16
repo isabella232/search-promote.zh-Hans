@@ -1,25 +1,23 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 8.15.0发行说明(6/19/2014)
+description: Search&amp;Promote 8.15.0发行说明。
 solution: Target
 title: Search&amp;Promote 8.15.0发行说明(6/19/2014)
-topic: Release Notes,Site search and merchandising
+topic: 发行说明、网站搜索和销售
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 58%
+source-wordcount: '112'
+ht-degree: 54%
 
 ---
 
 
-# Search&amp;Promote8.15.0发行说明(2014/6/19){#search-promote-release-notes}
+# Search&amp;Promote 8.15.0发行说明(6/19/2014){#search-promote-release-notes}
 
 **新增功能**
 
-* 短语词干——现在支持短语中的同义词词干。  要在 [!DNL Adobe Search&Promote] 中启用并使用此功能，请联系您的 Adobe 技术客户经理。
+* 短语词干 — 现在支持短语中的同义词词干。  要在 [!DNL Adobe Search&Promote] 中启用并使用此功能，请联系您的 Adobe 技术客户经理。
 
    另请参阅[配置搜索词与Web内容的匹配方式的选项表中的&#x200B;**[!UICONTROL Alternate Word Forms]**。](../c-about-linguistics-menu/c-about-words-and-language.md#task_351A9144A51F4B41923BDBACDEF3B616)。
 
