@@ -1,23 +1,21 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 8.9.3发行说明(11/01/2012)
+description: Search&amp;Promote 8.9.3发行说明。
 solution: Target
 title: Search&amp;Promote 8.9.3发行说明(11/01/2012)
-topic: Release Notes,Site search and merchandising
+topic: 发行说明、网站搜索和销售
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 81%
+source-wordcount: '289'
+ht-degree: 79%
 
 ---
 
 
-# Search&amp;Promote8.9.3发行说明(11/01/2012){#search-promote-release-notes}
+# Search&amp;Promote 8.9.3发行说明(11/01/2012){#search-promote-release-notes}
 
-## Search&amp;Promote8.9.3发行说明(2012/11/01){#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
+## Search&amp;Promote 8.9.3发行说明(11/01/2012){#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
 
 <table> 
  <thead> 
@@ -60,7 +58,7 @@ ht-degree: 81%
 
    请参阅[添加排名规则](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A)中的选项表。
 
-* [!DNL promosearch.cgi] 不是退回促销。
+* [!DNL promosearch.cgi] 未退回促销。
 
    请参阅[关于搜索](../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8)。
 
