@@ -1,16 +1,14 @@
 ---
 description: 使用“设计”菜单为搜索结果页面构建演示文稿。
-seo-description: 使用“设计”菜单为搜索结果页面构建演示文稿。
-seo-title: 设计搜索结果页面
 solution: Target
 title: 设计搜索结果页面
-topic: Design,Site search and merchandising
+topic: 设计、网站搜索和销售
 uuid: 61cb3ead-705e-45b7-a365-2c694d160d0a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 4%
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
