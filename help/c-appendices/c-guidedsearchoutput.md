@@ -1,70 +1,68 @@
 ---
-description: 您可以以任何基于文本的格式自定义输出，包括XML或JSON。
-seo-description: 您可以以任何基于文本的格式自定义输出，包括XML或JSON。
-seo-title: 向导式搜索输出
+description: 了解如何以任何基于文本的格式（包括XML或JSON）自定义输出。
 solution: Target
-title: 向导式搜索输出
-topic: Appendices,Site search and merchandising
+title: 导向搜索输出
+topic: 附录、网站搜索和销售
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '6298'
+source-wordcount: '6289'
 ht-degree: 2%
 
 ---
 
 
-# 向导式搜索输出{#guided-search-output}
+# 导向搜索输出{#guided-search-output}
 
 您可以以任何基于文本的格式自定义输出，包括XML或JSON。
 
-## 使用引导搜索输出{#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
+## 使用导向搜索输出{#concept_2A1BA3AD413848A1AC2A3ABC4FFE481F}
 
-输出格式可自定义，以支持在设计过程中做出的分面、排序和其他特定于实现的决策。 如有必要，您可以调整格式本身以简化客户前端的开发。
+输出格式可自定义，以支持在设计过程中做出的分面、排序和其他特定于实施的决策。 如有必要，您可以调整格式本身以简化客户前端的开发。
 
-整个输出包含在`<result>`标记中，大多数动态数据都包含在`<![CDATA[ ]]>`标记中。 这种组织允许结果包含HTML和其他非XML实体。
+整个输出包含在`<result>`标记中，而大多数动态数据都包含在`<![CDATA[ ]]>`标记中。 这种组织允许结果包含HTML和其他非XML实体。
 
-如果提供了指向其他页面的链接，则这些链接将以相对URL的形式显示。 此结果还包括为生成所需结果而传递的查询字符串参数。
+如果提供了指向其他页面的链接，则这些链接将以相对URL的形式显示。 此结果还包括传递的查询字符串参数，以生成所需结果。
 
 ## 了解向导式搜索实现{#section_95483980930C4325BAB50A40BD47245A}
 
-开始“向导式搜索”实施时，请记住[!DNL Adobe Search&Promote]负责业务层。 即，在任何给定时间向客户展示哪些结果和方面的逻辑。
+当您开始“引导式搜索”实施时，请记住[!DNL Adobe Search&Promote]负责业务层。 即，围绕在任何给定时间向客户展示哪些结果和方面的逻辑。
 
-当您实现分析结果并将结果显示为HTML的Web 应用程序前端时，将功能限制为仅显示。 换言之，您用于创建表示层的任何服务器端逻辑都不会决定向客户展示什么，除非有必要。 如果前端脚本正在更改搜索结果，则业务规则将无法按预期工作。
+当您实现分析结果并将结果显示为HTML的Web 应用程序前端时，将功能限制为仅显示。 换句话说，您用于创建表示层的任何服务器端逻辑不会决定向客户展示什么，除非有必要。 如果前端脚本正在更改搜索结果，则业务规则将无法按预期工作。
 
-[!DNL Adobe Search&Promote] 通过URL参数保持所选搜索细化选项的用户状态。所有`<link>`节点都包含客户选择的相关参数。 这些参数可以包括痕迹导航、分页、排序和彩块化选择。 如果适用，将返回`<undolink>`节点以允许客户“退出”选择。 彩块化和痕迹导航优惠这些类型的链接。
+[!DNL Adobe Search&Promote] 通过URL参数保持所选搜索优化选项的用户状态。所有`<link>`节点都包含客户选择的相关参数。 这些参数可以包括痕迹导航、分页、排序和彩块化选择。 如果适用，将返回`<undolink>`节点以允许客户“退出”选择。 彩块化和痕迹导航可优惠这些类型的链接。
 
 ## 使用搜索服务器{#section_8DBEACDECD714E59BDED6315E6041B8D}
 
-使用类似于REST的API，您可以与它交互以执行搜索和接收结果。 最常用的结果格式是XML或JSON。
+使用类似REST的API，您可以与它交互以执行搜索和接收结果。 最常用的结果格式是XML或JSON。
 
-基本URI与特定帐户以及暂存或实时环境关联。 您可以从帐户管理器请求基本URI的多个别名。 例如，一个名为Megacorp的虚构公司具有与其帐户关联的以下两个基本URL:
+基本URI与特定帐户和暂存或实时环境关联。 您可以从帐户管理器请求基本URI的多个别名。 例如，名为Megacorp的虚构公司具有以下两个基本URL与其帐户关联：
 
 * `https://search.megacorp.com `
 * `https://stage.megacorp.com`
 
-前一个URI对其实时索引执行搜索，后一个URI对其分阶段索引执行搜索。
+前一个URI针对其活动索引执行搜索，后一个URI针对其分阶段索引执行搜索。
 
-搜索请求包括基本URI和一组CGI参数或键值对，这些参数或键值对指示对与基本URI关联的帐户进行所需搜索。
+搜索请求由基本URI和一组CGI参数或键值对组成，这些参数或键值对指示对与基本URI关联的帐户进行所需搜索。
 
 支持三种格式的CGI参数。 默认情况下，您的帐户配置为使用分号(`;`)分隔CGI参数，如下例所示：
 
 * `https://search.megacorp.com?q=shoes ;page=2`
 
-如果您愿意，您可以让客户经理将您的帐户配置为使用和号(`&`)来分隔CGI参数，如下例所示：
+如果您愿意，您可以让您的客户经理将您的帐户配置为使用&amp;号(`&`)来分隔CGI参数，如下例所示：
 
 * `https://search.megacorp.com?q=shoes &page=2`
 
-还支持第三种格式，称为SEO格式，其中使用正斜杠(`/`)代替分隔符，并使用等号生成“干净”链接，如下例所示：
+还支持第三种格式，称为SEO格式，其中使用正斜杠(`/`)代替分隔符并使用等号生成“clean”链接，如下例所示：
 
 * `https://search.megacorp.com/q/shoes/page/2`
 
-每当使用SEO格式发送请求时，所有输出链接都将以相同格式返回。
+每当使用SEO格式发送请求时，所有输出链接都以相同的格式返回。
 
 ## 搜索查询参数{#section_7ADA5E130E3040C9BE85D0D68EDD3223}
 
-下表描述了您可以使用的标准“现成”搜索查询参数。 处理规则和业务规则可以基于用户定义的查询参数构建，以实施与您的公司相关的自定义业务逻辑。 您可以与咨询团队合作，获取有关这些参数的文档。
+下表描述了您可以使用的标准“现成”搜索查询参数。 可以基于用户定义的查询参数构建处理规则和业务规则，以实施与您的公司相关的自定义业务逻辑。 您可以与咨询团队合作，获取有关这些参数的文档。
 
 <table> 
  <thead> 
@@ -83,32 +81,32 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> q# </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> q#=字符串  </span> </p> </td> 
-   <td colname="col3"> <p>编号为<span class="codeph"> q </span>和<span class="codeph"> x </span>的参数可完成分页或在给定字段内搜索。 </p> <p><span class="codeph"> q </span>参数定义您在facet中搜索的术语，该术语表示为相应的编号<span class="codeph"> x </span>参数。 例如，如果您有两个彩块化，它们分别命名为大小和颜色，您可能会有如下内容： </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>此参数映射到<span class="codeph"> sp_q_exact_# </span>后端搜索参数。 </p> </td> 
+   <td colname="col3"> <p>编号<span class="codeph"> q </span>和<span class="codeph"> x </span>的参数可完成分页或在给定字段内搜索。 </p> <p><span class="codeph"> q </span>参数将您在facet中搜索的词定义为相应的编号<span class="codeph"> x </span>参数。 例如，如果您有两个彩块化，它们分别命名为大小和颜色，则您可能会有以下内容： </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>此参数映射到<span class="codeph"> sp_q_exact_# </span>后端搜索参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> x# </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> x#=字符串  </span> </p> </td> 
-   <td colname="col3"> <p> 编号为<span class="codeph"> q </span>和<span class="codeph"> x </span>的参数可完成分页或在给定字段内搜索。 </p> <p><span class="codeph"> q </span>参数定义您在facet中搜索的术语，该术语表示为相应的编号<span class="codeph"> x </span>参数。 例如，如果您有两个彩块化，它们分别命名为大小和颜色，您可能会有如下内容： </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>此参数映射到<span class="codeph"> sp_x_# </span>后端搜索参数。 </p> </td> 
+   <td colname="col3"> <p> 编号<span class="codeph"> q </span>和<span class="codeph"> x </span>的参数可完成分页或在给定字段内搜索。 </p> <p><span class="codeph"> q </span>参数将您在facet中搜索的词定义为相应的编号<span class="codeph"> x </span>参数。 例如，如果您有两个彩块化，它们分别命名为大小和颜色，则您可能会有以下内容： </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>此参数映射到<span class="codeph"> sp_x_# </span>后端搜索参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> collection（集合） </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> collection=字符串  </span> </p> </td> 
-   <td colname="col3"> <p> 指定用于搜索的集合。 此参数映射到<span class="codeph"> sp_k </span>后端搜索参数。 </p> </td> 
+   <td colname="col3"> <p> 指定要用于搜索的集合。 此参数映射到<span class="codeph"> sp_k </span>后端搜索参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> count（计数） </span> </p> </td> 
    <td colname="col2"> <p> <span class="codeph"> 计数=数字  </span> </p> </td> 
-   <td colname="col3"> <p> 指定显示的结果总数。 默认值在<span class="uicontrol">设置</span> &gt; <span class="uicontrol">搜索</span> &gt; <span class="uicontrol">搜索</span>中定义。 此参数映射到<span class="codeph"> sp_c </span>后端搜索参数。 </p> </td> 
+   <td colname="col3"> <p> 指定所显示结果的总计数。 默认值在<span class="uicontrol">设置</span> &gt; <span class="uicontrol">搜索</span> &gt; <span class="uicontrol">搜索</span>中定义。 此参数映射到<span class="codeph"> sp_c </span>后端搜索参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> page </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> page=数字  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> page= number  </span> </p> </td> 
    <td colname="col3"> <p> 指定返回的结果页。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> 秩  </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> 排名字段  </span> </p> </td> 
-   <td colname="col3"> <p> 指定用于静态排名的排名字段。 该字段必须是“排名”类型且相关度大于0的字段。 此参数映射到<span class="codeph"> sp_sr </span>后端参数。 </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> 排名  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> 排名  </span> </p> </td> 
+   <td colname="col3"> <p> 指定用于静态排名的排名字段。 该字段必须是关联度大于0的“排名”类型字段。 此参数映射到<span class="codeph"> sp_sr </span>后端参数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> gs_store  </span> </p> </td> 
@@ -117,16 +115,16 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> 排序  </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> 排序=编号  </span> </p> </td> 
-   <td colname="col3"> <p> 指定排序顺序。 “0”为默认值，按相关性得分排序；“1”按日期排序；“-1”不排序。 </p> <p>用户可以为<span class="codeph"> sp_s </span>参数的值指定字段名称。 例如，<span class="codeph"> sp_s=title </span>会根据标题字段中包含的值对结果进行排序。 当使用字段名称作为<span class="codeph"> sp_s </span>参数的值时，结果将按该字段排序，然后按相关性进行子排序。 </p> <p>要启用此功能，请执行以下操作： </p> 
+   <td colname="col2"> <p> <span class="codeph"> 排序=数字  </span> </p> </td> 
+   <td colname="col3"> <p> 指定排序顺序。 “0”是默认值，按相关性得分排序；“1”按日排序；“–1”不排序。 </p> <p>用户可以为<span class="codeph"> sp_s </span>参数的值指定字段名。 例如，<span class="codeph"> sp_s=title </span>会根据标题字段中包含的值对结果进行排序。 当使用字段名称作为<span class="codeph"> sp_s </span>参数的值时，结果将按该字段排序，然后按相关性进行子排序。 </p> <p>要启用此功能，请执行以下操作： </p> 
     <ol id="ol_3894F81EA7BF4827A84DE8662111ABEF"> 
-     <li id="li_C040C0B88F174A4885E1A8E721FD032A">在产品菜单中，单击<span class="uicontrol">设置</span> &gt; <span class="uicontrol">元数据</span> &gt; <span class="uicontrol">定义</span>。 </li> 
-     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">在<span class="wintitle">分阶段定义</span>页上，执行下列操作之一： 
+     <li id="li_C040C0B88F174A4885E1A8E721FD032A">在产品菜单上，单击<span class="uicontrol">设置</span> &gt; <span class="uicontrol">元数据</span> &gt; <span class="uicontrol">定义</span>。 </li> 
+     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">在“<span class="wintitle">分阶段定义</span>”页中，执行下列操作之一： 
       <ul id="ul_8018FEE10E0A4C96A74F84A897080580"> 
        <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">单击<span class="uicontrol">添加新字段</span>。 </li> 
-       <li id="li_9D2434A321924FBD874569CA9AD2EEF7">单击<span class="uicontrol">编辑</span>以获取特定字段名称。 </li> 
+       <li id="li_9D2434A321924FBD874569CA9AD2EEF7">单击<span class="uicontrol">编辑</span>以查找特定字段名称。 </li> 
       </ul> </li> 
-     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">在<span class="wintitle">排序</span>下拉列表中，单击<span class="uicontrol">升序</span>或<span class="uicontrol">降序</span>。 <p>此参数映射到<span class="codeph"> sp_s </span>后端搜索参数。 </p> </li> 
+     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">在<span class="wintitle">排序</span>下拉列表中，单击升序</span>或<span class="uicontrol">降序</span>。<span class="uicontrol"> </span><p>此参数映射到<span class="codeph"> sp_s </span>后端搜索参数。 </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
@@ -141,10 +139,10 @@ ht-degree: 2%
    您可以使用httpGET请求与[!DNL Adobe Search&Promote] Web服务器通信。 您的服务器生成这些请求或在客户端执行Ajax请求。
 * 保存搜索历史记录。
 
-[!DNL Adobe Search&Promote] 是无状态，其中整个状态在http请求中传递。
-* 解析返回的结果。
+[!DNL Adobe Search&Promote] 在http请求中传递整个状态时为无状态。
+* 分析返回的结果。
 
-   建议使用基于SAX的XML分析器来分析XML响应。 如果您正在生成Ajax请求，请配置[!DNL Adobe Search&Promote]以返回这些请求的JSON响应，以便更轻松地分析响应。
+   建议使用基于SAX的XML分析器分析XML响应。 如果您正在生成Ajax请求，请配置[!DNL Adobe Search&Promote]以返回这些请求的JSON响应，以便更轻松地分析响应。
 
 ## 向导式搜索JSON输出{#reference_EB8182A564DE4374BB84158F2AABEF74}
 
@@ -152,7 +150,7 @@ ht-degree: 2%
 
 另请参阅[引导搜索JSON输出](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74)。
 
-您可以查看JSON响应以了解以下内容：
+您可以查看以下JSON响应：
 
 * [横幅广告](../c-appendices/c-guidedsearchoutput.md#section_88519CAAD25F4BD49D5E517077745B0E)
 * [痕迹导航](../c-appendices/c-guidedsearchoutput.md#section_A7DB0F1DA9ED4CBCAE18395122F3E01E)
@@ -164,7 +162,7 @@ ht-degree: 2%
 * [搜索表单](../c-appendices/c-guidedsearchoutput.md#section_434DA13EA295474C99FFE9F14801CD0E)
 * [排序](../c-appendices/c-guidedsearchoutput.md#section_558853CD376F4D71BACF211D53085D55)
 * [建议](../c-appendices/c-guidedsearchoutput.md#section_6EC104E1DDD94AC799B65E6E61A2FB3C)
-* [区域](../c-appendices/c-guidedsearchoutput.md#section_AE53A498B440465EAF2286F2AE87D548)
+* [Zones](../c-appendices/c-guidedsearchoutput.md#section_AE53A498B440465EAF2286F2AE87D548)
 
 ## 横幅广告 {#section_88519CAAD25F4BD49D5E517077745B0E}
 
@@ -204,7 +202,7 @@ ht-degree: 2%
 
 ## 痕迹导航{#section_A7DB0F1DA9ED4CBCAE18395122F3E01E}
 
-在以下示例中，每次客户通过facet进一步缩小范围时，选择将添加到痕迹导航中。 每个项目表示为`<breadcrumb-item>`。
+在以下示例中，每次客户通过facet进一步缩小范围时，所做的选择都会添加到痕迹导航中。 每个项目都表示为`<breadcrumb-item>`。
 
 示例：
 
@@ -231,7 +229,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 显示所需视图的搜索结果的相对链接。 单击痕迹导航链接可将客户带到视图，在此处将删除所有后续细化。 还提供其他选项。 </p> </td> 
+   <td colname="col2"> <p> 显示所需视图的搜索结果的相对链接。 单击痕迹导航链接可将客户带到视图，随后所有的细化都将被删除。 还提供其他选项。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -242,11 +240,11 @@ ht-degree: 2%
 
 ## 彩块化{#section_65932C95931743A1BFAF1DF16D7E6D92}
 
-彩块化是细化选项，可让客户对结果进行筛选。 彩块化通常用于分类、价格范围、颜色选择和其他属性细化。 索引中的元数据是驱动器彩块化的因素。
+彩块化是细化选项，让客户能够对结果进行筛选。 彩块化通常用于分类、价格范围、颜色选择和其他属性细化。 索引中的元数据是驱动器彩块化的原因。
 
-客户在分类中向下移动时，通常会隐藏或显示分类彩块化。 最高级别的分类(类别)称为第1层。 当客户单击第1层选项时，将显示第2层（子类别）细化选项，而第1层选项将消失。 当客户单击第2层选项时，将显示第3层（子子类别）细化选项，而第2层选项将消失。 如上所述，这些选项是隐藏的，并且显示，您的Web应用程序不受这些选项的影响。
+客户在分类中向下移动时，通常会隐藏或显示分类彩块化。 最高级别的分类(类别)称为第1层。 当客户单击第1层选项时，将显示第2层（子类别）优化选项，而第1层选项将消失。 当客户单击第2层选项时，将显示第3层（子子类别）优化选项，而第2层选项将消失。 如上所述，这些选项是隐藏的并且显示的 — 您的Web应用程序不受这些选项的影响。
 
-每个facet都包含在`<facet-item>`标记中。 在以下示例中，它显示了一个facet，允许客户按“假日”细化搜索结果。
+每个facet都包含在`<facet-item>`标记中。 在以下示例中，它显示了一个允许客户按“假日”优化搜索结果的方面。
 
 示例：
 
@@ -340,11 +338,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;label&gt; </span> </p> </td> 
-   <td colname="col2"> <p> facet选项的面向客户标签。 </p> </td> 
+   <td colname="col2"> <p> facet选项的面向客户的标签。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 相对链接，该选项会细化结果。 </p> </td> 
+   <td colname="col2"> <p> 相对链接，可使选项缩小。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;count（计数）&gt; </span> </p> </td> 
@@ -352,12 +350,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;undolink&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 选择facet值后，节点将返回“撤消链接”，允许客户退出结果。 </p> </td> 
+   <td colname="col2"> <p> 选择facet值后，节点将返回一个“撤消链接”，允许客户退出结果。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 标题和查询{#section_1D57062259CA46E0B4F598FA4EB37065}
+## 标头和查询{#section_1D57062259CA46E0B4F598FA4EB37065}
 
 示例：
 
@@ -371,7 +369,7 @@ ht-degree: 2%
  </query> 
 ```
 
-这些标记结合使用会显示如下消息：“‘新年’的621项成绩显示1-16项。”
+这些标签一起使用时会显示如下消息：“‘新年’的621项中，显示结果1-16项。”
 
 <table> 
  <thead> 
@@ -383,7 +381,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 随请求提交的关键字查询。 </p> </td> 
+   <td colname="col2"> <p> 随请求一起提交的关键字查询。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
@@ -444,7 +442,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="first"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 包含指向结果集中第一页的相对链接，除非客户已在查看第1页。 在这种情况下，它是空的。 </p> </td> 
+   <td colname="col2"> <p> 包含指向结果集中第一页的相对链接，除非客户已查看第1页。 在这种情况下，它是空的。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="last"&gt; </span> </p> </td> 
@@ -452,7 +450,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="previous"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 包含指向结果集中上一页的相对链接，除非客户正在查看第1页；在这种情况下，它为空。 </p> </td> 
+   <td colname="col2"> <p> 包含指向结果集中上一页的相对链接，除非客户正在查看第1页；在这种情况下，它是空的。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="next"&gt; </span> </p> </td> 
@@ -460,18 +458,18 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
-   <td colname="col2"> <p> 包含指向特定页码的相对链接。 显示十个连续的页码。 在第1页，是第1-10页。 在结果集的末尾（本例中为39页），将是第30-39页。 例如，在结果集的中心，第15页，它应该是第11-20页。 </p> </td> 
+   <td colname="col2"> <p> 包含指向特定页码的相对链接。 显示十个连续的页码。 在第1页，是第1-10页。 在结果集（本例中为39页）末尾，将是第30-39页。 例如，在结果集的中心（第15页），它应该是第11-20页。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
-   <td colname="col2"> <p> 应用为当前所选页面的属性。 </p> </td> 
+   <td colname="col2"> <p> 应用为当前选定页面的属性。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 最近搜索{#section_525816A0355C48F8970D89B8FC3F1FFF}
 
-“最近搜索”是基于cookie的功能，仅当您将cookie信息中继到服务器时，此功能才有效。
+“最近搜索”是基于Cookie的功能，仅在您将Cookie信息中继到服务器时才有效。
 
 示例：
 
@@ -494,11 +492,11 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 单个最近搜索节点。 您可以有多个最近搜索的节点。 </p> </td> 
+   <td colname="col2"> <p> 单个最近搜索节点。 您可以有多个最近搜索节点。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 客户以前搜索的词。 </p> </td> 
+   <td colname="col2"> <p> 客户之前搜索的词。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -509,11 +507,11 @@ ht-degree: 2%
 
 ## 结果 {#section_41AC56BB0A084BF59379B06C8BEF2157}
 
-结果集是JSON响应的可自定义区域。 每个索引在元数据的字段命名机制中都是唯一的。 每个结果都会返回一些常用字段，如标题、说明和URL。 但是，为索引中的页面定义的任何元数据都可用于每个结果节点。 分类、价格、颜色和缩略图只是您可以应用到结果中、以生成更引人注目的搜索结果的几个选项。
+结果集是JSON响应的可自定义区域。 每个索引在元数据的字段命名机制中都是唯一的。 每个结果都返回了常用字段，如标题、说明和URL。 但是，为索引中的页面定义的任何元数据都可以在每个结果节点中使用。 分类、价格、颜色和缩略图只是一些选项，您可以将它们应用于结果，从而生成更引人注目的搜索结果。
 
-根据特定于您的实施的元数据自定义结果格式。 此处包含结果中显示的任何每个结果数据，包括缩略图图像URL。
+根据特定于您的实施的元数据自定义结果格式。 此处包含结果中显示的所有结果数据，包括缩略图图像URL。
 
-此外，还可以在页面中配置多个结果区域，如“特色结果”，或单独的“产品”和“内容”结果部分。 在这些情况下，HTML中会提供多个结果区域，但彩块化仅与主结果集关联。
+此外，还可以在页面中配置多个结果区域，如“特色结果”，或单独的“产品”和“内容”结果部分。 在这些情况下，HTML中会提供多个结果区域，但facet仅与主结果集关联。
 
 示例：
 
@@ -688,23 +686,23 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 可选. 如果JSON中存在值1，则它表示您的帐户已链接到<span class="keyword">测试目标</span>，并且至少有一个业务规则处于A:B测试中。 </p> </td> 
+   <td colname="col2"> <p> 可选. 如果JSON中存在值1，则它表示您的帐户已链接到<span class="keyword"> Test&amp;目标 </span>，并且至少有一个业务规则位于A:B测试中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 可选. 使用自动完成时，此节点表示页面上存在CSS和JavaScript以及表单中的内容。 除非有人更改了自动完成设置，否则这些字段通常不会更改。 在这种情况下，xxx_cache_ver字段会递增，以强制客户浏览器上缓存的内容失效。 </p> </td> 
+   <td colname="col2"> <p> 可选. 使用自动完成时，此节点会显示在页面上，指示CSS和JavaScript以及表单中的内容存在。 除非某人更改了自动完成设置，否则这些字段通常不会更改。 在这种情况下，xxx_cache_ver字段会递增，以强制客户浏览器上缓存的内容失效。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;css&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 与自动完成相关联的CSS。 建议您将此标记放在页面的较高位置以改进页面渲染。 </p> </td> 
+   <td colname="col2"> <p> 与自动完成关联的CSS。 建议您将此标记放在页面的高处以改进页面渲染。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;form-content&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 自动完成实用程序的搜索范围内所需的内容，以连接到正确的控件。 </p> </td> 
+   <td colname="col2"> <p> 搜索自中所需的内容，以自动完成实用程序与正确的控件关联。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;js&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 自动完成所需的自定义JavaScript。 建议您将此标记放在页面中低位以改进页面渲染。 自动完成操作也需要YUI JavaScript。 </p> </td> 
+   <td colname="col2"> <p> 自动完成所需的自定义JavaScript。 建议您将此标记放在页面中低位以改进页面渲染。 自动完成也需要YUI JavaScript。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;hidden-parameters&gt; </span> </p> </td> 
@@ -715,7 +713,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 ## 排序 {#section_558853CD376F4D71BACF211D53085D55}
 
-以下示例显示了三选项排序菜单的数据。 该菜单允许客户按相关性、标题或评级进行排序。 当前选定的项目包含属性“selected=true”。 ”。 始终优惠相关选项，以允许客户返回最初显示的默认搜索结果。
+以下示例显示了三选项排序菜单的数据。 该菜单允许客户按相关性、标题或评级进行排序。 当前选定的项目包含属性“selected=true”。 &quot; 始终优惠相关选项，以允许客户返回到最初显示的默认搜索结果。
 
 示例：
 
@@ -742,7 +740,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>排序菜单中的标记 </p> </th> 
+   <th colname="col1" class="entry"> <p>“排序”菜单中的标记 </p> </th> 
    <th colname="col2" class="entry"> <p>描述 </p> </th> 
   </tr> 
  </thead>
@@ -753,18 +751,18 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 表示此选项的“sort”查询字符串参数的值。 如果使用<span class="codeph"> &lt;link&gt; </span>值，则不需要此标记。 </p> </td> 
+   <td colname="col2"> <p> 表示此选项的"sort"查询字符串参数的值。 如果使用<span class="codeph"> &lt;link&gt; </span>值，则不需要此标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 对于未选择的选项，<span class="codeph"> &lt;link&gt; </span>参数包含返回相同结果集的相对链接，该链接按新的排序参数排序。 此字段对于当前选定的排序选项为空。 </p> </td> 
+   <td colname="col2"> <p> 对于未选择的选项，<span class="codeph"> &lt;link&gt; </span>参数包含返回相同结果集的相对链接，该链接按新排序参数排序。 此字段对于当前选定的排序选项为空。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 建议{#section_6EC104E1DDD94AC799B65E6E61A2FB3C}
 
-当结果很少或没有结果时，将返回建议。 此节点包含的术语会产生成功的查询，并可在“无结果”页面上显示。 链接也会返回，以便客户可以跳转到新查询。
+当结果很少或没有结果时，将返回建议。 此节点包含的术语会生成成功的查询，并可在“无结果”页面上显示。 此时还会返回链接，以便客户可以跳转到新查询。
 
 示例：
 
@@ -825,7 +823,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;display&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 1或0，以指示区域是否显示。 实际区域内容可以是网页或搜索结果中的静态区域，如最畅销商或相关产品。 </p> </td> 
+   <td colname="col2"> <p> 1或0表示区域是否显示。 实际区域内容可以是网页或搜索结果中的静态区域，如最畅销商品或相关产品。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -834,7 +832,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 描述标准XML响应输出的表。
 
-您可以查看XML响应以了解以下内容：
+您可以查看以下XML响应：
 
 * [横幅广告](../c-appendices/c-guidedsearchoutput.md#section_6A19EC26DD3B494194AAA788151B78B5)
 * [痕迹导航](../c-appendices/c-guidedsearchoutput.md#section_E48A71B0EBDB4EDDA7587009AD865488)
@@ -846,7 +844,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 * [搜索表单](../c-appendices/c-guidedsearchoutput.md#section_F92D8C3D37174A10A4E26CAFF3F3DF89)
 * [排序](../c-appendices/c-guidedsearchoutput.md#section_32DC50A103BF491BA3665A5CADCCAADE)
 * [建议](../c-appendices/c-guidedsearchoutput.md#section_D81BCE46F0AF443695DF9C4BA084B716)
-* [区域](../c-appendices/c-guidedsearchoutput.md#section_15D8AA585F3246799968BA88EE2C9FC2)
+* [Zones](../c-appendices/c-guidedsearchoutput.md#section_15D8AA585F3246799968BA88EE2C9FC2)
 
 ## 横幅广告 {#section_6A19EC26DD3B494194AAA788151B78B5}
 
@@ -886,7 +884,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 ## 痕迹导航{#section_E48A71B0EBDB4EDDA7587009AD865488}
 
-在以下示例中，每次客户通过facet进一步缩小范围时，选择将添加到痕迹导航中。 每个项目表示为`<breadcrumb-item>`。
+在以下示例中，每次客户通过facet进一步缩小范围时，所做的选择都会添加到痕迹导航中。 每个项目都表示为`<breadcrumb-item>`。
 
 示例：
 
@@ -913,7 +911,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 显示所需视图的搜索结果的相对链接。 单击痕迹导航链接可将客户带到视图，在此处将删除所有后续细化。 还提供其他选项。 </p> </td> 
+   <td colname="col2"> <p> 显示所需视图的搜索结果的相对链接。 单击痕迹导航链接可将客户带到视图，随后所有的细化都将被删除。 还提供其他选项。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
@@ -924,11 +922,11 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 ## 彩块化{#section_5CEB1F966C004FFEA3CF675638966E25}
 
-彩块化是细化选项，可让客户对结果进行筛选。 彩块化通常用于分类、价格范围、颜色选择和其他属性细化。 索引中的元数据是驱动器彩块化的因素。
+彩块化是细化选项，让客户能够对结果进行筛选。 彩块化通常用于分类、价格范围、颜色选择和其他属性细化。 索引中的元数据是驱动器彩块化的原因。
 
-客户在分类中向下移动时，通常会隐藏或显示分类彩块化。 最高级别的分类(类别)称为第1层。 当客户单击第1层选项时，将显示第2层（子类别）细化选项，而第1层选项将消失。 当客户单击第2层选项时，将显示第3层（子子类别）细化选项，而第2层选项将消失。 如上所述，这些选项是隐藏的，并且显示，您的Web应用程序不受这些选项的影响。
+客户在分类中向下移动时，通常会隐藏或显示分类彩块化。 最高级别的分类(类别)称为第1层。 当客户单击第1层选项时，将显示第2层（子类别）优化选项，而第1层选项将消失。 当客户单击第2层选项时，将显示第3层（子子类别）优化选项，而第2层选项将消失。 如上所述，这些选项是隐藏的并且显示的 — 您的Web应用程序不受这些选项的影响。
 
-每个facet都包含在`<facet-item>`标记中。 在以下示例中，它显示了一个facet，允许客户按“假日”细化搜索结果。
+每个facet都包含在`<facet-item>`标记中。 在以下示例中，它显示了一个允许客户按“假日”优化搜索结果的方面。
 
 示例：
 
@@ -1022,11 +1020,11 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;label&gt; </span> </p> </td> 
-   <td colname="col2"> <p> facet选项的面向客户标签。 </p> </td> 
+   <td colname="col2"> <p> facet选项的面向客户的标签。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 相对链接，该选项会细化结果。 </p> </td> 
+   <td colname="col2"> <p> 相对链接，可使选项缩小。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;count（计数）&gt; </span> </p> </td> 
@@ -1034,12 +1032,12 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;undolink&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 选择facet值后，节点将返回“撤消链接”，允许客户退出结果。 </p> </td> 
+   <td colname="col2"> <p> 选择facet值后，节点将返回一个“撤消链接”，允许客户退出结果。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 标题和查询{#section_802835E19BCB48239C6770A1B72DFFF8}
+## 标头和查询{#section_802835E19BCB48239C6770A1B72DFFF8}
 
 示例：
 
@@ -1054,7 +1052,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  </query> 
 ```
 
-这些标记结合使用会显示如下消息：“‘新年’的621项成绩显示1-16项。”
+这些标签一起使用时会显示如下消息：“‘新年’的621项中，显示结果1-16项。”
 
 <table> 
  <thead> 
@@ -1066,7 +1064,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 随请求提交的关键字查询。 </p> </td> 
+   <td colname="col2"> <p> 随请求一起提交的关键字查询。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;lower-results&gt; </span> </p> </td> 
@@ -1127,7 +1125,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="first"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 包含指向结果集中第一页的相对链接，除非客户已在查看第1页。 在这种情况下，它是空的。 </p> </td> 
+   <td colname="col2"> <p> 包含指向结果集中第一页的相对链接，除非客户已查看第1页。 在这种情况下，它是空的。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="last"&gt; </span> </p> </td> 
@@ -1135,7 +1133,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="previous"&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 包含指向结果集中上一页的相对链接，除非客户正在查看第1页；在这种情况下，它为空。 </p> </td> 
+   <td colname="col2"> <p> 包含指向结果集中上一页的相对链接，除非客户正在查看第1页；在这种情况下，它是空的。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="next"&gt; </span> </p> </td> 
@@ -1143,18 +1141,18 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
-   <td colname="col2"> <p> 包含指向特定页码的相对链接。 显示十个连续的页码。 在第1页，是第1-10页。 在结果集的末尾（本例中为39页），将是第30-39页。 例如，在结果集的中心，第15页，它应该是第11-20页。 </p> </td> 
+   <td colname="col2"> <p> 包含指向特定页码的相对链接。 显示十个连续的页码。 在第1页，是第1-10页。 在结果集（本例中为39页）末尾，将是第30-39页。 例如，在结果集的中心（第15页），它应该是第11-20页。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
-   <td colname="col2"> <p> 应用为当前所选页面的属性。 </p> </td> 
+   <td colname="col2"> <p> 应用为当前选定页面的属性。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 最近搜索{#section_BCA2DDD17F264CF6BA11634E1A514E28}
 
-“最近搜索”是基于cookie的功能，仅当您将cookie信息中继到服务器时，此功能才有效。
+“最近搜索”是基于Cookie的功能，仅在您将Cookie信息中继到服务器时才有效。
 
 示例：
 
@@ -1177,11 +1175,11 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 单个最近搜索节点。 您可以有多个最近搜索的节点。 </p> </td> 
+   <td colname="col2"> <p> 单个最近搜索节点。 您可以有多个最近搜索节点。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 客户以前搜索的词。 </p> </td> 
+   <td colname="col2"> <p> 客户之前搜索的词。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -1192,11 +1190,11 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 ## 结果 {#section_EC496F5CA2634158891455E2F6DF6833}
 
-结果集是XML响应的可自定义区域。 每个索引在元数据的字段命名机制中都是唯一的。 每个结果都会返回一些常用字段，如标题、说明和URL。 但是，为索引中的页面定义的任何元数据都可用于每个结果节点。 分类、价格、颜色和缩略图只是您可以应用到结果中、以生成更引人注目的搜索结果的几个选项。
+“结果”集是XML响应的可自定义区域。 每个索引在元数据的字段命名机制中都是唯一的。 每个结果都返回了常用字段，如标题、说明和URL。 但是，为索引中的页面定义的任何元数据都可以在每个结果节点中使用。 分类、价格、颜色和缩略图只是一些选项，您可以将它们应用于结果，从而生成更引人注目的搜索结果。
 
-根据特定于您的实施的元数据自定义结果格式。 此处包含结果中显示的任何每个结果数据，包括缩略图图像URL。
+根据特定于您的实施的元数据自定义结果格式。 此处包含结果中显示的所有结果数据，包括缩略图图像URL。
 
-此外，还可以在页面中配置多个结果区域，如“特色结果”，或单独的“产品”和“内容”结果部分。 在这些情况下，HTML中会提供多个结果区域，但彩块化仅与主结果集关联。
+此外，还可以在页面中配置多个结果区域，如“特色结果”，或单独的“产品”和“内容”结果部分。 在这些情况下，HTML中会提供多个结果区域，但facet仅与主结果集关联。
 
 示例：
 
@@ -1371,23 +1369,23 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 可选. 当XML中存在值1时，它表示您的帐户已链接到<span class="keyword">测试目标</span>，并且至少有一个业务规则处于A:B测试中。 </p> </td> 
+   <td colname="col2"> <p> 可选. 当XML中存在值1时，它表示您的帐户已链接到<span class="keyword"> Test&amp;目标 </span>，并且至少有一个业务规则位于A:B测试中。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 可选. 使用自动完成时，此节点表示页面上存在CSS和JavaScript以及表单中的内容。 除非有人更改了自动完成设置，否则这些字段通常不会更改。 在这种情况下，xxx_cache_ver字段会递增，以强制客户浏览器上缓存的内容失效。 </p> </td> 
+   <td colname="col2"> <p> 可选. 使用自动完成时，此节点会显示在页面上，指示CSS和JavaScript以及表单中的内容存在。 除非某人更改了自动完成设置，否则这些字段通常不会更改。 在这种情况下，xxx_cache_ver字段会递增，以强制客户浏览器上缓存的内容失效。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;css&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 与自动完成相关联的CSS。 建议您将此标记放在页面的较高位置以改进页面渲染。 </p> </td> 
+   <td colname="col2"> <p> 与自动完成关联的CSS。 建议您将此标记放在页面的高处以改进页面渲染。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;form-content&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 自动完成实用程序的搜索范围内所需的内容，以连接到正确的控件。 </p> </td> 
+   <td colname="col2"> <p> 搜索自中所需的内容，以自动完成实用程序与正确的控件关联。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;js&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 自动完成所需的自定义JavaScript。 建议您将此标记放在页面中低位以改进页面渲染。 自动完成操作也需要YUI JavaScript。 </p> </td> 
+   <td colname="col2"> <p> 自动完成所需的自定义JavaScript。 建议您将此标记放在页面中低位以改进页面渲染。 自动完成也需要YUI JavaScript。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;hidden-parameters&gt; </span> </p> </td> 
@@ -1398,7 +1396,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 ## 排序 {#section_32DC50A103BF491BA3665A5CADCCAADE}
 
-以下示例显示了三选项排序菜单的数据。 该菜单允许客户按相关性、标题或评级进行排序。 当前选定的项目包含属性“selected=true”。 ”。 始终优惠相关选项，以允许客户返回最初显示的默认搜索结果。
+以下示例显示了三选项排序菜单的数据。 该菜单允许客户按相关性、标题或评级进行排序。 当前选定的项目包含属性“selected=true”。 &quot; 始终优惠相关选项，以允许客户返回到最初显示的默认搜索结果。
 
 示例：
 
@@ -1425,7 +1423,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 <table> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> <p>排序菜单中的标记 </p> </th> 
+   <th colname="col1" class="entry"> <p>“排序”菜单中的标记 </p> </th> 
    <th colname="col2" class="entry"> <p>描述 </p> </th> 
   </tr> 
  </thead>
@@ -1436,18 +1434,18 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 表示此选项的“sort”查询字符串参数的值。 如果使用<span class="codeph"> &lt;link&gt; </span>值，则不需要此标记。 </p> </td> 
+   <td colname="col2"> <p> 表示此选项的"sort"查询字符串参数的值。 如果使用<span class="codeph"> &lt;link&gt; </span>值，则不需要此标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 对于未选择的选项，<span class="codeph"> &lt;link&gt; </span>参数包含返回相同结果集的相对链接，该链接按新的排序参数排序。 此字段对于当前选定的排序选项为空。 </p> </td> 
+   <td colname="col2"> <p> 对于未选择的选项，<span class="codeph"> &lt;link&gt; </span>参数包含返回相同结果集的相对链接，该链接按新排序参数排序。 此字段对于当前选定的排序选项为空。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 建议{#section_D81BCE46F0AF443695DF9C4BA084B716}
 
-当结果很少或没有结果时，将返回建议。 此节点包含的术语会产生成功的查询，并可在“无结果”页面上显示。 链接也会返回，以便客户可以跳转到新查询。
+当结果很少或没有结果时，将返回建议。 此节点包含的术语会生成成功的查询，并可在“无结果”页面上显示。 此时还会返回链接，以便客户可以跳转到新查询。
 
 示例：
 
@@ -1508,18 +1506,18 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;display&gt; </span> </p> </td> 
-   <td colname="col2"> <p> 1或0，以指示区域是否显示。 实际区域内容可以是网页或搜索结果中的静态区域，如最畅销商或相关产品。 </p> </td> 
+   <td colname="col2"> <p> 1或0表示区域是否显示。 实际区域内容可以是网页或搜索结果中的静态区域，如最畅销商品或相关产品。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Adobe Experience Manager{#reference_DBE13C606C3A4BB185DE53F88D0D3048}的向导式搜索XML输出
+## Adobe Experience Manager {#reference_DBE13C606C3A4BB185DE53F88D0D3048}的向导式搜索XML输出
 
 描述AEM(Adobe Experience Manager)标准XML响应输出的表。
 
 另请参阅 . [向导式搜索XML输出](../c-appendices/c-guidedsearchoutput.md#reference_D93E859A277643068B10AE7A61C973EA)
 
-您可以查看XML响应以了解以下内容：
+您可以查看以下XML响应：
 
 * [横幅广告](../c-appendices/c-guidedsearchoutput.md#section_B16EDC5533FA4494AC9983AA7357CBE3)
 * [Breadcrumb](../c-appendices/c-guidedsearchoutput.md#section_49EA7043FBE44315A79A4E738BE30114)
@@ -1534,11 +1532,11 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 * [搜索表单](../c-appendices/c-guidedsearchoutput.md#section_9E4B99D4FEDC49629F6C7E866F3A7493)
 * [建议](../c-appendices/c-guidedsearchoutput.md#section_2899FACB9AD84F60B3687C1B4EF09E15)
 * [模板](../c-appendices/c-guidedsearchoutput.md#section_1E2BB2F274B04F5491A4CCCC38F507BD)
-* [区域](../c-appendices/c-guidedsearchoutput.md#section_26C4A947E7B1474A8E37D86D9579B93E)
+* [Zones](../c-appendices/c-guidedsearchoutput.md#section_26C4A947E7B1474A8E37D86D9579B93E)
 
 ## 横幅广告 {#section_B16EDC5533FA4494AC9983AA7357CBE3}
 
-网站搜索／销售可以管理客户的横幅，将横幅插入网页的各个部分。
+网站搜索/促销可以管理客户的横幅，将横幅插入网页的各个部分。
 
 示例横幅：
 
@@ -1564,7 +1562,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p>横幅 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p>包含0-n个横幅节点，指示每个横幅区域以及插入该区域的内容。 </p> </td> 
   </tr> 
   <tr> 
@@ -1589,7 +1587,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 支持多个痕迹导航。 您可以在&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**&#x200B;中定义痕迹导航及其相应行为。 此外，您需要为定义的每个痕迹导航指定唯一的名称。 痕迹导航XML节点迭代所有定义的痕迹导航。 建议在搜索结果中只显示一个痕迹导航。
 
-在以下示例中，每次客户通过facet进一步缩小范围时，选择将添加到痕迹导航中。 每个项目表示为`<breadcrumb-item>`。
+在以下示例中，每次客户通过facet进一步缩小范围时，所做的选择都会添加到痕迹导航中。 每个项目都表示为`<breadcrumb-item>`。
 
 痕迹导航节点示例：
 
@@ -1622,45 +1620,45 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  <tbody> 
   <tr> 
    <td colname="col1"> <p>痕迹 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p> 包含定义每个痕迹导航的0-n痕迹导航节点。 大多数客户只有一个痕迹导航。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>痕迹导航 </p> </td> 
+   <td colname="col1"> <p>痕迹 </p> </td> 
    <td colname="col2"> <p>痕迹 </p> </td> 
    <td colname="col3"> <p> 包含定义痕迹导航定义的子节点。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
-   <td colname="col2"> <p>痕迹导航 </p> </td> 
+   <td colname="col2"> <p>痕迹 </p> </td> 
    <td colname="col3"> <p> 痕迹导航的名称。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>痕迹导航项 </p> </td> 
-   <td colname="col2"> <p>痕迹导航中的单个项。 每个项目表示在用户缩小结果集范围时跟踪中的步骤。 </p> </td> 
+   <td colname="col1"> <p>breadcrumb项目 </p> </td> 
+   <td colname="col2"> <p>痕迹导航中的单个项。 每个项目表示跟踪中的步骤，因为用户会缩小结果集的范围。 </p> </td> 
    <td colname="col3"> <p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
-   <td colname="col2"> <p>痕迹导航项 </p> </td> 
-   <td colname="col3"> <p> 显示所需视图的搜索结果的相对链接。 单击痕迹导航链接可将客户带到视图，在此处将删除所有后续细化。 还提供了其他选项，如删除和删除。 </p> </td> 
+   <td colname="col2"> <p>breadcrumb项目 </p> </td> 
+   <td colname="col3"> <p> 显示所需视图的搜索结果的相对链接。 单击痕迹导航链接可将客户带到视图，随后所有的细化都将被删除。 还提供了其他选项，如删除和删除。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>value </p> </td> 
-   <td colname="col2"> <p>痕迹导航项 </p> </td> 
+   <td colname="col2"> <p>breadcrumb项目 </p> </td> 
    <td colname="col3"> <p> 痕迹导航项的面向客户的文本。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>标签 </p> </td> 
-   <td colname="col2"> <p>痕迹导航项 </p> </td> 
-   <td colname="col3"> <p> 标签标签输出痕迹导航值的标签，详细描述选择哪个facet来生成痕迹导航项。 它仅用于向导痕迹导航块的上下文。 对于查询词步骤，此值为空。 </p> </td> 
+   <td colname="col2"> <p>breadcrumb项目 </p> </td> 
+   <td colname="col3"> <p> 标签标签输出一个标签，用于描述已选择哪个facet来生成该痕迹导航项的痕迹导航值。 它仅用于向导式痕迹导航块的上下文。 对于查询术语步骤，此值为空。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 自定义字段{#section_38DD31AFE5DD4263A63644AFF484E0F4}
 
-自定义字段是具有全局上下文的变量的杂项集合。 它通常用于传递变量以用于在搜索结果页面的元数据中设置的SEO。
+自定义字段是具有全局上下文的变量的杂项集合。 它通常用于传递在搜索结果页面的元数据中设置的用于SEO的变量。
 
 自定义字段节点示例：
 
@@ -1681,13 +1679,13 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>自定义字段 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
-   <td colname="col3"> <p> 可包含定义自定义字段的0-n子节点。 </p> </td> 
+   <td colname="col1"> <p>custom-fields </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
+   <td colname="col3"> <p> 可以包含定义自定义字段的0-n子节点。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>custom-field </p> </td> 
-   <td colname="col2"> <p>自定义字段 </p> </td> 
+   <td colname="col2"> <p>custom-fields </p> </td> 
    <td colname="col3"> <p> 可选. 包含由name属性指示的给定自定义字段的值。 </p> </td> 
   </tr> 
  </tbody> 
@@ -1695,11 +1693,11 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
 
 ## 彩块化{#section_BE98990E3DD748A1BD4E0CA322314B79}
 
-彩块化是细化选项，可让客户对结果进行筛选。 彩块化通常用于分类、价格范围、颜色选择和其他属性细化。 彩块化构建在索引中的元数据之上。
+彩块化是细化选项，让客户能够对结果进行筛选。 彩块化通常用于分类、价格范围、颜色选择和其他属性细化。 彩块化构建在索引中的元数据之上。
 
-客户在分类中向下移动时，通常会隐藏或显示分类彩块化。 最高级别的分类(类别)称为第1层。 当客户单击第1层选项时，将显示第2层（子类别）细化选项，而第1层选项将消失。 当客户单击第2层选项时，将显示第3层（子子类别）细化选项，而第2层选项将消失。 如上所述，这些选项被隐藏和显示；您的web应用程序不会影响它们。
+客户在分类中向下移动时，通常会隐藏或显示分类彩块化。 最高级别的分类(类别)称为第1层。 当客户单击第1层选项时，将显示第2层（子类别）优化选项，而第1层选项将消失。 当客户单击第2层选项时，将显示第3层（子子类别）优化选项，而第2层选项将消失。 如上所述，这些选项被隐藏和显示；您的web应用程序不会影响它们。
 
-每个facet都包含在`<facet-item>`标记中。 在以下示例中，它显示了一个facet，让客户可以按“假日”细化搜索结果。
+每个facet都包含在`<facet-item>`标记中。 在以下示例中，它显示了一个允许客户按“假日”优化搜索结果的方面。
 
 彩块示例：
 
@@ -1790,13 +1788,13 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>彩块化 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
-   <td colname="col3"> <p>容器facet节点，具有表示每个facet的0-n个子节点。 </p> </td> 
+   <td colname="col1"> <p>facet </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
+   <td colname="col3"> <p>容器facet节点，具有0-n个子节点，表示每个facet。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>fact </p> </td> 
-   <td colname="col2"> <p>彩块化 </p> </td> 
+   <td colname="col2"> <p>facet </p> </td> 
    <td colname="col3"> <p> 单个facet实例。 </p> </td> 
   </tr> 
   <tr> 
@@ -1817,7 +1815,7 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
   <tr> 
    <td colname="col1"> <p>还原链接 </p> </td> 
    <td colname="col2"> <p>fact </p> </td> 
-   <td colname="col3"> <p> 仅当选择了彩块化时显示。 撤消链接可还原整个彩块化。 例如，当它是多选facet时，它会取消选择该facet的所有选定选项。 </p> </td> 
+   <td colname="col3"> <p> 仅当选择了小平面时显示。 撤消链接会还原整个彩块化。 例如，当它是多选facet时，它会取消选择该facet的所有选项。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>facet-value </p> </td> 
@@ -1825,19 +1823,19 @@ traditions-to-start-this-year-parties-photo-160-FF1107HOLIA01.jpg]]></large-thum
    <td colname="col3"> <p>包含属于该facet的所有单个facet项。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>已选 </p> </td> 
+   <td colname="col1"> <p>选定 </p> </td> 
    <td colname="col2"> <p>facet-value </p> </td> 
    <td colname="col3"> <p>如果选择了具有facet的当前项，则此节点存在并设置为“true”。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>标签 </p> </td> 
    <td colname="col2"> <p>facet-value </p> </td> 
-   <td colname="col3"> <p>facet选项的面向客户标签。 默认情况下，它应已由HTML转义。 </p> </td> 
+   <td colname="col3"> <p>facet选项的面向客户的标签。 默认情况下，这应已由HTML转义。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>链接 </p> </td> 
    <td colname="col2"> <p>facet-value </p> </td> 
-   <td colname="col3"> <p> 相对链接可进一步细化选项。 </p> </td> 
+   <td colname="col3"> <p> 相对链接，以便选项进一步细化。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>count（计数） </p> </td> 
@@ -1862,11 +1860,11 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 菜单和排序{#section_A34CBB645DBF4C70A12A5B7E81211295}
 
-支持用于对结果进行排序的菜单，以及更改每页返回的结果数。 它还支持一个导航菜单，该菜单对于使用“搜索为导航”很有用。 帐户可以定义同一类型的多个菜单，并将其中的任意菜单用于其演示。
+支持用于对结果进行排序的菜单，以及更改每页返回的结果数。 它还支持一个导航菜单，该菜单对于使用“搜索为导航”很有用。 帐户可以定义同一类型的多个菜单，并使用其中的任意菜单进行演示。
 
-示例菜单节点：
+“示例菜单”节点：
 
-以下示例显示了三选项排序菜单和导航菜单的数据。 通过排序菜单，客户可以按相关性、标题或评级进行排序。 当前选定的项目包含属性“selected=true”。 ”。 始终优惠相关选项，以允许客户返回最初显示的默认搜索结果。
+以下示例显示了三选项排序菜单和导航菜单的数据。 通过“排序”菜单，客户可以按相关性、标题或评级进行排序。 当前选定的项目包含属性“selected=true”。 &quot; 始终优惠相关选项，以允许客户返回到最初显示的默认搜索结果。
 
 ```xml
 <menus> 
@@ -1945,7 +1943,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>菜单 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p>包含定义每个菜单的0-n个子节点。 </p> </td> 
   </tr> 
   <tr> 
@@ -1959,23 +1957,23 @@ xml version="1.0" encoding="utf-8" standalone="yes"
    <td colname="col3"> <p>菜单的名称。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>物料 </p> </td> 
+   <td colname="col1"> <p>项目 </p> </td> 
    <td colname="col2"> <p>菜单 </p> </td> 
-   <td colname="col3"> <p>定义菜单中的每个项目。 如果当前选择了给定的菜单项，则选定的可选属性将设置为true。 </p> </td> 
+   <td colname="col3"> <p>定义菜单中的每个项。 如果当前选择了给定的菜单项，则选定的可选属性将设置为true。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>标签 </p> </td> 
-   <td colname="col2"> <p>物料 </p> </td> 
+   <td colname="col2"> <p>项目 </p> </td> 
    <td colname="col3"> <p>菜单项的面向客户的文本。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>值 </p> </td> 
-   <td colname="col2"> <p>物料 </p> </td> 
+   <td colname="col2"> <p>项目 </p> </td> 
    <td colname="col3"> <p>表示菜单项的值(也设置菜单的查询参数值)。 如果使用&lt;link&gt;值，则不需要此标记。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>链接 </p> </td> 
-   <td colname="col2"> <p>物料 </p> </td> 
+   <td colname="col2"> <p>项目 </p> </td> 
    <td colname="col3"> <p>对于未选择的选项，&lt;link&gt;参数包含返回相同结果集但应用了菜单选项的相对链接。 此字段对于当前选定的排序选项为空。 </p> </td> 
   </tr> 
  </tbody> 
@@ -1983,9 +1981,9 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 分页{#section_E52F81C6A6EB4B8F996157B657EC540F}
 
-结果集将拆分到多个页面。 通常，客户在单个页面上显示10 - 20个结果。 后续结果将显示在下一页。 分页XML允许您构建一组导航链接，这样客户就可以逐页浏览结果集。 有四个可用的导航链接：第一个、最后一个、下一个和上一个。 每种类型的链接都能让客户快速浏览页面，从而轻松地审阅和调整其所寻找的内容。
+结果集将拆分到多个页面。 通常，客户在单个页面上显示10 - 20个结果。 后续结果将显示在下一页。 分页XML允许您构建一组导航链接，以便客户可以逐页浏览结果集。 有四个可用的导航链接：first、last、next和previous。 每种类型的链接都可让客户快速浏览页面，以便轻松地审阅和优化所需内容。
 
-以下示例显示了在第一页上搜索的分页，该分页配置为显示指向五个页面的链接。
+以下示例显示了在第一页上搜索的分页，其中将分页配置为显示指向五个页面的链接。
 
 分页示例：
 
@@ -2016,13 +2014,13 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>分页 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p> 结果页总数，基于结果数除以每页结果数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>总页数 </p> </td> 
    <td colname="col2"> <p>分页 </p> </td> 
-   <td colname="col3"> <p>搜索结果分布到的页面总数。 </p> </td> 
+   <td colname="col3"> <p>将搜索结果分布到的页面总数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>页面 </p> </td> 
@@ -2032,7 +2030,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
   <tr> 
    <td colname="col1"> <p>page </p> </td> 
    <td colname="col2"> <p>页面 </p> </td> 
-   <td colname="col3"> <p>存在四个特殊页面节点：第一个、最后一个、上一个和下一个。 这四个页面是可选的，仅在有意义时才显示在结果集中。 例如，如果您位于第1页，则不存在“上一个”链接。 所有其他页面均指示位置。 列出的页数取决于在分页用户界面中配置的“页面链接数”。 “选定”属性指示客户当前所在的页面。 </p> </td> 
+   <td colname="col3"> <p>存在四个特殊页面节点：第一个、最后一个、上一个和下一个。 这四个页面是可选的，仅在有意义时才显示在结果集中。 例如，如果您位于第1页，则不存在“上一个”链接。 所有其他页面都指示一个位置。 列出的页数取决于在分页用户界面中配置的“页面链接数”。 “选定”属性指示客户当前所在的页面。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2061,13 +2059,13 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>query </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p> 提供查询概述的全局节点。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>用户查询 </p> </td> 
    <td colname="col2"> <p>查询 </p> </td> 
-   <td colname="col3"> <p> 搜索的关键字。 如果“<span class="uicontrol">您是否想搜索</span>”由于原始词未产生任何结果而自动搜索建议词，则会反映在搜索的新关键字中（请参阅获取原始关键字的建议节点）。 </p> </td> 
+   <td colname="col3"> <p> 搜索的关键字。 如果“<span class="uicontrol">是否是You Mean </span>”由于原始词未产生结果而自动搜索建议词，则会反映在搜索的新关键词中（请参阅建议节点以获取原始关键词）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>低结果 </p> </td> 
@@ -2089,7 +2087,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 最近搜索{#section_17F942F6EC07456DABED7A483AC08446}
 
-“最近搜索”是基于cookie的功能，仅当您将cookie信息中继到网站搜索／销售服务器时，此功能才有效。
+“最近搜索”是基于Cookie的功能，仅当您将Cookie信息中继至网站搜索/促销服务器时才有效。
 
 最近搜索的示例：
 
@@ -2114,8 +2112,8 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>最近搜索 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
-   <td colname="col3"> <p>节点仅在搜索有最近搜索时才存在。 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
+   <td colname="col3"> <p>仅当搜索有最近搜索时，节点才存在。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>清除链接 </p> </td> 
@@ -2130,7 +2128,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
   <tr> 
    <td colname="col1"> <p>链接 </p> </td> 
    <td colname="col2"> <p>最近搜索 </p> </td> 
-   <td colname="col3"> <p>用于创建链接的路径，该链接执行用户最近执行的搜索。 </p> </td> 
+   <td colname="col3"> <p>创建链接的路径，该链接执行用户最近执行的搜索。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>标签 </p> </td> 
@@ -2142,11 +2140,11 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 结果 {#section_155A80B8C4F641678DD9C8F257108412}
 
-结果集是XML响应的可自定义区域。 每个索引在元数据的字段命名机制中都是唯一的。 每个结果都会返回一些常用字段，如标题、说明和URL。 但是，为索引中的页面定义的任何元数据都可用于每个结果节点。 分类、价格、颜色和缩略图只是您可以应用到结果中、以生成更引人注目的搜索结果的几个选项。
+“结果”集是XML响应的可自定义区域。 每个索引在元数据的字段命名机制中都是唯一的。 每个结果都返回了常用字段，如标题、说明和URL。 但是，为索引中的页面定义的任何元数据都可以在每个结果节点中使用。 分类、价格、颜色和缩略图只是一些选项，您可以将它们应用于结果，从而生成更引人注目的搜索结果。
 
-根据特定于您的实施的元数据自定义结果格式。 此处包含结果中显示的任何每个结果数据，包括缩略图图像URL。
+根据特定于您的实施的元数据自定义结果格式。 此处包含结果中显示的所有结果数据，包括缩略图图像URL。
 
-此外，还可以在页面中配置多个结果区域，如“特色结果”，或单独的“产品”和“内容”结果部分。 在这些情况下，HTML中会提供多个结果区域，但彩块化仅与主结果集关联。
+此外，还可以在页面中配置多个结果区域，如“特色结果”，或单独的“产品”和“内容”结果部分。 在这些情况下，HTML中会提供多个结果区域，但facet仅与主结果集关联。
 
 示例结果节点：
 
@@ -2205,7 +2203,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>结果 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p>0-n个结果集的容器节点。 零结果集意味着您处于特殊的无结果登陆页。 </p> </td> 
   </tr> 
   <tr> 
@@ -2233,7 +2231,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 搜索表单{#section_9E4B99D4FEDC49629F6C7E866F3A7493}
 
-搜索表单包含在结果集中，让客户动态地构建其搜索表单。 此步骤是可选的。 大多数客户都有固定的搜索表单。 但是，它允许客户根据至少一个执行A:B测试的业务规则来确定搜索表单是否需要Test&amp;目标mbox。 同样，它允许客户自动获取最新的自动完成CSS和JavaScript。
+搜索表单包含在结果集中，让客户动态地构建其搜索表单。 此步骤是可选的。 大多数客户都有固定的搜索表单。 但是，它确实允许客户根据至少一个执行A:B测试的业务规则来确定搜索表单是否需要Test&amp;目标 mbox。 同样，它允许客户自动获取最新的自动完成CSS和JavaScript。
 
 搜索表单XML的示例：
 
@@ -2267,13 +2265,13 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>搜索表单 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p>包含用于驱动搜索表单的数据。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>include-tnt-mbox </p> </td> 
    <td colname="col2"> <p> 搜索表单 </p> </td> 
-   <td colname="col3"> <p>从技术上讲，只有在至少有一条业务规则在进行Test&amp;目标A:B测试时，您才需要在搜索表单中使用mbox。 此节点指示您是否需要mbox，以便减少Test&amp;目标服务器上的点击次数。 </p> </td> 
+   <td colname="col3"> <p>从技术上讲，只有在至少有一个执行Test&amp;目标 A:B测试的业务规则时，您才需要在搜索表单中使用mbox。 此节点指示您是否需要mbox，或是否允许您减少Test&amp;目标服务器上的点击次数。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>自动完成 </p> </td> 
@@ -2288,7 +2286,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
   <tr> 
    <td colname="col1"> <p>css </p> </td> 
    <td colname="col2"> <p> 自动完成 </p> </td> 
-   <td colname="col3"> <p> CSS实现自动完成。 将此节点放在页面上尽可能高。 </p> </td> 
+   <td colname="col3"> <p> CSS实现自动完成。 将此节点放在页面上。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> 表单内容 </p> </td> 
@@ -2298,16 +2296,16 @@ xml version="1.0" encoding="utf-8" standalone="yes"
   <tr> 
    <td colname="col1"> <p>javascript </p> </td> 
    <td colname="col2"> <p>自动完成 </p> </td> 
-   <td colname="col3"> <p>用于自动完成的JavaScript。 将此节点放在页面上尽可能低。 </p> </td> 
+   <td colname="col3"> <p>JavaScript实现自动完成。 将此节点放在页面上尽可能低。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 建议{#section_2899FACB9AD84F60B3687C1B4EF09E15}
 
-客户可以通过以下三种方式配置&#x200B;**[!UICONTROL Did You Mean]**&#x200B;功能：由于没有结果而提出建议，在没有结果时自动搜索第一个建议，或由于结果不足而提出建议（如果建议的结果数较高）。 所有建议都会产生结果。
+客户可以通过以下三种方式配置&#x200B;**[!UICONTROL Did You Mean]**&#x200B;功能：由于没有结果而提出建议，在没有结果时自动搜索第一个建议，或由于结果低而提出建议（如果建议的结果数较高）。 所有建议都会产生结果。
 
-此建议节点包含的术语会生成成功查询。 链接也会返回，以便客户可以跳转到新查询。
+此建议节点包含的术语会生成成功的查询。 此时还会返回链接，以便客户可以跳转到新查询。
 
 由于0个结果而建议的输出示例：
 
@@ -2332,7 +2330,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
     </suggestions> 
 ```
 
-由于结果不高而建议的输出示例：
+由于结果低而建议的输出示例：
 
 ```xml
    <suggestions> 
@@ -2356,23 +2354,23 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>建议 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
-   <td colname="col3"> <p> 包含定义建议的子节点（如果有）。 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
+   <td colname="col3"> <p> 包含定义建议的子节点（如果存在）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>自动搜索 </p> </td> 
    <td colname="col2"> <p>建议 </p> </td> 
-   <td colname="col3"> <p> 如果存在，则指示网站搜索／销售是否因没有结果而自动搜索新词。 </p> </td> 
+   <td colname="col3"> <p> 如果存在，则指示网站搜索/促销是否因没有结果而自动搜索新词。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>原始查询 </p> </td> 
    <td colname="col2"> <p>建议 </p> </td> 
-   <td colname="col3"> <p> 当站点搜索／推销自动根据第一个建议搜索时，查询节点中的用户查询显示所搜索的关键字。 此节点显示原始查询词。 两者结合，让顾客可以创建“搜索街机，而不是游戏场”等结构。 </p> </td> 
+   <td colname="col3"> <p> 当站点搜索/促销自动根据第一建议搜索时，查询节点中的用户查询显示所搜索的关键字。 此节点显示原始查询词。 将二者结合起来，让客户可以创建“搜索游戏机而不是游戏机”等结构。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>建议——低结果 </p> </td> 
+   <td colname="col1"> <p>建议 — 低结果 </p> </td> 
    <td colname="col2"> <p>建议 </p> </td> 
-   <td colname="col3"> <p>如果存在，则表示网站搜索／销售是否正在提出建议，因为当前搜索词产生的结果较低，而建议产生的结果要高得多。 这两个阈值可在<span class="uicontrol">中进行配置。</span> </p> </td> 
+   <td colname="col3"> <p>如果存在，则指示网站搜索/促销是否正在提出建议，因为当前搜索词产生的结果较低，而建议产生的结果要高得多。 可在<span class="uicontrol">中配置这两个阈值。</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>建议项 </p> </td> 
@@ -2382,7 +2380,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
   <tr> 
    <td colname="col1"> <p>链接 </p> </td> 
    <td colname="col2"> <p>建议项 </p> </td> 
-   <td colname="col3"> <p>包含创建指向建议词的链接的路径。 </p> </td> 
+   <td colname="col3"> <p>包含用于创建指向建议术语的链接的路径。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>词 </p> </td> 
@@ -2394,7 +2392,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 模板 {#section_1E2BB2F274B04F5491A4CCCC38F507BD}
 
-支持根据结果切换客户搜索体验的功能。 部分操作包括在具有不同搜索结果布局的不同模板之间切换。 例如，您可能有一个模板，其中含有大量产品的网格视图。 或者，在显示包含更多详细信息的单个结果时，您可能有一个“聚焦”模板。 当搜索不产生任何结果时，您也可能有“无结果”模板。 模板节点指示用于显示搜索结果的模板。
+支持根据结果切换客户搜索体验的功能。 部分操作涉及在具有不同搜索结果布局的不同模板之间进行切换。 例如，您可能有一个模板，其中含有大量产品时的产品网格视图。 或者，在显示包含更多详细信息的单个结果时，您可能有一个“聚焦”模板。 当搜索不产生任何结果时，您也可能有“无结果”模板。 模板节点指示用于显示搜索结果的模板。
 
 示例模板：
 
@@ -2413,7 +2411,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>模板 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p>指示用于显示搜索结果的模板的名称。 </p> </td> 
   </tr> 
  </tbody> 
@@ -2421,7 +2419,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 区域{#section_26C4A947E7B1474A8E37D86D9579B93E}
 
-区域是页面中可通过业务规则打开或关闭的部分。 区域可以包含任何内容，包括（但不限于）彩块化、搜索、痕迹导航和静态内容。 客户网页上的区域应与网站搜索／销售相同。
+区域是可通过业务规则打开或关闭的页面部分。 区域可以包含任何内容，包括（但不限于）彩块化、搜索、痕迹导航和静态内容。 客户网页上的区域应与网站搜索/促销相同。
 
 区域节点示例：
 
@@ -2445,7 +2443,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
  <tbody> 
   <tr> 
    <td colname="col1"> <p>区域 </p> </td> 
-   <td colname="col2"> <p>客户结果 </p> </td> 
+   <td colname="col2"> <p>客户成果 </p> </td> 
    <td colname="col3"> <p>包含0-n个区域。 </p> </td> 
   </tr> 
   <tr> 
@@ -2468,7 +2466,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 示例 {#reference_64B7D8D228AF4B8D90EDF4DE507B0F84}
 
-*搜索在虚构网站(称为Geometrixx)上的示例输出，以及用于生成示例输出的示例演示模板。
+*搜索在虚构网站(称为“Geometrixx”)上的示例输出以及用于生成示例输出的示例演示模板。
 
 * [输出示例](../c-appendices/c-guidedsearchoutput.md#section_515C000A18B847D59097D0A9CCC02636)
 * [演示文稿模板示例](../c-appendices/c-guidedsearchoutput.md#section_AD42571DFB88491AA7F0FDF0929EBE97)
@@ -2829,7 +2827,7 @@ xml version="1.0" encoding="utf-8" standalone="yes"
 
 ## 演示文稿模板示例{#section_AD42571DFB88491AA7F0FDF0929EBE97}
 
-以下是用于生成上述示例输出的示例演示文稿模板。
+以下是用于生成上述示例输出的示例演示模板。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?> 
