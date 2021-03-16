@@ -1,21 +1,19 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 8.12.0发行说明(01/16/2014)
+description: Search&amp;Promote 8.12.0发行说明。
 solution: Target
 title: Search&amp;Promote 8.12.0发行说明(01/16/2014)
-topic: Release Notes,Site search and merchandising
+topic: 发行说明、网站搜索和销售
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 74%
+source-wordcount: '257'
+ht-degree: 72%
 
 ---
 
 
-# Search&amp;Promote8.12.0发行说明(01/16/2014){#search-promote-release-notes}
+# Search&amp;Promote 8.12.0发行说明(01/16/2014){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -36,7 +34,7 @@ ht-degree: 74%
      <ul id="ul_93B619DBB3444F64BD6D7F9E969AB1E1"> 
       <li id="li_96DDE1A196834845A0FA319903C5934B"> <p>术语报表 </p> </li> 
       <li id="li_4F1A19DE98C84F8CAD963EEA2B38ED7A"> <p>空搜索词报表 </p> </li> 
-      <li id="li_A7716C62C4D44CD69D411C3FEE246D96"> <p>搜索请求报告 </p> </li> 
+      <li id="li_A7716C62C4D44CD69D411C3FEE246D96"> <p>搜索请求报表 </p> </li> 
      </ul> </p> <p>请参阅<a href="../c-about-reports-menu/c-about-reports-menu.md#concept_5F901459C7AB461BAB30B305957EB00C" format="dita" scope="local">关于“报告”菜单</a>。 </p> </td> 
   </tr> 
   <tr> 
