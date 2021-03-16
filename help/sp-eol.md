@@ -3,10 +3,8 @@ title: AdobeSearch&Promote服务终止公告
 description: 了解有关AdobeSearch&Promote服务终止公告的更多信息。
 feature: null
 role: 管理员，业务从业者，数据工程师，开发人员
-hide: true
-hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
+source-git-commit: e3a31b27ea130dc25be6691dd06e29686a97c5e4
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
