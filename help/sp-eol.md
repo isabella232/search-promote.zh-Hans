@@ -1,42 +1,45 @@
 ---
-title: 'Lorem Ipsum '
-description: Lorem ipsum dolor sit amet， consectetur adipiscing elit. Etiam vulputate nulla quis libero sagittis sollicitudin.
-solution: Target
+title: AdobeSearch&Promote服务终止公告
+description: 了解有关AdobeSearch&Promote服务终止公告的更多信息。
+feature: null
+role: 管理员，业务从业者，数据工程师，开发人员
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
+source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 
-# Lorem Ipsum
+# AdobeSearch&amp;Promote服务终止公告
 
-## Lorem ipsum dolor sit amet
+## 有关服务终了的常见问题Search&amp;Promote
 
-Consectetur adipiscing elit. Etiam vulputate nulla quis libero sagittis sollicitudin. Quisque pellentesque enim sit amet maximus commodo. Sundisse vitae risus volutpat， vehicula orci a， placerat nulla. Curabitur ullamcorper quis dolor ac lacinia. Fusce aliquet egestas mi nec facisis.
+### **_Search&amp;Promote将在什么日期停止运行？_**
 
-Donec neque odio， scelerisque sed odio a， consectetur efficitur ex. Nunc sodales vitae turpis non rutrum. Mauris imperdiet sollicitudin leo vel efficitr. Quisque mattis nulla eget nulla ornare， ac tempor lorem maximus. 在filisis nisl elit， et vulputate nunc maximus quis.
+Search&amp;Promote服务终止计划于2022年8月1日推出。 在该日期，Search&amp;Promote管理用户界面将不再可访问，对Search&amp;PromoteAPI的请求将不再提供结果。 在此日期之前，该服务将完全可用并可正常使用。
 
-### **_Lorem ipsum dolor sit amet， consectetur adipiscing elit?_**
+### **_如果对Search&amp;Promote发出搜索或其他API请求，会发生什么情况？_**
 
-在metus volutpat sodales的rutrum metus。 Donec imperdiet augue nec ipsum vestibulum， in elementum ante egestas. Duis sodales ligula maximus ex auctor， at auctor tor malesuada.
+搜索和对Search&amp;Promote发出的其他API请求将不再返回结果。 请求可能导致“找不到主机”错误、3xx HTTP重定向或HTTP错误（如404、408或其他HTTP错误代码）。
 
-### **_Pellentesque frizilla purus convallis， sollicitudin leo sit amet， condimentum ex?_**
+### **_Adobe是否提供用于网站搜索和商务搜索的替代选项？_**
 
-Quisque a magna dictum， molestie mauris at， iaculis leo. Pellentesque vel erat ac tellus vehicula ultricies. 果香。
+是. 对于产品和商务搜索，[来自Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html)的实时搜索是Adobe的搜索应用程序。 “从Magento Commerce实时搜索”计划于2021年上半年启动。
 
-### **_Curabitur id nunc at massa fruzilla condimentum?_**
+### **_Adobe是否可以推荐任何优惠功能与Search&amp;Promote类似的框架或平台？_**
 
-Morbi eu nisl nec urna aliquet laoreet. Suspendisse luctus nisl in bibendum scelerisque. Pellentesque sit amet lacus vel erat convallis ornare. Quisque gravida eros eu dapibus tempor.
+是. 如果Search&amp;Promote功能对您的营销战略至关重要，请考虑现有的许多开放源框架，包括[Apache Solr](https://solr.apache.org/)和[Elastic Free and Open](https://www.elastic.co/about/free-and-open)。
 
-### **_流苏调味品？_**
+此外，[AWS](https://aws.amazon.com/cloudsearch/)和[Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/)在各自的云平台上提供云本搜索功能。 您可以将这两个选项集成到Adobe Experience Manager Sites中以支持站点搜索等。
 
-Morbi eu nisl nec urna aliquet laoreet. Suspendisse luctus nisl in bibendum scelerisque. Pellentesque sit amet lacus vel erat convallis ornare. Quisque gravida eros eu dapibus tempor.
+### **_如欲了解更多信息，我可以联系谁？_**
 
-### **_Nam et sem ac quam sollicitudin egestas et sit amet ligula?_**
+如有任何问题，请联系您的Adobe成功经理(CSM)，或联系客户团队：[searchquestions@adobe.com](mailto:searchquestions@adobe.com)。
 
-Ut id libero at velit porttitor lacinia sagittis sit amet metus. Nulla vehicula odio mollis dolor facisis tempor. Morbi sit amet felis sit amet dolor varius vehicula. Nulla vel leo sed purus varius rhoncus.
+### **_我是否仍可以在其服务终止前续订适用的Search&amp;Promote许可证？_**
+
+是. 请与Adobe代表合作，以在2022年8月1日之前以合同终止日期续订您的许可证。
