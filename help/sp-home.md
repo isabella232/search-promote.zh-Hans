@@ -5,10 +5,10 @@ solution: Target
 topic: 网站搜索和销售
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 1914d67d2634cb13368ab72d54da7da5988de13f
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 22%
+source-wordcount: '139'
+ht-degree: 23%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 22%
 
 ## 新闻和公告{#topic_02625547D07F411DBAC9593FCBD4741B}
 
-* **注意：** [AdobeSearch&amp;Promote服务终止公告](/help/sp-eol.md)。
+<!-- * **Attention:** [Adobe Search&amp;Promote End-of-Service Announcement](/help/sp-eol.md). -->
 
 * Adobe Marketing Cloud发行说明 — 包含所有Marketing Cloud解决方案中的新增功能、修复和已知问题。 功能版本在春季和秋季发布，而维护版本每月发布一次。
 
