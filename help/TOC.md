@@ -7,9 +7,9 @@ audience: end-user
 user-guide-title: Adobe Search&amp；提升指南
 breadcrumb-title: Adobe Search&amp；提升指南
 translation-type: tm+mt
-source-git-commit: 4beba3603171a481c89d9b785072f73d6062fe01
+source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '259'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Adobe搜索和提升指南{#using}
 
-+ [Lorem Ipsum](sp-eol.md)
++ [Search&amp;Promote服务终止公告](sp-eol.md)
 + [Search&amp;Promote文档概述](sp-home.md)
 + 发行说明{#release-notes}
    + [Search&amp;Promote18.1.1发行说明(02/13/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
