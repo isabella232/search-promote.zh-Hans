@@ -1,16 +1,14 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Search&amp;Promote 15.1.1发行说明(01/15/2015)
+description: Search&amp;Promote 15.1.1发行说明。
 solution: Target
 title: Search&amp;Promote 15.1.1发行说明(01/15/2015)
-topic: Release Notes,Site search and merchandising
+topic: 发行说明、网站搜索和销售
 uuid: 070f9c46-426f-4ca1-80c7-8ca53d40a402
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 17%
+source-wordcount: '241'
+ht-degree: 16%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 17%
 
 * 以前，诸如词干、同义词之类的语言始终会应用到引导式搜索规则中的关键字。现在，您可以停用此项扩展，以便按原样使用关键字。
 
-   如果要将触发条件应用于业务规则，请在[!DNL Advanced Rule Builder]的&#x200B;**[!UICONTROL If any/all of the following conditions are met]**&#x200B;后的第一个下拉列表中，选择&#x200B;**[!UICONTROL keyword]**，然后在第二个下拉列表中选择新的运算符&#x200B;**[!UICONTROL equal exact]**。
+   如果要将触发条件应用于业务规则，请在[!DNL Advanced Rule Builder]中，在&#x200B;**[!UICONTROL If any/all of the following conditions are met]**&#x200B;之后的第一个下拉列表中，选择&#x200B;**[!UICONTROL keyword]**，然后在第二个下拉列表中选择新运算符&#x200B;**[!UICONTROL equal exact]**。
 
    请参阅[关于Business Rules](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD)。
 
@@ -29,11 +27,11 @@ ht-degree: 17%
 
 * [!DNL Visual Rule Builder] 并且 [!DNL Advanced Rule Builder] 不再截断MDI(销售文档ID)字段值。
 * 与 RBTA 有关的索引失败现已修复。
-* 编辑状态为“已批准”的现有业务规则现在会撤消“已批准”状态。 必须使用[!DNL Advanced Rule Builder]重新检查选项&#x200B;**[!UICONTROL Approved]**，然后按常规方式保存规则。 如果您不重新批准已编辑的规则，则该规则的状态会在[!DNL Business Rules]页面上自动设置为WIP（进行中的工作）。
+* 编辑状态为“已批准”的现有业务规则现在会撤销“已批准”状态。 必须使用[!DNL Advanced Rule Builder]重新选中选项&#x200B;**[!UICONTROL Approved]**，然后按常规方式保存规则。 如果您不重新批准已编辑的规则，则在[!DNL Business Rules]页面上，规则的状态将自动设置为“WIP(Work In Progress)”。
 * 现在，[!DNL Business Rules]页面上提供了新的&#x200B;**[!UICONTROL Advanced Search]**&#x200B;选项，以改进规则筛选。
-* 在[!DNL Query Cleaning]、[!DNL Pre-Search Rules]、[!DNL Post Search Rules]和[!DNL Business Rules]中的规则触发器中添加了&#x200B;**[!UICONTROL contains word]**&#x200B;条件，以便您轻松指定分词。
-* 对业务规则注释所做的改进，例如，在视图规则时，您现在可以检索该规则的注释历史记录。 此外，现在注释记录在&#x200B;**[!UICONTROL Reports]** > **[!UICONTROL Change Log]**&#x200B;中。
+* 在[!DNL Query Cleaning]、[!DNL Pre-Search Rules]、[!DNL Post Search Rules]和[!DNL Business Rules]中为规则触发器添加了&#x200B;**[!UICONTROL contains word]**&#x200B;条件，以便您轻松指定换行符。
+* 对业务规则注释所做的改进，例如视图规则时，您现在可以检索该规则的注释历史记录。 此外，现在注释记录在&#x200B;**[!UICONTROL Reports]** > **[!UICONTROL Change Log]**&#x200B;中。
 * 值为非零`sp_i`的查询不再通过[!DNL Adobe Analytics]重定向器运行。
 
-   请参见[后端搜索CGI参数](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)的表中的第15行。
+   请参见[后端搜索CGI参数](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8)中表中的第15行。
 
