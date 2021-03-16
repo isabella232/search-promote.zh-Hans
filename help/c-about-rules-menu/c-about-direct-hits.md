@@ -1,15 +1,13 @@
 ---
-description: 直接点击允许您在客户搜索匹配词时将客户重定向到指定的URL。 这种功能使您能够改进网站搜索的导航。
-seo-description: 直接点击允许您在客户搜索匹配词时将客户重定向到指定的URL。 这种功能使您能够改进网站搜索的导航。
-seo-title: 关于直接点击
+description: 当客户搜索匹配词时，直接点击允许您将客户重定向到指定的URL。 这类功能可让您改进搜索网站的导航。
 solution: Target
 title: 关于直接点击
-topic: Rules,Site search and merchandising
+topic: 规则、网站搜索和销售
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
@@ -17,25 +15,25 @@ ht-degree: 1%
 
 # 关于直接点击{#about-direct-hits}
 
-直接点击允许您在客户搜索匹配词时将客户重定向到指定的URL。 这种功能使您能够改进网站搜索的导航。
+当客户搜索匹配词时，直接点击允许您将客户重定向到指定的URL。 这类功能可让您改进搜索网站的导航。
 
 ## 使用直接点击{#concept_C5EE074A19FD4D5B8DD21DB575E35565}
 
-直接点击由两个主要元素组成：网站的URL以及一个或多个以逗号分隔的搜索词。 直接点击按如下方式指定：
+直接点击由两个主要元素组成：网站的URL，以及一个或多个以逗号分隔的搜索词。 直接点击按如下方式指定：
 
 ```
     website_URL: term
     website_URL: term, term, term
 ```
 
-例如，假定您有一个公司网站，其中有一个页面指定您的所有条款和条件。 当客户搜索您的条款和条件而不是显示结果时，您可以将客户重定向到您的条款和条件页面。
+例如，假设您有一个公司网站，其中有一个页面指定了您的所有条款和条件。 当客户搜索您的条款和条件而不是显示结果时，您可以将客户重定向到您的条款和条件页面。
 
 ```
     https://www.mycompany.com/policies.asp?article=terms: terms and conditions, terms, conditions, security
     https://www.mycompany.com/press/news.asp: press releases, press
 ```
 
-如果查询词与任何直接点击不匹配，则搜索结果会以通常方式返回。
+如果查询项与任何直接点击不匹配，则搜索结果会以通常方式返回。
 
 ## 配置直接点击{#task_64DFB8C554874C699FCC0C2F26C3669F}
 
@@ -51,12 +49,12 @@ t_configuring_direct_hits.xml
 
 **配置直接点击**
 
-1. 在产品菜单中，单击&#x200B;**[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**。
+1. 在产品菜单上，单击&#x200B;**[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**。
 1. 在[!DNL Direct Hits]字段中，输入网站的URL以及一个或多个以逗号分隔的搜索词。
 1. 单击 **[!UICONTROL Save Changes]**.
 1. （可选）执行下列操作之一：
 
-   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;可还原您所做的任何更改。
 
       请参阅[使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
@@ -78,15 +76,15 @@ t_testing_direct_hits.xml
 
  -->
 
-如果测试的术语未受直接点击规则的覆盖，将显示一条消息，通知您。 在这种情况下，如果直接点击规则在您的网站上实时显示，则搜索结果将照常返回。 如果测试了直接点击规则涵盖的术语，将显示一条消息，告知您已重定向到指定的URL。
+如果测试的术语未被直接点击规则覆盖，将显示一条消息，通知您。 在这种情况下，如果直接点击规则在您的网站上实时显示，搜索结果将照常返回。 如果您测试了直接点击规则涵盖的术语，将显示一条消息，通知您已重定向到指定的URL。
 
 **测试直接点击**
 
-1. 在产品菜单中，单击&#x200B;**[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**。
+1. 在产品菜单上，单击&#x200B;**[!UICONTROL Rules]** > **[!UICONTROL Direct Hits]**。
 1. 在[!DNL Test Direct Hits]字段中，输入搜索词，然后单击&#x200B;**[!UICONTROL Test]**。
 1. （可选）执行下列操作之一：
 
-   * 单击&#x200B;**[!UICONTROL History]**&#x200B;以还原您所做的任何更改。
+   * 单击&#x200B;**[!UICONTROL History]**&#x200B;可还原您所做的任何更改。
 
       请参阅[使用历史记录选项](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)。
 
