@@ -7,9 +7,9 @@ audience: end-user
 user-guide-title: Adobe Search&amp；提升指南
 breadcrumb-title: Adobe Search&amp；提升指南
 translation-type: tm+mt
-source-git-commit: 1914d67d2634cb13368ab72d54da7da5988de13f
+source-git-commit: bdfd504301d8c0a6b0f364ecd6fd451c0c1cdcba
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '260'
 ht-degree: 10%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 10%
 
 # Adobe搜索和提升指南{#using}
 
-<!-- + Attention {#attention}
-  + [Adobe Search&amp;Promote End-of-Service Announcement](sp-eol.md) -->
++ [AdobeSearch&amp;Promote服务终止公告](sp-eol.md)
 + [Search&amp;Promote文档概述](sp-home.md)
 + 发行说明{#release-notes}
    + [Search&amp;Promote18.1.1发行说明(02/13/2018)](c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
