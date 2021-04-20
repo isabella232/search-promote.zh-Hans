@@ -3,7 +3,7 @@ description: 使用Adobe Analytics菜单设置Adobe Analytics量度身份验证�
 solution: Target
 subtopic: Adobe Analytics
 title: 关于Adobe Analytics菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

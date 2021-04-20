@@ -2,7 +2,7 @@
 description: 了解如何在Search&amp;Promote中使用演示和模板标记。
 solution: Target
 title: 模板
-topic: 附录、网站搜索和销售
+topic: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

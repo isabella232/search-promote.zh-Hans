@@ -3,7 +3,7 @@ description: 使用动态彩块化在搜索时自动创建新的范围选择。 
 solution: Target
 subtopic: Navigation
 title: 关于动态彩块化
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: 您可以定义当分析和索引任何数据类型为“日期”的字段时使用的日期格式。
 solution: Target
 title: 日期格式
-topic: 附录、网站搜索和销售
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: 使用“元数据”菜单可自定义搜索定义和索引注入�
 solution: Target
 subtopic: Metadata
 title: 关于元数据菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

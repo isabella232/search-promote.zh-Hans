@@ -3,7 +3,7 @@ description: “最近搜索”是一个基于cookie的系统，允许您使用�
 solution: Target
 subtopic: Navigation
 title: 配置最近搜索
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

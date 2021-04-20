@@ -2,7 +2,7 @@
 description: 使用“报表”菜单可视图或重置客户搜索查询的报表。
 solution: Target
 title: 关于“报告”菜单
-topic: 报告、网站搜索和销售
+topic: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

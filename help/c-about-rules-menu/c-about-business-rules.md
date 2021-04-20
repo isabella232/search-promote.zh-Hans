@@ -2,7 +2,7 @@
 description: 您可以使用业务规则来推销您的搜索。
 solution: Target
 title: 关于业务规则
-topic: 规则、网站搜索和销售
+topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: 使用“用户”菜单可视图和添加用户、视图和添加�
 solution: Target
 subtopic: Users
 title: 关于“用户”菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

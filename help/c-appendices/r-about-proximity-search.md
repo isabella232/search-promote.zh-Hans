@@ -2,7 +2,7 @@
 description: “邻近性搜索”允许您将唯一位置与网站上的任何页面关联，然后按距离给定位置的邻近性（距离）搜索结果并对其排序。
 solution: Target
 title: 关于邻近搜索
-topic: 附录、网站搜索和销售
+topic: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

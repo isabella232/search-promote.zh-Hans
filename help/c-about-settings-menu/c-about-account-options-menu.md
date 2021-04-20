@@ -3,7 +3,7 @@ description: 使用“帐户选项”菜单可更新帐户设置、设置促销�
 solution: Target
 subtopic: Account Options
 title: 关于“帐户选项”菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

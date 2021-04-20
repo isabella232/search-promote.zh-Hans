@@ -2,7 +2,7 @@
 description: 使用模拟器查看如果要推送当前已上演的所有实时内容，您的搜索会是什么样子。
 solution: Target
 title: 关于Simulator
-topic: 模拟器、网站搜索和销售
+topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: 使用“重写规则”菜单设置爬网和搜索URL和标题规�
 solution: Target
 subtopic: Rewrite Rules
 title: 关于“重写规则”菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

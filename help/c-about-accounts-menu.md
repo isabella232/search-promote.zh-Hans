@@ -2,7 +2,7 @@
 description: 使用产品菜单上的帐户选择要访问和使用的帐户。
 solution: Target
 title: 关于帐户菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

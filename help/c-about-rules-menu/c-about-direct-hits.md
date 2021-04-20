@@ -2,7 +2,7 @@
 description: 当客户搜索匹配词时，直接点击允许您将客户重定向到指定的URL。 这类功能可让您改进搜索网站的导航。
 solution: Target
 title: 关于直接点击
-topic: 规则、网站搜索和销售
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

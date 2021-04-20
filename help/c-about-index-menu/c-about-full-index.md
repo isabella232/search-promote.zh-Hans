@@ -3,7 +3,7 @@ description: 您可以使用“完整索引”为分阶段或实时网站的所�
 solution: Target
 subtopic: Full Index
 title: 关于完整索引
-topic: 索引、网站搜索和销售
+topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

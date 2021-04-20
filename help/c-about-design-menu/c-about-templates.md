@@ -2,7 +2,7 @@
 description: 您可以使用模板来管理您的演示文稿模板和传输模板。
 solution: Target
 title: 关于模板
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

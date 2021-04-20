@@ -2,7 +2,7 @@
 description: 您可以使用“历史记录”来查看对已实现功能（如facet、breadcrumb、横幅或模板）所做的所有修订的列表，例如一些。
 solution: Target
 title: 使用“历史记录”选项
-topic: 使用历史记录、网站搜索和销售
+topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

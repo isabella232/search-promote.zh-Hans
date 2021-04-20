@@ -2,7 +2,7 @@
 description: 您可以定义您网站上使用的常见短语，以便客户在输入搜索查询时，无需在您定义的任何短语周围输入引号。
 solution: Target
 title: 关于常用短语
-topic: 语言学、网站搜索和促销
+topic: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

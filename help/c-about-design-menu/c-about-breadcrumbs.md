@@ -3,7 +3,7 @@ description: 痕迹导航是可添加到网站的导航控件。 痕迹导航可
 solution: Target
 subtopic: Navigation
 title: 关于痕迹导航
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

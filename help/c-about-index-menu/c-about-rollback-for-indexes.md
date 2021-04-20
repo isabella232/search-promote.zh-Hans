@@ -3,7 +3,7 @@ description: 您可以使用回滚来备份和存档您生成的网站索引。 
 solution: Target
 subtopic: Rollback
 title: 关于索引的回滚
-topic: 索引、网站搜索和销售
+topic: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

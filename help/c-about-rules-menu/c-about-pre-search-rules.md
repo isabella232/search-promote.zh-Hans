@@ -2,7 +2,7 @@
 description: 使用预搜索规则分析传入的查询并确定要使用的演示文稿模板。 预搜索规则将按顺序执行每个查询。 要更改规则的顺序，可使用拖放操作。 在保存之前，实际订单不会更改。
 solution: Target
 title: 关于预搜索规则
-topic: 规则、网站搜索和销售
+topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

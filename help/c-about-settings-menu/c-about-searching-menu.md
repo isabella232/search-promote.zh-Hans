@@ -3,7 +3,7 @@ description: 使用“搜索”菜单设置排除的单词、集合、限制、�
 solution: Target
 subtopic: Searching
 title: 关于搜索菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

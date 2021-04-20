@@ -2,7 +2,7 @@
 description: 了解如何以任何基于文本的格式（包括XML或JSON）自定义输出。
 solution: Target
 title: 导向搜索输出
-topic: 附录、网站搜索和销售
+topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

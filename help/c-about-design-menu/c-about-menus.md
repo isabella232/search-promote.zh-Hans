@@ -3,7 +3,7 @@ description: 您可以使用菜单自定义您的表示层。
 solution: Target
 subtopic: Navigation
 title: 关于菜单
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

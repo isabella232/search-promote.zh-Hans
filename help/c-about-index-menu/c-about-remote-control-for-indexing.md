@@ -2,7 +2,7 @@
 description: 只要您的网站发生更改，您就可以运行脚本或项目，请求搜索自动机使用远程控制运行索引。
 solution: Target
 title: 关于用于索引的远程控制
-topic: 索引、网站搜索和销售
+topic: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

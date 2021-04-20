@@ -2,7 +2,7 @@
 description: 您可以使用词典管理词典的集合及其关联的同义词和地名。
 solution: Target
 title: 关于词典
-topic: 语言学、网站搜索和促销
+topic: Linguistics,Site search and merchandising
 uuid: d4463896-30fe-4385-a283-c930c8264a02
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

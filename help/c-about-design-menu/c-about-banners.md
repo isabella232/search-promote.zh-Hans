@@ -2,7 +2,7 @@
 description: 您可以使用横幅管理您网站上的横幅广告。
 solution: Target
 title: 关于横幅
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

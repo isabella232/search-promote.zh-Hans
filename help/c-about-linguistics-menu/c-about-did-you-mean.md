@@ -2,7 +2,7 @@
 description: 您可以配置“您是指”，以便客户在尝试失败的搜索时获得有效搜索词的建议。 通过查找拼写并键入导致有效搜索的搜索词的更正来形成建议。
 solution: Target
 title: 你是说
-topic: 语言学、网站搜索和促销
+topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

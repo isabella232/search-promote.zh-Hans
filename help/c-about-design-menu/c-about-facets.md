@@ -3,7 +3,7 @@ description: 您可以使用彩块化来自定义您的演示文稿图层，并�
 solution: Target
 subtopic: Navigation
 title: 关于彩块化
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: 您可以使用页面导航来自定义搜索演示层的页面导�
 solution: Target
 subtopic: Navigation
 title: 关于页面导航
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

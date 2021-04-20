@@ -2,7 +2,7 @@
 description: 您可以使用“排除的单词”来指定您希望从搜索结果中遗漏的常用短语和常用单词，如“a”和“the”。
 solution: Target
 title: 关于排除的单词
-topic: 语言学、网站搜索和促销
+topic: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: 您可以覆盖搜索查询结果的扩展。
 solution: Target
 title: 关于查询扩展优先
-topic: 语言学、网站搜索和促销
+topic: Linguistics,Site search and merchandising
 uuid: dfe18004-b8fd-4889-b01c-72a3b0c82b9c
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: 使用“我的用户档案”菜单设置个人信息、首选项�
 solution: Target
 subtopic: My Profile
 title: 关于“我的用户档案”菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

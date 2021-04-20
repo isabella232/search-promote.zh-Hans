@@ -2,7 +2,7 @@
 description: 阅读有关Search&amp;Promote的常见问题解答
 solution: Target
 title: 常见问题解答
-topic: 附录、网站搜索和销售
+topic: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

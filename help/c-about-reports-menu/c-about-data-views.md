@@ -2,7 +2,7 @@
 description: 数据视图显示带有元字段的搜索结果。 每列都是一个元字段，每行都来自搜索查询。 通过选择和重新排列列来自定义视图。 数据视图还可以具有自定义标题和说明。
 solution: Target
 title: 关于数据视图
-topic: 报告、网站搜索和销售
+topic: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

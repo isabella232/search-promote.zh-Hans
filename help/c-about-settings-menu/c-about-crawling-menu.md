@@ -3,7 +3,7 @@ description: 使用搜索菜单集日期和URL蒙版、密码、内容类型、�
 solution: Target
 subtopic: Crawling
 title: 关于“爬网”菜单
-topic: 设置、网站搜索和销售
+topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

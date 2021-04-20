@@ -2,7 +2,7 @@
 description: 如果您不熟悉Search&Promote和动态导航，请在此处开始，以便开始使用您的帐户。 您将学习如何为网站编制索引以及自定义搜索结果的外观等。
 solution: Target
 title: 入门指南
-topic: 入门、网站搜索和销售
+topic: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

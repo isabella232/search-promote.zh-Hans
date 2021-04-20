@@ -2,7 +2,7 @@
 description: 您可以使用“主页”来视图各种报表构件，以便快速概述您的Search&amp;Promote帐户。
 solution: Target
 title: 关于主页
-topic: 主页、网站搜索和销售
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

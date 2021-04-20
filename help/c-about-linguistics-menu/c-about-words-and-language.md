@@ -2,7 +2,7 @@
 description: 您可以使用“单词和语言”来确定如何将搜索词与网页内容进行匹配。
 solution: Target
 title: 关于词语和语言
-topic: 语言学、网站搜索和促销
+topic: Linguistics,Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

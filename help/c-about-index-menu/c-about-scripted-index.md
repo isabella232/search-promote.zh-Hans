@@ -3,7 +3,7 @@ description: 使用脚本索引，您无需登录即可编写、更新和维护�
 solution: Target
 subtopic: Scripted Index
 title: 关于脚本索引
-topic: 索引、网站搜索和销售
+topic: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

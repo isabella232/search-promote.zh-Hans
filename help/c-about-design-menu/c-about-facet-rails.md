@@ -3,7 +3,7 @@ description: 使用Facet边栏可重新排序网页上的facet组。
 solution: Target
 subtopic: Navigation
 title: 关于Facet边栏
-topic: 设计、网站搜索和销售
+topic: Design,Site search and merchandising
 uuid: 6da2bd67-8c20-4955-9836-bc8ba88546c5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
