@@ -2,16 +2,16 @@
 description: 您可以使用模板来管理您的演示文稿模板和传输模板。
 solution: Target
 title: 关于模板
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
+exl-id: 846f34b3-9857-494e-9010-3db0b48412d3
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2647'
 ht-degree: 1%
 
 ---
-
 
 # 关于模板{#about-templates}
 
@@ -693,4 +693,3 @@ t_previewing_the_xml_of_a_transport_template_file.xml
    * 单击 **[!UICONTROL Push Live]**.
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
-
