@@ -3,16 +3,16 @@ description: 使用Facet边栏可重新排序网页上的facet组。
 solution: Target
 subtopic: Navigation
 title: 关于Facet边栏
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 6da2bd67-8c20-4955-9836-bc8ba88546c5
+exl-id: 389b2f5e-c1aa-48d7-ab3e-c8a1d1e4ecb4
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '776'
 ht-degree: 1%
 
 ---
-
 
 # 关于Facet边栏{#about-facet-rail}
 
@@ -44,7 +44,7 @@ t_configuring_facet_rail.xml
 
 **配置facet边栏**
 
-1. 在配置facet边栏之前，请确保已添加facet，并且作为该任务的一部分，指定了facet边栏名称。
+1. 在配置facet边栏之前，请确保已添加facet，并作为该任务的一部分，指定了facet边栏名称。
 
    请参阅[添加新facet](../c-about-design-menu/c-about-facets.md#task_FC07BFFA62CA4B718D6CBF4F2855C89B)。
 1. 在产品菜单上，单击&#x200B;**[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facet Rail.]**
