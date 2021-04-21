@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.17.0发行说明。
 solution: Target
 title: Search&amp;Promote 8.17.0发行说明(10/30/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: ea1725df-778c-4875-a269-f33d0c367126
+exl-id: aa185a62-9823-462c-b56c-402bee8fa80b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '166'
 ht-degree: 13%
 
 ---
-
 
 # Search&amp;Promote 8.17.0发行说明(10/30/2014){#search-promote-release-notes}
 
@@ -40,4 +40,3 @@ ht-degree: 13%
 
 * 使用 Kindle Fire 的 Silk 浏览器用户代理，会导致 Apache 崩溃。
 * 修复了一个索引错误问题。
-
