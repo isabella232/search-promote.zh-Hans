@@ -2,16 +2,16 @@
 description: 了解如何在Search&amp;Promote中使用演示和模板标记。
 solution: Target
 title: 模板
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
+exl-id: f8cc4b5c-4e75-426b-8234-76af8bb0f4c5
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '15153'
+source-wordcount: '15148'
 ht-degree: 2%
 
 ---
-
 
 # 模板{#templates}
 
@@ -80,7 +80,7 @@ ht-degree: 2%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng 1/31/13--> <span class="codeph"> &lt;guided-results&gt;&lt;/guided-results&gt; </span> </p> </td> 
    <td colname="col2"> <p>向导结果标签定义结果循环的边界。 通过指定<span class="codeph"> gsname </span>属性，可以访问任何结果集。 如果未提供<span class="codeph"> gsname </span> ，则显示默认的搜索结果。 </p> </td> 
@@ -267,7 +267,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
    <td colname="col2"> <p>返回facet的显示标签。 </p> <p>如果facet在传输模板上使用<span class="codeph"> &lt;display-name&gt; </span>标记，则该标记的内容将成为标签。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--In search-eng version 1/31/13--> <span class="codeph"> &lt;guided-facet-rail&gt;&lt;/guided-facet-rail&gt; </span> </p> </td> 
    <td colname="col2"> <p> 在表示模板上定义一个部分，该部分用作facet边栏中每个facet的重复图案。 </p> <p> 属于facet边栏的每个facet都使用此部分来评估其输出。 </p> <p>以下是彩块化边栏的示例： </p> <p> <code class="syntax html"> &lt;guided-facet-rail&gt; 
@@ -620,7 +620,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
       &lt;/guided-breadcrumb&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-breadcrumb-value /&gt; </span> </p> </td> 
    <td colname="col2"> <p>value标签将打印出当前痕迹导航小版本的转换值。 它仅用于<span class="codeph">导向痕迹导航</span>块的上下文。 </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
@@ -676,7 +676,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-menu gsname="menuname"&gt;&lt;/guided-menu&gt; </span> </p> </td> 
    <td colname="col2"> <p>这是菜单值循环迭代器标签。 使用<span class="codeph"> gsname </span>属性可标识显示的菜单项集。 </p> </td> 
@@ -745,7 +745,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-pages&gt;&lt;/guided-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p>页面导航的循环标签。 每个页面都会重复显示开始标记和结束标记之间的任何内容。 </p> </td> 
@@ -900,7 +900,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
    <td colname="col2"> <p>允许您构建指向最近搜索的链接。 它支持将任何HTML属性直接传递到锚点标签。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-recent-searches-path /&gt; </span> </p> </td> 
    <td colname="col2"> <p>允许您在<span class="codeph">向导 — 最近搜索</span>循环中获取最近搜索的相对URL路径。 通常，您会使用<span class="codeph"> guided-recent-search-link </span>。 但是，如果您想构建自己的链接，可以使用此标签。 以下是一个示例： </p> <p> <code class="syntax html"> &lt;guided-lt/&gt;a&amp;nbsp;href="&lt;guided_recent_searches_path&gt;"&gt;&lt;guided-recent-searches-value&gt;&lt;/a&gt; </code> </p> </td> 
   </tr> 
@@ -954,7 +954,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matches search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestions&gt;&lt;/guided-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>这是循环播放建议的循环标签。 </p> </td> 
@@ -1040,7 +1040,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-autocomplete&gt; &lt;guided-else-autocomplete&gt; &lt;/guided-if-autocomplete&gt; </span> </p> </td> 
    <td colname="col2"> <p>检测是否启用自动完成功能。 您可以使用标记（可选）拾取自动完成所需的头部和表单内容。 反过来，这又可让您打开和关闭功能，而不必更改演示文稿模板。 </p> </td> 
   </tr> 
@@ -1086,7 +1086,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
    <td colname="col2"> <p>检测用户是否在商店中。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-store gsname="store"&gt; &lt;guided-else-store&gt; &lt;/guided-if-store&gt; </span> </p> </td> 
    <td colname="col2"> <p>检测用户是否在存储中，<span class="codeph"> gsname </span>参数指定。 </p> </td> 
   </tr> 
@@ -1105,7 +1105,7 @@ Facet是可导航的组件，可让您深入搜索结果。 您可以使用facet
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-zone gsname="zone area"&gt; </span> </p> </td> 
    <td colname="col2"> <p>您可以用区域标签中的任何内容换行，以创建该区域之外的区域。 这样，您就可以使用业务规则根据需要显示区域。 默认情况下，始终显示区域。 您可以使用可选的搜索和facet参数来指示与区域关联的搜索或facet。 此类功能可让软件在隐藏区域时跳过搜索或彩块化，从而提高搜索时间性能。 高度和宽度属性是可选的，用于配置在删除区域时占位符在可视规则生成器中的显示方式。 </p> <p> 使用<span class="codeph"> guided-if-facet[-not]-visible </span>标记，而不是尽可能使用区域。 它简化了演示文稿模板。 </p> </td> 
   </tr> 
@@ -1586,7 +1586,7 @@ r_search_template_tags.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-index&gt; </span> </p> </td> 
    <td colname="col2"> <p>返回当前结果的数值索引。 </p> </td> 
   </tr> 
@@ -1756,7 +1756,7 @@ r_search_template_tags.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-link target="frame-name" hbx-enable="yes/no" hbx-linkid-name="field-name" hbx-linkid-none="text" hbx-linkid-length="XX"&gt; ...  &lt;/search-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>这对标签在它们之间的HTML周围创建一个锚点链接。 单击链接时，将显示结果页。 可选的目标属性指定了指定的窗口，支持帧的浏览器应在其中显示结果页。 </p> <p>将hbx-enable属性设置为“是”，以利用通过HBX提供的分析。 将hbx-linkid-name设置为要跟踪的元数据字段的名称。 例如，要按SKU编号跟踪搜索结果，请将hbx-linkid-name设置为包含SKU信息的元数据字段的名称。 </p> <p>当前不支持日期类型字段。 hbx-linkid-name的值将附加到生成的锚点中的链接ID。 只要命名的元数据字段为空，就会将hbx-linkid-none属性的值附加到链接ID。 hbx-linkid-length的值限制从Meta标签中获取和显示的字符数。 默认的字符数为12。 </p> </td> 
   </tr> 
@@ -1766,7 +1766,7 @@ r_search_template_tags.xml
    <td colname="col2"> <p>这对标记与<span class="codeph"> &lt;search-link&gt; ... &lt;/search-link&gt; </span>标记类似。 单击生成的锚点链接时，将显示结果页，但该页滚动到结果前最近的锚点标签。 对于PDF链接，Acrobat查看器显示包含结果的页面。 可选的目标属性指定了指定的窗口，支持帧的浏览器应在其中显示结果页。 </p> <p>将hbx-enable属性设置为“是”，以利用通过HBX提供的分析。 将hbx-linkid-name设置为要跟踪的元数据字段的名称。 例如，要按SKU编号跟踪搜索结果，请将hbx-linkid-name设置为包含SKU信息的元数据字段的名称。 </p> <p>当前不支持日期类型字段。 hbx-linkid-name的值将附加到生成的锚点中的链接ID。 只要命名的元数据字段为空，就会将hbx-linkid-none属性的值附加到链接ID。 hbx-linkid-length的值限制从Meta标签中获取和显示的字符数。 默认的字符数为12。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-link-extension&gt; ...  &lt;/search-if-link-extension&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-link-extension&gt; ...  &lt;/search-if-not-link-extension&gt; </span> </p> </td> 
    <td colname="col2"> <p>如果值属性指定的扩展与结果的URL结尾相匹配，则这些标签包括它们之间的HTML。 此标签对于在基于链接扩展的搜索结果中包含图形很有用。 value属性是一个或多个扩展（空格分隔）的列表，如下所示：VALUE="。pdf"或VALUE="。html .htm"。 </p> </td> 
   </tr> 
@@ -1789,7 +1789,7 @@ r_search_template_tags.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-first&gt; ...  &lt;/search-if-first&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-first&gt; ...  &lt;/search-if-not-first&gt; </span> </p> </td> 
    <td colname="col2"> <p>如果当前结果是（或不是）页面上的第一个结果（在<span class="codeph"> &lt;search-results&gt; </span>中使用）或第一个字段值（在<span class="codeph"> &lt;search-field-values&gt; </span>中使用），则这些标签包括它们之间的文本。 </p> </td> 
   </tr> 
@@ -1837,7 +1837,7 @@ r_search_template_tags.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>第一个结果 </p> </td> 
    <td colname="col3"> <p>否 </p> </td> 
    <td colname="col4"> <p>否 </p> </td> 
@@ -1930,7 +1930,7 @@ r_search_template_tags.xml
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-list name="field-name" quotes="yes/no" commas="yes/no" data="values/counts/results" separator="X" sortby="none/values/counts/results" max-items="XX" date-format="date-format-string" gmt="yes/no" language="0/language-id" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
    <td colname="col2"> <p>此标签显示整个结果集中唯一字段值、值计数或结果计数的列表。 </p> <p>此标签仅生成由搜索查询中的<span class="codeph"> sp_sfvl_field </span> CGI参数指定的字段的输出。 可选的“quotes”属性控制各个项目输出是否用多次引号（或单引号，如果encoding=perl）括起来。 “quotes”的默认值为“yes”。 可选的“逗号”属性控制各个项目输出是否以逗号分隔。 “逗号”的默认值为“是”。 可选的"data"属性控制是输出每个唯一字段值(data="values")，输出每个唯一字段值的总计数(data="counts")，还是输出包含每个唯一值的结果数(data="results")。 “data”的默认值为“values”。 对于非列表类型字段，data="counts"和data="results"是等效的。 separator属性定义要插入输出值之间的单个字符或分隔符。 可选的“sortby”属性控制输出的顺序；sortby="none"表示没有特定顺序，sortby="values"表示按字段值排序（根据字段的“排序”属性按升序或降序排序），sortby="counts"表示按字段值计数的降序排序，sortby="results"表示按包含每个值的结果数的降序排序。 </p> <p>请注意，sortby="counts"和sortby="results"对于非列表类型字段是等效的。 可选的“max-items”属性限制要输出的项目数。 “max-items”的默认值为–1，表示“输出所有项目”。 </p> <p>最大项目的绝对限制为100。 仅当指定字段的内容类型为“date”时，“date-format”、“gmt”和“language”属性才相关。 "date-format"属性采用UNIX样式的日期格式字符串，如"%A， %B %d， %Y"（对于"2016年7月25日，星期一"）。 "gmt"默认为"yes"，并控制日期字符串的时间部分应以GMT("yes")或帐户的时区("no")输出。 </p> <p>请参阅<a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local">日期格式字符串</a>。 </p> <p>“language”属性控制输出日期字符串的语言和区域设置约定。 “0”（默认）是指“使用帐户语言”。 任何其他“语言”值都解释为特定语言标识符，例如，“en_US”表示“英语（美国）”。 可选的“encoding”属性控制输出字符串字符是HTML编码、JavaScript编码、Perl编码、URL编码还是未编码，以在结果页上输出。 “encoding”的默认值为“html”。 </p> <p>请参阅<a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local">语言标识符</a>。 </p> </td> 
   </tr> 
@@ -1976,7 +1976,7 @@ r_search_template_tags.xml
    <td colname="col2"> <p>此标签输出当前&lt;search-field-values&gt;循环迭代的字段值。 此标记仅在<span class="codeph"> &lt;search-field-values&gt; </span>循环内有效。 仅当封闭&lt;search-field-values&gt;标记中指定的字段名称的内容类型为"date"时，“date-format”、“gmt”和“language”属性才相关。 "date-format"属性采用UNIX样式的日期格式字符串，如"%A， %B %d， %Y"（对于"2020年7月25日，星期一"）。 </p> <p>请参阅<a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local">日期格式字符串</a>。 </p> <p>可选的“encoding”属性控制输出字符串字符是HTML编码、JavaScript编码、Perl编码、URL编码还是未编码，以在结果页上输出。 “encoding”的默认值为“none”。 通常，您无需指定编码属性。 "gmt"默认为"yes"，并控制日期字符串的时间部分应以GMT("yes")或帐户的时区("no")输出。 “language”属性控制输出日期字符串的语言和区域设置约定。 “0”（默认）是指“使用帐户语言”。 任何其他“语言”值都解释为特定语言标识符，例如，“en_US”表示“英语（美国）”。 </p> <p>请参阅<a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local">语言标识符</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-count results="yes/no"&gt; </span> </p> </td> 
    <td colname="col2"> <p>此标签输出与当前<span class="codeph"> &lt;search-field-values&gt; </span>循环迭代关联的计数。 输出计数是包含字段值的整个结果集中的结果数（结果="yes"），或整个结果集中字段值的总计数。 “results”的默认值为“no”。 </p> <p>对于非列表类型字段，results="yes"和results="no"是等效的。 此标记仅在<span class="codeph"> &lt;search-field-values&gt; </span>循环内有效。 </p> </td> 
   </tr> 
@@ -2006,7 +2006,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-suggestions&gt; ...  &lt;/search-if-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>在这些标签周围添加任何“建议”模板标签，如<span class="codeph"> &lt;search-seccuption&gt; </span> 、 <span class="codeph"> &lt;search-seccuption-link&gt; </span>等。 如果搜索生成建议，则搜索引擎输出并处理开放标记和结束标记之间的所有内容。 如果搜索未生成建议，则不会输出任何嵌套内容。 </p> </td> 
   </tr> 
@@ -2016,7 +2016,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
    <td colname="col2"> <p>此标签生成“建议”循环，该循环包含建议搜索词的列表(例如，“打算”、“预期”和“打算”，对于最初输入为“意向”的查询)。 在生成术语列表时，搜索引擎最多重复五次任何嵌套的HTML和/或模板标记，这是建议的最大数目。 使用count属性指定生成的建议数（在0到5之间）。 </p> <p><span class="codeph"> &lt;search-sugmentiss&gt; </span>标记可在页面上多次显示以重复建议的列表。 根据每个结果的数量对多个建议进行排序。 </p> <p>将<span class="codeph"> &lt;search-segments&gt; </span>标记嵌套在open和close <span class="codeph"> &lt;search-if-segments&gt; </span>标记之间。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-suggestion-link&gt; ...  &lt;/search-suggestion-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>此标记使用选定的建议搜索词而不是原始词生成指向原始搜索查询的链接。 标签接受并直接打印任何HTML属性，如类、目标和样式。 标记还可以接受URL属性，该属性的值用作生成链接的基本URL。 这些标记只能显示在<span class="codeph"> &lt;search-segmenties&gt; </span>循环中。 </p> </td> 
   </tr> 
@@ -2082,7 +2082,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
    <td colname="col2"> <p>在“模板”链接下的“基本外观”部分中设置的“搜索结果标题”的HTML。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-cdata&gt; ...  &lt;/search-cdata&gt; </span> </p> </td> 
    <td colname="col2"> <p>search-cdata标记被替换为其XML等效项：<span class="codeph"> &lt;search_cdata&gt; </span>替换为<span class="codeph"> &lt;![CDATA["和&lt;/search-cdata&gt; </span>标记替换为" <span class="codeph"> ]&gt; </span>"。 XML分析器不解析开放标签和关闭标签之间的任何信息。 </p> </td> 
   </tr> 
@@ -2231,7 +2231,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-results&gt; ...  &lt;/search-if-results&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-results&gt; ...&lt;/search-if-not-results&gt; </span> </p> </td> 
    <td colname="col2"> <p>如果当前页面包含任何（或不包含）搜索结果，则这些标签包含HTML。 </p> </td> 
   </tr> 
@@ -2241,7 +2241,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
    <td colname="col2"> <p>如果上一页或下一页具有与其关联的任何（或无）结果，则这些标签包括HTML。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-sort-by-score&gt; ...  &lt;/search-if-sort-by-score&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-sort-by-score&gt; ...  &lt;/search-if-not-sort-by-score&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-sort-by-date&gt; ...  &lt;/search-if-sort-by-date&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-sort-by-date&gt; ...  &lt;/search-if-not-sort-by-date&gt; </span> </p> </td> 
    <td colname="col2"> <p>如果当前页面是否按相关性或日期排序，则这些标记包括HTML。 </p> </td> 
   </tr> 
@@ -2292,7 +2292,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-input&gt; </span> </p> </td> 
    <td colname="col2"> <p>在模板中用于代替<span class="codeph"> &lt;input&gt; </span>标记。 将标记写入浏览器时，单词<span class="codeph">输入</span>将替换<span class="codeph">搜索输入</span>，并且标记中的所有其他信息将按原样输出。 此外，如果标签中指定的<span class="codeph">名称</span>被列为CGI参数，并且标签中指定的<span class="codeph">值</span>是该CGI参数的值，则在标签末尾添加选中的<span class="codeph">词。 </span>这样，您可以自动使搜索结果中的默认单选按钮或复选框状态与当前查询相同。 </p> <p>例如，复选框的HTML代码可能如下所示： </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;无相似声音匹配  </span> </p> <p>该复选框的相应模板代码如下所示： </p> <p> <span class="codeph"> &lt;search-input type="checkbox" name="sp_w" value="exact"&gt;无相似声音匹配  </span> </p> <p>如果查询的CGI参数字符串包含<span class="codeph"> sp_w=exact </span>，则写入浏览器的搜索结果的标签如下（检查的<span class="codeph">字词</span>将插入标签末尾）： </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact" checked=""&gt;无相似声音匹配  </span> </p> <p>如果查询的CGI参数字符串不包含<span class="codeph"> sp_w=exact </span>，则写入浏览器的搜索结果的标签如下所示（标记中未列出选中的<span class="codeph">词</span>）： </p> <p> <span class="codeph"> &lt;input type="checkbox" name="sp_w" value="exact"&gt;无相似声音匹配  </span> </p> <p><span class="codeph"> &lt;search-input&gt; </span>标记可用于将复选框和单选按钮放入搜索模板中。 如果您有要添加到搜索模板中的<span class="codeph"> &lt;form&gt; </span>的复选框或单选按钮，请使用<span class="codeph"> &lt;search-input...&gt; </span>代替<span class="codeph"> &lt;input..&gt; </span>。 </p> </td> 
   </tr> 
@@ -2320,7 +2320,7 @@ Sembley提供用户友好的“您是说吗？” 服务。 例如，如果用�
       &lt;/search-select&gt; </code> </p> <p>如果要将列表框添加到搜索模板的<span class="codeph"> &lt;form&gt; </span>中，请使用<span class="codeph"> &lt;search-select...&gt; </span>代替<span class="codeph"> &lt;select...&gt; </span>、<span class="codeph"> &lt;/search-select&gt; </span> <span class="codeph"> &lt;/select&gt;a9/&gt;、<span class="codeph"> &lt;search-option...&gt; </span>代替<span class="codeph"> &lt;option...&gt; </span>,<span class="codeph"> </span>代替<span class="codeph"> &lt;/option&gt; </span>.</span> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-sort-by-field name="field-name" count="XX"&gt; ...  &lt;/search-sort-by-field&gt; </span> </p> </td> 
    <td colname="col2"> <p>这些高级标签在它们之间的HTML周围创建一个锚点链接。 单击此锚点时，将显示在给定字段中排序的结果页。 可选的<span class="codeph"> count </span>属性指定要在结果页上显示的结果数。 如果省略<span class="codeph">计数</span>，则使用当前页上使用的计数。 </p> </td> 
   </tr> 
