@@ -2,16 +2,16 @@
 description: 数据视图显示带有元字段的搜索结果。 每列都是一个元字段，每行都来自搜索查询。 通过选择和重新排列列来自定义视图。 数据视图还可以具有自定义标题和说明。
 solution: Target
 title: 关于数据视图
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
-
 
 # 关于数据视图{#about-data-views}
 
@@ -185,4 +185,3 @@ ht-degree: 1%
    * 在[!DNL Data Views]页面的表的[!DNL Title]列中，单击要打开的数据视图的名称。
 
    * 在[!DNL Data Views]页面的表的[!DNL Actions]列中，单击要打开的数据视图行中的&#x200B;**[!UICONTROL View]**。
-
