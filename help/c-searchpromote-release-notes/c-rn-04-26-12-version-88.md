@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.8发行说明。
 solution: Target
 title: Search&amp;Promote 8.8发行说明(04/26/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
+exl-id: 3bd9b6af-99a2-4631-b7a7-0a792122c157
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 68%
+source-wordcount: '322'
+ht-degree: 70%
 
 ---
-
 
 # Search&amp;Promote 8.8发行说明(04/26/2012){#search-promote-release-notes}
 
@@ -46,4 +46,3 @@ ht-degree: 68%
 * 添加了更简要的业务规则说明（例如，不在管理器中显示 field_table）功能。
 * 引导式搜索导航菜单之前最多可容纳九个项目。现在最多可容纳 20 个。
 * 对索引连接器进行了性能改进。
-
