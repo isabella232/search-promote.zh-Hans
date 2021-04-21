@@ -2,16 +2,16 @@
 description: 了解在Search&amp;Promote中搜索表单
 solution: Target
 title: 搜索表单
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
+exl-id: 9771a19d-86a8-41db-9c80-d734fbd10ab7
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '2931'
+source-wordcount: '2926'
 ht-degree: 0%
 
 ---
-
 
 # 搜索表单{#search-forms}
 
@@ -920,4 +920,3 @@ Sorry, no matches were found containing <b><SEARCH-QUERY>.</b>
 </SEARCH-IF-ADVANCED> 
 </form>
 ```
-
