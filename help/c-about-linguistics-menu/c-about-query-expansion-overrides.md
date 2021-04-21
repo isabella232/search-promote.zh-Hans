@@ -2,16 +2,16 @@
 description: 您可以覆盖搜索查询结果的扩展。
 solution: Target
 title: 关于查询扩展优先
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: dfe18004-b8fd-4889-b01c-72a3b0c82b9c
+exl-id: 6157ffcb-e696-419a-acb5-2076c12a6763
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # 关于查询扩展覆盖{#about-query-expansion-overrides}
 
@@ -124,4 +124,3 @@ t_configuring_query_expansion_overrides.xml
    * 单击&#x200B;**实时推送**。
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)
-
