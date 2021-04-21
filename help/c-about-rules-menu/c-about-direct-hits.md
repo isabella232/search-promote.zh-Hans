@@ -2,16 +2,16 @@
 description: 当客户搜索匹配词时，直接点击允许您将客户重定向到指定的URL。 这类功能可让您改进搜索网站的导航。
 solution: Target
 title: 关于直接点击
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
+exl-id: 251dfa47-f55a-469c-8fca-e187877b7759
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
-
 
 # 关于直接点击{#about-direct-hits}
 
@@ -95,4 +95,3 @@ t_testing_direct_hits.xml
    * 单击 **[!UICONTROL Push Live]**.
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
-
