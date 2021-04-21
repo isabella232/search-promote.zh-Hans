@@ -3,16 +3,16 @@ description: 您可以使用SEO（搜索引擎优化）元标记来帮助定制�
 solution: Target
 subtopic: SEO
 title: 关于SEO
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 5c5d64f5-fe79-4489-85c6-399d1437f2c4
+exl-id: 0045455b-cb86-4820-82fa-753475ab6ca6
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
-
 
 # 关于SEO{#about-seo}
 
