@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.12.0发行说明。
 solution: Target
 title: Search&amp;Promote 8.12.0发行说明(01/16/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 4db10eb4-11bf-4483-a7f2-87981d9c7a50
+exl-id: 8ea76d7e-6675-4ba3-8f93-1895476f7017
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 72%
+source-wordcount: '251'
+ht-degree: 74%
 
 ---
-
 
 # Search&amp;Promote 8.12.0发行说明(01/16/2014){#search-promote-release-notes}
 
@@ -66,4 +66,3 @@ ht-degree: 72%
 * 针对“包含”或“排除”列表的自动完成编辑内容未保存在“历史记录”中，因此无法还原。
 
    请参阅[关于自动完成](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578)。
-
