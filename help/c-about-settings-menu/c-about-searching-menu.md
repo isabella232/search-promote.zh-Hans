@@ -3,16 +3,16 @@ description: 使用“搜索”菜单设置排除的单词、集合、限制、�
 solution: Target
 subtopic: Searching
 title: 关于搜索菜单
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 1%
 
 ---
-
 
 # 关于“搜索”菜单{#about-the-searching-menu}
 
@@ -157,7 +157,7 @@ c_about_searches.xml
      </code>会找到“what”、“why”、“when”、“whever”和与“wh”开始的任何其他单词。 搜索*her*时，会发现“here”、“where”、“where”、“toghere”、“gathering”以及任何在单词中任何位置包含“her”的其他单词。 </p> <p>您可以将通配符与+和 — 修饰符、短语的引号以及字段搜索说明符组合。 </p> <p>搜索 
      <code>
        +wh* -se*ch 
-     </code>会查找所有页面，其中含有一个词的开始为“wh”，且不包含一个词的开始为“se”并以“ch”结尾。 </p> <p>搜索 
+     </code>会查找所有页面，其中包含一个词，该词用“wh”开始，且不包含一个词，该词用“se”开始，以“ch”结尾。 </p> <p>搜索 
      <code>
        "wh* are" 
      </code>查找短语“where are”、“what are”、“why are”等。 </p> </td> 
@@ -1141,7 +1141,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>馈送名称 </p> </td> 
       <td colname="col3"> <p>指定源的名称。 </p> </td> 
       </tr> 
@@ -1157,7 +1157,7 @@ t_creating_a_feed.xml
         </ul> <p>通用源需要指定特殊的CGI参数。 要绑定与此源关联的特殊模板，请定义<span class="codeph"> sp_t </span>参数。 将<span class="codeph"> sp_t </span>的值设置为传输模板文件的名称。 例如，如果您添加了名为<span class="codeph"> super_feed.tpl </span>的传输模板文件，则会创建一个自定义CGI搜索参数，作为<span class="codeph"> sp_t=super_feed </span>。 在您从<span class="wintitle">元字段</span>下拉列表中选择<span class="uicontrol">自由格式</span>之前，不会显示用于输入<span class="codeph"> sp_t </span>的文本框。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>文件提交 </p> </td> 
       <td colname="col3"> <p>允许您配置提交源文件的计划，并设置要用于上传文件的方法。 </p> 
         <ul id="ul_30E830C41F6A4526822AF1FD3083075A"> 
@@ -1274,7 +1274,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>允许您将特定于供应商的源字段映射到站点搜索/销售元数据字段。 向导中的此映射步骤很重要，因为它允许源关联索引中的字段与源数据中的字段之间的信息。 在大多数情况下，除<span class="wintitle">通用源</span>之外，关联将保存在动态生成的搜索模板中。 </p> <p>“字段映射”表中的每一行都表示字段映射。 在表的“添加/删除”列中，单击<span class="uicontrol"> + </span>以添加新字段映射行；单击<span class="uicontrol"> - </span>从表中删除当前选定的字段映射行。 要将源字段与元数据字段关联，请使用相应的下拉列表选择所需的字段。 </p> <p> <b>高级使用</b> </p> <p>您可以创建自己的自定义字段。 在<span class="wintitle">源字段</span>下拉列表中，单击<span class="uicontrol">自定义</span>。 在关联的文本字段中，输入该字段的自定义标记名称。 如果源需要特定于供应商的特殊字段，则此自定义选项很有用。 </p> <p>您还可以创建自定义元数据字段。 在<span class="wintitle">元数据字段</span>下拉列表中，单击<span class="uicontrol">自定义</span>。 在关联的文本字段中，输入自定义元数据字段值。 该值将插入预生成的模板中，并且还可用于插入自定义搜索模板标记。 </p> <p>请参阅<a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local">搜索模板标记</a>。 </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>搜索条件 </p> </td> 
       <td colname="col3"> <p>当生成源文件时，使用搜索查询来过滤数据。 您可以在此面板中定义用于搜索查询的过滤器。 </p> 
         <ul id="ul_994585E89A044BD3A89A99D30F277432"> 
