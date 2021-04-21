@@ -3,16 +3,16 @@ description: 使用“我的用户档案”菜单设置个人信息、首选项�
 solution: Target
 subtopic: My Profile
 title: 关于“我的用户档案”菜单
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
+exl-id: 093b47b2-2c4f-47c6-bee4-b794d97d97b9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
-
 
 # 关于“我的用户档案”菜单{#about-the-my-profile-menu}
 
