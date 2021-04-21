@@ -3,16 +3,16 @@ description: 痕迹导航是可添加到网站的导航控件。 痕迹导航可
 solution: Target
 subtopic: Navigation
 title: 关于痕迹导航
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
+exl-id: e668d706-6899-4db9-968b-d98df9090ad9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
-
 
 # 关于痕迹导航{#about-breadcrumbs}
 
@@ -183,4 +183,3 @@ t_deleting_a_breadcrumb.xml
    * 单击 **[!UICONTROL Push Live]**.
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
-
