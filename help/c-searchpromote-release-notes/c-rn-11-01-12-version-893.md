@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.9.3发行说明。
 solution: Target
 title: Search&amp;Promote 8.9.3发行说明(11/01/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
+exl-id: 9593a87d-2a84-41e1-b052-644d928f5053
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 79%
+source-wordcount: '283'
+ht-degree: 80%
 
 ---
-
 
 # Search&amp;Promote 8.9.3发行说明(11/01/2012){#search-promote-release-notes}
 
@@ -69,4 +69,3 @@ ht-degree: 79%
 * **[!UICONTROL Did You Mean]** 搜索查询缓存现已禁用。
 
    请参阅[关于 Did You Mean](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D4F3C29EF184B538B8AE2ECAE0CDC5E)。
-
