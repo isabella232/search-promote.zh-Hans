@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.9.1发行说明。
 solution: Target
 title: Search&amp;Promote 8.9.1发行说明(08/16/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 6f3284ed-660f-477f-a863-b961b185eaf3
+exl-id: fcea6adc-e43f-4c7f-a6fe-3417427a6421
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 69%
+source-wordcount: '135'
+ht-degree: 72%
 
 ---
-
 
 # Search&amp;Promote 8.9.1发行说明(08/16/2012){#search-promote-release-notes}
 
@@ -29,4 +29,3 @@ ht-degree: 69%
 
 * 修复了实时推送暂存业务规则时出现的多个问题。
 * 修复了无法搜索横幅标记的错误。
-
