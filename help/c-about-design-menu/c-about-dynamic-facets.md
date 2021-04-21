@@ -3,16 +3,16 @@ description: 使用动态彩块化在搜索时自动创建新的范围选择。 
 solution: Target
 subtopic: Navigation
 title: 关于动态彩块化
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
+exl-id: e668e683-3ed8-48fe-a82b-3c4dd484a1c8
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
-
 
 # 关于动态彩块化{#about-dynamic-facets}
 
