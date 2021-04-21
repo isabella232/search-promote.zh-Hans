@@ -2,16 +2,16 @@
 description: 只要您的网站发生更改，您就可以运行脚本或项目，请求搜索自动机使用远程控制运行索引。
 solution: Target
 title: 关于用于索引的远程控制
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
+exl-id: 1a7689f9-1e3f-48c8-a5f1-abe0efdb7768
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
-
 
 # 关于索引{#about-remote-control-for-indexing}的远程控制
 
@@ -62,7 +62,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> sp_a=sp99999999  </span> </p> </td> 
-   <td colname="col2"> <p> 您的帐号。 </p> <p>您可以在<span class="uicontrol"> <b>Settings</b> </span> &gt; <span class="uicontrol"> <b> Account Options</b> </span> &gt; <span class="uicontrol"> <b> Account Settings</b> </span>下找到您的帐号。 </p> </td> 
+   <td colname="col2"> <p> 您的帐号。 </p> <p>您可以在<span class="uicontrol"> <b>Settings</b> </span> &gt; <span class="uicontrol"> <b>Account Options</b> </span> &gt; <span class="uicontrol"> <b>Account Settings</b> </span>下找到您的帐户号。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> sp_lines= N  </span> </p> </td> 
