@@ -2,16 +2,16 @@
 description: 使用产品菜单上的帐户选择要访问和使用的帐户。
 solution: Target
 title: 关于帐户菜单
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
+exl-id: f3f43b71-cbcb-4325-88de-72db1c049700
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
-
 
 # 关于“帐户”菜单{#about-the-accounts-menu}
 
@@ -40,4 +40,3 @@ t_selecting_a_different_account_to_use.xml
 
    * 在表的[!DNL Name]列标题下，单击要使用和管理开始的帐户名。
    * 在表的[!DNL Number]列标题下，单击要使用和管理开始的帐户号。
-
