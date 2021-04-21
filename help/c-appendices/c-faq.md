@@ -2,16 +2,16 @@
 description: 阅读有关Search&amp;Promote的常见问题解答
 solution: Target
 title: 常见问题解答
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 4ce454a4-e770-4587-91a0-a25491818ac6
+exl-id: 2bb1da04-62f9-4f8c-bee4-5511d8cb2582
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '8648'
+source-wordcount: '8643'
 ht-degree: 0%
 
 ---
-
 
 # 常见问题解答{#frequently-asked-questions}
 
