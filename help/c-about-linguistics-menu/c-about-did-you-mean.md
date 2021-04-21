@@ -2,16 +2,16 @@
 description: 您可以配置“您是指”，以便客户在尝试失败的搜索时获得有效搜索词的建议。 通过查找拼写并键入导致有效搜索的搜索词的更正来形成建议。
 solution: Target
 title: 你是说
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
+exl-id: c86da375-ac5f-442b-9975-6a4e1ba8a70d
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '728'
 ht-degree: 2%
 
 ---
-
 
 # 你是说{#about-did-you-mean}
 
@@ -99,4 +99,3 @@ t_configuring_did_you_mean.xml
    * 单击 **[!UICONTROL Push Live]**.
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
-
