@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.9.4发行说明。
 solution: Target
 title: Search&amp;Promote 8.9.4发行说明(01/17/2013)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
+exl-id: cb5d93d9-54ac-4b41-96ad-66f18ee1e934
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 33%
+source-wordcount: '259'
+ht-degree: 34%
 
 ---
-
 
 # Search&amp;Promote 8.9.4发行说明(01/17/2013){#search-promote-release-notes}
 
@@ -57,4 +57,3 @@ ht-degree: 33%
    请参阅[有关规则排名](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397)。
 
    请参阅[关于重新排名索引](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692)。
-
