@@ -2,16 +2,16 @@
 description: 如果您不熟悉Search&Promote和动态导航，请在此处开始，以便开始使用您的帐户。 您将学习如何为网站编制索引以及自定义搜索结果的外观等。
 solution: Target
 title: 入门指南
-topic: Getting Started,Site search and merchandising
+topic-legacy: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
+exl-id: f2772d7a-b558-403e-9e77-8c87302e2b02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # 入门指南{#getting-started}
 
@@ -142,4 +142,3 @@ ht-degree: 0%
 * 配置词典，以便您指定相关词组（例如，购买、购买和采购）。 即使客户的搜索查询与您网页上使用的术语不完全匹配，这些相关词语也有助于返回相关结果。 在上例中使用的同义词中，客户的“购买”搜索查询返回包含“购买”字样的页面。
 
    请参阅[关于字典](c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034)。
-
