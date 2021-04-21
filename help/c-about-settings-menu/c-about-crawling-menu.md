@@ -3,16 +3,16 @@ description: 使用搜索菜单集日期和URL蒙版、密码、内容类型、�
 solution: Target
 subtopic: Crawling
 title: 关于“爬网”菜单
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
+exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11016'
+source-wordcount: '11011'
 ht-degree: 0%
 
 ---
-
 
 # 关于爬网菜单{#about-the-crawling-menu}
 
@@ -1367,7 +1367,7 @@ index:<indexconnector_configuration_name>
       </tr> 
       <tr> 
       <td colname="col1"> <p>Itemtag </p> </td> 
-      <td colname="col2"> <p>标识在您指定的数据源文件中定义"行"的XML元素。 </p> </td> 
+      <td colname="col2"> <p>标识在您指定的数据源文件中定义“行”的XML元素。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>地图 </p> </td> 
