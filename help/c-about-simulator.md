@@ -2,16 +2,16 @@
 description: 使用模拟器查看如果要推送当前已上演的所有实时内容，您的搜索会是什么样子。
 solution: Target
 title: 关于Simulator
-topic: Simulator,Site search and merchandising
+topic-legacy: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
+exl-id: ee8dcf37-7692-438a-8869-6703ef61e498
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
-
 
 # 关于Simulator{#about-simulator}
 
