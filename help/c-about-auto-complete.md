@@ -3,16 +3,16 @@ description: 您可以配置“自动完成”的各个区域，以控制生成�
 solution: Target
 subtopic: Auto-Complete
 title: 关于自动完成
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
+exl-id: a1d08c0a-6c68-4da2-88d2-fe953d333536
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
-
 
 # 关于自动完成{#about-auto-complete}
 
