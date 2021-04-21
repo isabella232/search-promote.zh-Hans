@@ -3,16 +3,16 @@ description: 您可以使用重新排名索引来更新网站的排名信息，�
 solution: Target
 subtopic: Re-Rank Index
 title: 关于重排索引
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
+exl-id: c4ddaec9-43ba-42ec-89dc-04d42306b9b6
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
-
 
 # 关于重排索引{#about-re-rank-index}
 
@@ -67,4 +67,3 @@ ht-degree: 1%
    * 使用导航选项&#x200B;**[!UICONTROL First]**、**[!UICONTROL Prev]**、**[!UICONTROL Next]**、**[!UICONTROL Last]**&#x200B;或&#x200B;**[!UICONTROL Go to line]**&#x200B;在日志中移动。
 
    * 使用显示选项&#x200B;**[!UICONTROL Errors only]**、**[!UICONTROL Wrap line]**&#x200B;或&#x200B;**[!UICONTROL Show]**&#x200B;细化您所看到的内容。
-
