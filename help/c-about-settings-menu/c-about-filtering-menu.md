@@ -3,16 +3,16 @@ description: 使用“筛选”菜单可使用在索引Web文档之前更改其�
 solution: Target
 subtopic: Filtering
 title: 关于筛选菜单
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
+exl-id: 1a1c7b86-a29b-4c17-8743-ff3c2c91b63a
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '4008'
+source-wordcount: '4003'
 ht-degree: 1%
 
 ---
-
 
 # 关于筛选菜单{#about-the-filtering-menu}
 
