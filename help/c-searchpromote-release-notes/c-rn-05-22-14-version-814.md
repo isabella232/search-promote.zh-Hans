@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.14.0发行说明。
 solution: Target
 title: Search&amp;Promote 8.14.0发行说明(05/22/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 308d84a9-ec38-4fec-b146-e8a353e65be4
+exl-id: fcc00d85-128e-4015-aa82-7d31606cb076
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 63%
+source-wordcount: '96'
+ht-degree: 67%
 
 ---
-
 
 # Search&amp;Promote 8.14.0发行说明(05/22/2014){#search-promote-release-notes}
 
@@ -23,4 +23,3 @@ ht-degree: 63%
 * 在&#x200B;**[!UICONTROL Business Rule History]**&#x200B;中添加了注释。
 * 在执行索引操作的过程中，基于结果的触发器和操作预览索引重新生成阶段的性能会一直稳步下降。
 * 将&#x200B;**[!UICONTROL Reset SPIN cache]**&#x200B;选项从布尔值no/next-run更改为三状态：no/always/next-run。
-
