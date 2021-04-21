@@ -3,16 +3,16 @@ description: 您可以使用“重新生成索引”来更新网站的索引，�
 solution: Target
 subtopic: Regenerate Index
 title: 关于重新生成索引
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
+exl-id: 4155a52c-33f6-4f54-b69b-2a092530f7aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '393'
 ht-degree: 1%
 
 ---
-
 
 # 关于重新生成索引{#about-regenerate-index}
 
@@ -75,4 +75,3 @@ ht-degree: 1%
    * 使用导航选项&#x200B;**[!UICONTROL First]**、**[!UICONTROL Prev]**、**[!UICONTROL Next]**、**[!UICONTROL Last]**&#x200B;或&#x200B;**[!UICONTROL Go to line]**&#x200B;在日志中移动。
 
    * 使用显示选项&#x200B;**[!UICONTROL Errors only]**、**[!UICONTROL Wrap line]**&#x200B;或&#x200B;**[!UICONTROL Show]**&#x200B;细化您所看到的内容。
-
