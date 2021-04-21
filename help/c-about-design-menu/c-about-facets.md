@@ -3,16 +3,16 @@ description: 您可以使用彩块化来自定义您的演示文稿图层，并�
 solution: Target
 subtopic: Navigation
 title: 关于彩块化
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
+exl-id: 10cdc599-79fe-44e1-8f90-f08b819f6dda
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3827'
 ht-degree: 1%
 
 ---
-
 
 # 关于彩块化{#about-facets}
 
@@ -707,4 +707,3 @@ t_deleting_a_facet.xml
    * 单击 **[!UICONTROL Push Live]**.
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
-
