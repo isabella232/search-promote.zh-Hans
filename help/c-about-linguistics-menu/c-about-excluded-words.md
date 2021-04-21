@@ -2,16 +2,16 @@
 description: 您可以使用“排除的单词”来指定您希望从搜索结果中遗漏的常用短语和常用单词，如“a”和“the”。
 solution: Target
 title: 关于排除的单词
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
+exl-id: d553b776-907a-4f4a-8481-b36dc0cb75c9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
-
 
 # 关于排除的单词{#about-excluded-words}
 
@@ -73,4 +73,3 @@ ht-degree: 0%
    * 单击 **[!UICONTROL Push Live]**.
 
       请参阅[实时推送舞台设置](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4)。
-
