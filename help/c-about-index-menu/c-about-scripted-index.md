@@ -3,16 +3,16 @@ description: 使用脚本索引，您无需登录即可编写、更新和维护�
 solution: Target
 subtopic: Scripted Index
 title: 关于脚本索引
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
+exl-id: e1d14cd5-4885-4e3a-bc5f-fe0b6a4df15e
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1730'
+source-wordcount: '1725'
 ht-degree: 1%
 
 ---
-
 
 # 关于脚本索引{#about-scripted-index}
 
@@ -286,4 +286,3 @@ Web服务器通常安排在半夜停机进行维护。 如果服务器在计划�
    * 使用导航选项&#x200B;**[!UICONTROL First]**、**[!UICONTROL Prev]**、**[!UICONTROL Next]**、**[!UICONTROL Last]**&#x200B;或&#x200B;**[!UICONTROL Go to line]**&#x200B;在日志中移动。
 
    * 使用显示选项&#x200B;**[!UICONTROL Errors only]**、**[!UICONTROL Wrap line]**&#x200B;或&#x200B;**[!UICONTROL Show]**&#x200B;细化您所看到的内容。
-
