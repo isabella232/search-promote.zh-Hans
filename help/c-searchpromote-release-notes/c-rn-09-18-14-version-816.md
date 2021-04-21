@@ -2,16 +2,16 @@
 description: Search&amp;Promote 8.16.0发行说明。
 solution: Target
 title: Search&amp;Promote 8.16.0发行说明(9/18/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
+exl-id: 929d6f97-4939-4e37-aded-6a746757b960
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '332'
 ht-degree: 39%
 
 ---
-
 
 # Search&amp;Promote 8.16.0发行说明(9/18/2014){#search-promote-release-notes}
 
@@ -52,4 +52,3 @@ ht-degree: 39%
 * 使用&#x200B;**[!UICONTROL Common Phrases]**&#x200B;功能时，搜索结果不一致。
 * “规则”列表摘要中显示的属性名称被截短。
 * 将单个业务规则实时推送就是将所有业务规则实时推送。
-
