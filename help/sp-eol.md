@@ -5,14 +5,14 @@ feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 hide: true
 hidefromtoc: true
+exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
 translation-type: tm+mt
-source-git-commit: 681e3e6768f214759598482526ce7ffba27e860e
+source-git-commit: 1562d46d096206f21228cb8ca9cbd8cec406e8dc
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # AdobeSearch&amp;Promote服务终止公告
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ### **_Search&amp;Promote将在什么日期停止运行？_**
 
-Search&amp;Promote服务终止计划于2022年8月1日推出。 在该日期，Search&amp;Promote管理用户界面将不再可访问，对Search&amp;PromoteAPI的请求将不再提供结果。 在此日期之前，该服务将完全可用并可正常使用。
+Search&amp;Promote服务终止计划于2022年9月1日&#x200B;****&#x200B;开始。 在该日期，Search&amp;Promote管理用户界面将不再可访问，对Search&amp;PromoteAPI的请求将不再提供结果。 在此日期之前，该服务将完全可用并可正常使用。
 
 ### **_如果对Search&amp;Promote发出搜索或其他API请求，会发生什么情况？_**
 
@@ -42,4 +42,4 @@ Search&amp;Promote服务终止计划于2022年8月1日推出。 在该日期，S
 
 ### **_我是否仍可以在其服务终止前续订适用的Search&amp;Promote许可证？_**
 
-是. 请与Adobe代表合作，以在2022年8月1日之前以合同终止日期续订您的许可证。
+是. 与Adobe代表合作，以在合同终止日期&#x200B;**2022年9月1日**&#x200B;之前续订许可证。
