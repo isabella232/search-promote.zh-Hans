@@ -3,13 +3,11 @@ title: AdobeSearch&Promote服务终止公告
 description: 了解有关AdobeSearch&Promote服务终止公告的更多信息。
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
-hide: true
-hidefromtoc: true
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
 translation-type: tm+mt
-source-git-commit: 1562d46d096206f21228cb8ca9cbd8cec406e8dc
+source-git-commit: 99d23647ba5d30ed90d9e8ac377d627f6266c618
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 0%
 
 ### **_Search&amp;Promote将在什么日期停止运行？_**
 
-Search&amp;Promote服务终止计划于2022年9月1日&#x200B;****&#x200B;开始。 在该日期，Search&amp;Promote管理用户界面将不再可访问，对Search&amp;PromoteAPI的请求将不再提供结果。 在此日期之前，该服务将完全可用并可正常使用。
+AdobeSearch&amp;Promote服务终止计划于2022年9月1日&#x200B;****&#x200B;结束。 在该日期，Search&amp;Promote管理用户界面将不再可访问，对Search&amp;PromoteAPI的请求将不再提供结果。 在此日期之前，该服务将完全可用并可正常使用。
 
 ### **_如果对Search&amp;Promote发出搜索或其他API请求，会发生什么情况？_**
 
