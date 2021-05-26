@@ -1,12 +1,11 @@
 ---
-title: Adobe Search&amp;Promote技术文档
-description: Adobe Search&amp;Promote的技术文档和自助资料
+title: AdobeSearch&amp;Promote技术文档
+description: Search&amp;Promote的Adobe技术文档和自助资料
 solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-translation-type: tm+mt
-source-git-commit: c52719f476a61592b11bf1182a1bfe3525488817
+source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 22%
@@ -15,24 +14,24 @@ ht-degree: 22%
 
 # Adobe Search&amp;Promote 指南 {#search-promote-documentation}
 
-## 新闻和公告{#topic_02625547D07F411DBAC9593FCBD4741B}
+## 新闻和公告 {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-* **注意** - [AdobeSearch&amp;Promote服务终止公告](/help/sp-eol.md)。
+* **重要信息：** [AdobeSearch&amp;Promote服务终止公告](/help/sp-eol.md)。
 
-* Adobe Marketing Cloud发行说明 — 包含所有Marketing Cloud解决方案中的新增功能、修复和已知问题。 功能版本在春季和秋季发布，而维护版本每月发布一次。
+* Adobe Marketing Cloud发行说明 — 包含所有Marketing Cloud解决方案的新增功能、修复和已知问题。 功能版本在春季和秋季发布，而维护版本每月发布一次。
 
-   早期访问：注册[Adobe优先级产品更新](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe)，在每个发行版前一周收到Adobe Marketing Cloud发行说明。
+   抢先体验：注册[Adobe优先产品更新](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe)，以在每个版本发行前一周收到Adobe Marketing Cloud发行说明。
 
 * 最新的AdobeSearch&amp;Promote发行说明：
 
-   [发行说明](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
+[发行说明](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
 
 ## 白皮书 {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
 
-[理解和设计AdobeSearch&amp;Promote中的索引连接器源](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
+[了解和设计AdobeSearch&amp;Promote中的索引连接器馈送](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
 
-## 其他信息{#topic_34A00195904D4AE7AE982D3746F693AA}
+## 其他信息 {#topic_34A00195904D4AE7AE982D3746F693AA}
 
 [AdobeSearch&amp;Promote网站](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
 
-[行业见解](https://blogs.adobe.com/digitalmarketing/) - Adobe 数字营销博客.
+[行业见解](https://blog.adobe.com/en/topics/digital-transformation.html) - Adobe 数字营销博客.
