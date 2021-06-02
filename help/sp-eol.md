@@ -4,7 +4,7 @@ description: 进一步了解AdobeSearch&Promote的服务终止公告。
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
+source-git-commit: cffbd6a62e1ffe1f5fe1f2f6123e8bc5199b55dc
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -39,4 +39,4 @@ AdobeSearch&amp;Promote的服务终止计划于2022年9月1日&#x200B;****&#x200
 
 ### **_我是否仍可以在Search&amp;Promote服务终止前续订适用的数据许可证？_**
 
-是. 与您的Adobe代表合作，在合同终止日期&#x200B;**2022年9月1日**&#x200B;之前续订您的许可证。
+是. 与您的Adobe代表合作，在合同终止日期&#x200B;**2022年8月31日**&#x200B;之前续订您的许可证。
