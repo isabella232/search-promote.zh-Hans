@@ -3,9 +3,9 @@ title: AdobeSearch&Promote服务终止公告
 description: 进一步了解AdobeSearch&Promote的服务终止公告。
 role: Admin,User,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: bbd1877e3f3942097c2f9348204279aec992ed5a
+source-git-commit: 47092ce7c0839090789d43d63d2144128868088d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ### **_Search&amp;Promote将于何时停止运行？_**
 
-AdobeSearch&amp;Promote的服务终止计划于2022年9月1日&#x200B;****&#x200B;结束。 在该日期，Search&amp;Promote管理用户界面将不再可访问，并且对Search&amp;PromoteAPI的请求将不再交付结果。 在此日期之前，该服务将完全可用且正常运行。 预计2022年9月1日，在2022年8月31日之后，将不允许合同Search&amp;Promote权利。
+AdobeSearch&amp;Promote的服务终止计划 **2022年9月1日**. 在该日期，Search&amp;Promote管理用户界面将不再可访问，并且对Search&amp;PromoteAPI的请求将不再交付结果。 在此日期之前，该服务将完全可用且正常运行。 预计2022年9月1日，在2022年8月31日之后，将不允许合同Search&amp;Promote权利。
 
 ### **_如果对Search&amp;Promote发出搜索或其他API请求，会发生什么情况？_**
 
@@ -24,7 +24,7 @@ AdobeSearch&amp;Promote的服务终止计划于2022年9月1日&#x200B;****&#x200
 
 ### **_Adobe是否有用于网站搜索和商务搜索的替代选项？_**
 
-是. 对于产品和商务搜索，[从Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html)进行实时搜索是Adobe的搜索应用程序。 “从Magento Commerce进行实时搜索”计划于2021年上半年启动。
+是. 对于产品和商务搜索， [实时搜索来自Magento Commerce](https://devdocs.magento.com/live-search/overview.html) 是Adobe的搜索应用程序。
 
 <!-- ### **_Can Adobe recommend any frameworks or platforms that offer features similar to Search&Promote?_**
 
@@ -34,8 +34,8 @@ AdobeSearch&amp;Promote的服务终止计划于2022年9月1日&#x200B;****&#x200
 
 ### **_我可以联系谁以了解更多信息？_**
 
-如有任何问题，请联系您的Adobe成功经理(CSM)，或通过[searchquestions@adobe.com](mailto:searchquestions@adobe.com)联系客户团队。
+如有任何问题，请联系您的客户成功经理(CSM)，或通过联系Adobe团队 [searchquestions@adobe.com](mailto:searchquestions@adobe.com).
 
 ### **_我是否仍可以在Search&amp;Promote服务终止前续订适用的数据许可证？_**
 
-是. 与您的Adobe代表合作，在合同终止日期&#x200B;**2022年8月31日**&#x200B;之前续订您的许可证。
+是. 与您的Adobe代表合作，在合同终止日期之前续订您的许可证 **2022年8月31日**.
